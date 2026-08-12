@@ -20,6 +20,16 @@ export const work: CaseStudy[] = [
     status: "live",
   },
   {
+    id: "the-dive",
+    client: "The Dive",
+    category: "Bar & Lounge",
+    summary:
+      "A moody, neon-lit website for a Walnut Creek speakeasy — built around their real logo, 5-star Google reviews, and full drink menu.",
+    deliverables: ["Custom website design & build", "Full beer & cocktail menu", "Reviews showcase", "Mobile-first, live on the web"],
+    liveUrl: "https://the-dive-mu.vercel.app",
+    status: "live",
+  },
+  {
     id: "salon",
     client: "Salons & Spas",
     category: "Coming soon",
