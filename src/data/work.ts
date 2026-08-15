@@ -30,6 +30,16 @@ export const work: CaseStudy[] = [
     status: "live",
   },
   {
+    id: "little-red-bistro",
+    client: "Little Red Bistro",
+    category: "Café & Bistro",
+    summary:
+      "A full redesign for a Pleasant Hill bistro, replacing an outdated site with a modern one built around their real crêpe & panini menu, real Yelp reviews, and full amenities list.",
+    deliverables: ["Custom website design & build", "Full menu system (40+ items)", "Reviews showcase", "Mobile-first, live on the web"],
+    liveUrl: "https://little-red-bistro.vercel.app",
+    status: "live",
+  },
+  {
     id: "salon",
     client: "Salons & Spas",
     category: "Coming soon",
