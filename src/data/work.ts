@@ -40,6 +40,16 @@ export const work: CaseStudy[] = [
     status: "live",
   },
   {
+    id: "pittsburg-tires",
+    client: "Pittsburg Tires And Wheels",
+    category: "Auto & Tire Shop",
+    summary:
+      "A bold, industrial redesign for a Pittsburg tire shop with no existing website — dark asphalt & safety-yellow palette, gauge-style stats, and a bento service layout, built around their real 4.7-star reviews.",
+    deliverables: ["Custom website design & build", "Services & booking-ready contact", "Reviews showcase", "Mobile-first, live on the web"],
+    liveUrl: "https://pittsburg-tires.vercel.app",
+    status: "live",
+  },
+  {
     id: "salon",
     client: "Salons & Spas",
     category: "Coming soon",
