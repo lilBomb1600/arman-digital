@@ -60,6 +60,16 @@ export const work: CaseStudy[] = [
     status: "live",
   },
   {
+    id: "trl-boyz",
+    client: "TRL BOYZ",
+    category: "Streetwear & E-commerce",
+    summary:
+      "A stark black-and-white streetwear shop built to spec from brand references — a drag-to-spin 360 product viewer for checking front and back before buying, plus a full custom horror-grunge art direction with a custom cursor and terminal-style UI.",
+    deliverables: ["Custom website design & build", "Drag-to-spin product viewer", "Custom cart & sign-up flow", "Mobile-first, live on the web"],
+    liveUrl: "https://trl-boyz.vercel.app",
+    status: "live",
+  },
+  {
     id: "gym",
     client: "Gyms & Studios",
     category: "Coming soon",
