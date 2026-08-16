@@ -50,12 +50,14 @@ export const work: CaseStudy[] = [
     status: "live",
   },
   {
-    id: "salon",
-    client: "Salons & Spas",
-    category: "Coming soon",
-    summary: "A booking-first website concept for salons and spas — built to turn browsers into booked appointments.",
-    deliverables: [],
-    status: "coming-soon",
+    id: "luxe-lounge",
+    client: "The Luxe Lounge",
+    category: "Hair Salon",
+    summary:
+      "A completely distinct layout for a Concord hair salon — fixed sidebar navigation, a soft boho-glam palette pulled from the real studio's interior, and a personal 'Meet Your Stylist' intro built around the owner's real story.",
+    deliverables: ["Custom website design & build", "Services & booking flow", "Reviews showcase", "Mobile-first, live on the web"],
+    liveUrl: "https://luxe-lounge-snowy.vercel.app",
+    status: "live",
   },
   {
     id: "gym",
