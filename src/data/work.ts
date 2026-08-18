@@ -70,11 +70,13 @@ export const work: CaseStudy[] = [
     status: "live",
   },
   {
-    id: "gym",
-    client: "Gyms & Studios",
-    category: "Coming soon",
-    summary: "A membership-focused site concept for gyms and fitness studios, built around class schedules and sign-ups.",
-    deliverables: [],
-    status: "coming-soon",
+    id: "iron-therapy-gym",
+    client: "Iron Therapy Gym",
+    category: "Strength & Conditioning Gym",
+    summary:
+      "A high-energy, forge-themed site for a 24/7 Concord gym — split day/night hero, count-up stats, rising ember particles, and a real 5.0-star Yelp reviews wall built around the owner's own story.",
+    deliverables: ["Custom website design & build", "Programs, gallery & FAQ", "Reviews showcase", "Mobile-first, live on the web"],
+    liveUrl: "https://iron-therapy-gym.vercel.app",
+    status: "live",
   },
 ];
