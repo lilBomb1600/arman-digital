@@ -29,4 +29,14 @@ export const videoWork: VideoCaseStudy[] = [
     videoSrc: "/videos/lexus-es350-walkaround.mp4",
     poster: "/videos/lexus-es350-poster.jpg",
   },
+  {
+    id: "porsche-911-gt3",
+    category: "Car Walkthrough Video",
+    title: "2022 Porsche 911 GT3",
+    description:
+      "A full 360° exterior orbit of the 992 GT3 followed by an interior tour — gauge cluster, manual shift knob, and roll cage — cut into one continuous walkaround. Built for listings, Marketplace, and social.",
+    deliverables: ["Full exterior 360° orbit", "Interior cabin walkthrough", "Edited into one continuous cut", "Ready for listings & social"],
+    videoSrc: "/videos/porsche-gt3-walkaround.mp4",
+    poster: "/videos/porsche-gt3-poster.jpg",
+  },
 ];
