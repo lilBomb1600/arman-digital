@@ -39,4 +39,14 @@ export const videoWork: VideoCaseStudy[] = [
     videoSrc: "/videos/porsche-gt3-walkaround.mp4",
     poster: "/videos/porsche-gt3-poster.jpg",
   },
+  {
+    id: "lexus-ls430",
+    category: "Car Walkthrough Video",
+    title: "2005 Lexus LS 430",
+    description:
+      "A full exterior 360° orbit, a close detail pass on the wheels and exhaust, then a front-to-back interior tour — dash, console, front seats, rear seats, sunroof, and trunk — cut into one continuous walkaround. Built for listings, Marketplace, and social.",
+    deliverables: ["Full exterior 360° orbit", "Wheel & exhaust detail pass", "Front & rear interior walkthrough", "Ready for listings & social"],
+    videoSrc: "/videos/lexus-ls430-walkaround.mp4",
+    poster: "/videos/lexus-ls430-poster.jpg",
+  },
 ];
