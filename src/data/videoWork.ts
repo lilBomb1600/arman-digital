@@ -49,4 +49,14 @@ export const videoWork: VideoCaseStudy[] = [
     videoSrc: "/videos/lexus-ls430-walkaround.mp4",
     poster: "/videos/lexus-ls430-poster.jpg",
   },
+  {
+    id: "dome-treehouse",
+    category: "Airbnb Walkthrough Video",
+    title: "Geodesic Dome Treehouse",
+    description:
+      "A hillside dome retreat in Lafayette, CA — exterior at dusk, the dome living room and kitchen, both dome bedrooms, the main house's living room and bathrooms, deck views over the valley, and the hot tub and rec areas, cut into one continuous cinematic tour.",
+    deliverables: ["Full property exterior & interior coverage", "Every room & outdoor amenity", "Edited into one continuous cut", "Ready for the listing & social"],
+    videoSrc: "/videos/dome-treehouse-walkthrough.mp4",
+    poster: "/videos/dome-treehouse-poster.jpg",
+  },
 ];
