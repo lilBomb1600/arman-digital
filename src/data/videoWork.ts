@@ -1,5 +1,6 @@
 export type VideoCaseStudy = {
   id: string;
+  group: "car" | "property";
   category: string;
   title: string;
   description: string;
@@ -11,6 +12,7 @@ export type VideoCaseStudy = {
 export const videoWork: VideoCaseStudy[] = [
   {
     id: "house-walkthrough",
+    group: "property",
     category: "Real Estate Walkthrough Video",
     title: "Modern Minimalist Home",
     description:
@@ -21,6 +23,7 @@ export const videoWork: VideoCaseStudy[] = [
   },
   {
     id: "lexus-es350",
+    group: "car",
     category: "Car Walkthrough Video",
     title: "2025 Lexus ES 350",
     description:
@@ -31,6 +34,7 @@ export const videoWork: VideoCaseStudy[] = [
   },
   {
     id: "porsche-911-gt3",
+    group: "car",
     category: "Car Walkthrough Video",
     title: "2022 Porsche 911 GT3",
     description:
@@ -41,6 +45,7 @@ export const videoWork: VideoCaseStudy[] = [
   },
   {
     id: "lexus-ls430",
+    group: "car",
     category: "Car Walkthrough Video",
     title: "2005 Lexus LS 430",
     description:
@@ -51,6 +56,7 @@ export const videoWork: VideoCaseStudy[] = [
   },
   {
     id: "dome-treehouse",
+    group: "property",
     category: "Airbnb Walkthrough Video",
     title: "Geodesic Dome Treehouse",
     description:

@@ -1,9 +1,33 @@
 "use client";
 
-import { motion } from "framer-motion";
+import { motion, type Variants } from "framer-motion";
 import { ArrowRight, Phone } from "lucide-react";
 import { Container } from "@/components/ui/Container";
 import { studio } from "@/data/business";
+
+const EASE = [0.16, 1, 0.3, 1] as const;
+
+const HEADLINE = [
+  { text: "Websites", gold: false },
+  { text: "&", gold: false },
+  { text: "cinematic", gold: true },
+  { text: "media", gold: true },
+  { text: "for", gold: false },
+  { text: "businesses", gold: false },
+  { text: "that", gold: false },
+  { text: "mean", gold: false },
+  { text: "business.", gold: false },
+];
+
+const headlineContainer: Variants = {
+  hidden: {},
+  show: { transition: { staggerChildren: 0.045, delayChildren: 0.1 } },
+};
+
+const headlineWord: Variants = {
+  hidden: { opacity: 0, y: 22 },
+  show: { opacity: 1, y: 0, transition: { duration: 0.55, ease: EASE } },
+};
 
 export function Hero() {
   return (
@@ -36,18 +60,30 @@ export function Hero() {
         </motion.div>
 
         <motion.h1
-          initial={{ opacity: 0, y: 24 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.7, delay: 0.1 }}
+          initial="hidden"
+          animate="show"
+          variants={headlineContainer}
           className="max-w-3xl text-balance font-display text-5xl font-semibold leading-[1.05] text-cream sm:text-6xl lg:text-7xl"
         >
-          Websites & cinematic media for businesses that mean business.
+          {HEADLINE.map((word, i) => (
+            <motion.span
+              key={i}
+              variants={headlineWord}
+              className={
+                word.gold
+                  ? "inline-block bg-gradient-to-r from-gold to-gold-light bg-clip-text text-transparent"
+                  : "inline-block"
+              }
+            >
+              {word.text}&nbsp;
+            </motion.span>
+          ))}
         </motion.h1>
 
         <motion.p
           initial={{ opacity: 0, y: 24 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.7, delay: 0.2 }}
+          transition={{ duration: 0.7, delay: 0.55 }}
           className="mt-6 max-w-xl text-balance text-lg leading-relaxed text-muted"
         >
           {studio.description}
@@ -56,7 +92,7 @@ export function Hero() {
         <motion.div
           initial={{ opacity: 0, y: 24 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.7, delay: 0.3 }}
+          transition={{ duration: 0.7, delay: 0.7 }}
           className="mt-10 flex flex-wrap items-center gap-4"
         >
           <a

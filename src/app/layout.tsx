@@ -33,6 +33,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
     <html lang="en" className={`${display.variable} ${body.variable} h-full antialiased`}>
       <body className="flex min-h-full flex-col bg-ink text-cream">
+        <div className="grain-overlay pointer-events-none fixed inset-0 z-[55] opacity-[0.05]" />
         <ScrollProgress />
         <Navbar />
         <main className="flex-1">{children}</main>
