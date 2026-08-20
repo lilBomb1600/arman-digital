@@ -4,6 +4,7 @@ import { Car, Home } from "lucide-react";
 import { Container } from "@/components/ui/Container";
 import { SectionHeading } from "@/components/ui/SectionHeading";
 import { Reveal } from "@/components/ui/Reveal";
+import { SectionGlow } from "@/components/ui/SectionGlow";
 import { VideoCarousel } from "@/components/sections/VideoCarousel";
 import { videoWork } from "@/data/videoWork";
 
@@ -12,7 +13,8 @@ export function VideoWork() {
   const properties = videoWork.filter((v) => v.group === "property");
 
   return (
-    <section id="video-work" className="border-t border-border/60 py-24 sm:py-28">
+    <section id="video-work" className="relative overflow-hidden border-t border-border/60 py-24 sm:py-28">
+      <SectionGlow className="-left-32 bottom-0" />
       <Container>
         <SectionHeading
           eyebrow="Video Work"

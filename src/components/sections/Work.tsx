@@ -2,6 +2,7 @@ import { ArrowUpRight, Sparkles } from "lucide-react";
 import { Container } from "@/components/ui/Container";
 import { SectionHeading } from "@/components/ui/SectionHeading";
 import { Reveal, RevealGroup, RevealItem } from "@/components/ui/Reveal";
+import { SectionGlow } from "@/components/ui/SectionGlow";
 import { work } from "@/data/work";
 
 export function Work() {
@@ -9,7 +10,8 @@ export function Work() {
   const upcoming = work.filter((w) => w.status === "coming-soon");
 
   return (
-    <section id="work" className="border-t border-border/60 bg-surface/40 py-24 sm:py-28">
+    <section id="work" className="relative overflow-hidden border-t border-border/60 bg-surface/40 py-24 sm:py-28">
+      <SectionGlow className="-right-40 top-10" />
       <Container>
         <SectionHeading
           eyebrow="Recent Work"
@@ -20,7 +22,7 @@ export function Work() {
         <div className="mt-14 space-y-10">
           {live.map((project) => (
             <Reveal key={project.id}>
-              <div className="group grid overflow-hidden rounded-[2rem] border border-border bg-surface transition-colors duration-300 hover:border-gold/30 lg:grid-cols-2">
+              <div className="group grid overflow-hidden rounded-[2rem] border border-border bg-surface transition-all duration-300 hover:border-gold/40 hover:shadow-[0_30px_70px_-20px_rgba(217,164,65,0.3)] lg:grid-cols-2">
                 <div className="relative aspect-[4/3] overflow-hidden bg-ink lg:aspect-auto">
                   <div className="absolute inset-0 overflow-hidden transition-transform duration-700 ease-out group-hover:scale-105">
                     <iframe
@@ -53,7 +55,7 @@ export function Work() {
                       href={project.liveUrl}
                       target="_blank"
                       rel="noreferrer"
-                      className="group/btn mt-8 flex w-fit items-center gap-2 rounded-full bg-gold px-6 py-3 text-sm font-semibold text-ink transition-transform hover:-translate-y-0.5"
+                      className="shine-btn group/btn mt-8 flex w-fit items-center gap-2 rounded-full bg-gradient-to-b from-gold-light to-gold px-6 py-3 text-sm font-semibold text-ink shadow-[0_6px_24px_-6px_rgba(217,164,65,0.55)] transition-all hover:-translate-y-1 hover:shadow-[0_10px_32px_-6px_rgba(217,164,65,0.75)]"
                     >
                       Visit Live Site
                       <ArrowUpRight className="h-4 w-4 transition-transform group-hover/btn:translate-x-0.5 group-hover/btn:-translate-y-0.5" />

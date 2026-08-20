@@ -30,7 +30,7 @@ export function VideoCarousel({
     <div>
       <div className="mb-6 flex flex-wrap items-center justify-between gap-4">
         <h3 className="flex items-center gap-2.5 font-display text-xl font-semibold text-cream sm:text-2xl">
-          <span className="flex h-9 w-9 items-center justify-center rounded-full bg-gold/10 text-gold">
+          <span className="flex h-9 w-9 items-center justify-center rounded-full bg-gradient-to-br from-gold/25 to-gold/5 text-gold shadow-[0_0_20px_-4px_rgba(217,164,65,0.5)]">
             <Icon className="h-4.5 w-4.5" />
           </span>
           {label}
@@ -45,14 +45,14 @@ export function VideoCarousel({
             <button
               aria-label={`Previous ${label.toLowerCase()} video`}
               onClick={() => go(-1)}
-              className="flex h-9 w-9 items-center justify-center rounded-full border border-border text-cream transition-all hover:-translate-x-0.5 hover:border-gold hover:text-gold"
+              className="flex h-9 w-9 items-center justify-center rounded-full border border-border text-cream transition-all hover:-translate-x-0.5 hover:border-gold hover:text-gold hover:shadow-[0_0_16px_-2px_rgba(217,164,65,0.6)]"
             >
               <ChevronLeft className="h-4 w-4" />
             </button>
             <button
               aria-label={`Next ${label.toLowerCase()} video`}
               onClick={() => go(1)}
-              className="flex h-9 w-9 items-center justify-center rounded-full border border-border text-cream transition-all hover:translate-x-0.5 hover:border-gold hover:text-gold"
+              className="flex h-9 w-9 items-center justify-center rounded-full border border-border text-cream transition-all hover:translate-x-0.5 hover:border-gold hover:text-gold hover:shadow-[0_0_16px_-2px_rgba(217,164,65,0.6)]"
             >
               <ChevronRight className="h-4 w-4" />
             </button>
@@ -60,7 +60,7 @@ export function VideoCarousel({
         )}
       </div>
 
-      <div className="relative overflow-hidden rounded-[2rem] border border-border bg-surface transition-colors duration-300 hover:border-gold/30">
+      <div className="relative overflow-hidden rounded-[2rem] border border-border bg-surface transition-all duration-300 hover:border-gold/40 hover:shadow-[0_30px_70px_-20px_rgba(217,164,65,0.3)]">
         <AnimatePresence mode="wait" custom={direction}>
           <motion.div
             key={project.id}

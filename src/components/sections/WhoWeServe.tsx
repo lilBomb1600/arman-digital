@@ -2,6 +2,7 @@ import { Container } from "@/components/ui/Container";
 import { SectionHeading } from "@/components/ui/SectionHeading";
 import { Reveal } from "@/components/ui/Reveal";
 import { Marquee } from "@/components/ui/Marquee";
+import { SectionGlow } from "@/components/ui/SectionGlow";
 import { businessTypes } from "@/data/businessTypes";
 
 export function WhoWeServe() {
@@ -10,7 +11,8 @@ export function WhoWeServe() {
   const rowB = businessTypes.slice(half);
 
   return (
-    <section className="border-t border-border/60 bg-surface/40 py-24 sm:py-28">
+    <section className="relative overflow-hidden border-t border-border/60 bg-surface/40 py-24 sm:py-28">
+      <SectionGlow className="right-0 top-1/2 -translate-y-1/2" />
       <Container>
         <SectionHeading eyebrow="Who I Work With" title="Built for businesses that live in the real world" />
       </Container>

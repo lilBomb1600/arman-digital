@@ -8,7 +8,8 @@
   --color-cream: #f5f3ee;
   --color-muted: #9aa0a8;
   --color-gold: #d9a441;
-  --color-gold-light: #e8c377;
+  --color-gold-light: #f0c975;
+  --color-gold-dark: #a06a1c;
 
   --font-display: var(--font-display);
   --font-body: var(--font-body);
@@ -59,4 +60,29 @@ body {
 .grain-overlay {
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='140' height='140'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='3' stitchTiles='stitch'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
   background-repeat: repeat;
+}
+
+.shine-btn {
+  position: relative;
+  overflow: hidden;
+}
+
+.shine-btn::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -60%;
+  width: 40%;
+  height: 100%;
+  background: linear-gradient(115deg, transparent, rgba(255, 255, 255, 0.45), transparent);
+  transform: skewX(-20deg);
+  transition: left 0.75s ease;
+}
+
+.shine-btn:hover::after {
+  left: 140%;
+}
+
+.text-glow {
+  text-shadow: 0 0 40px rgba(217, 164, 65, 0.45);
 }

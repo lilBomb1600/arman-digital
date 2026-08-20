@@ -33,22 +33,23 @@ export function Stats() {
   const videos = videoWork.length;
 
   return (
-    <section className="border-t border-border/60 py-14">
+    <section className="relative overflow-hidden border-t border-border/60 py-14">
+      <div className="pointer-events-none absolute inset-0 bg-gradient-to-r from-gold/[0.04] via-transparent to-gold/[0.04]" />
       <Container className="grid grid-cols-3 gap-8">
         <div className="text-center sm:text-left">
-          <p className="font-display text-4xl font-semibold text-gold sm:text-5xl">
+          <p className="text-glow font-display text-4xl font-bold text-gold sm:text-5xl">
             <CountUp to={liveSites} />
           </p>
           <p className="mt-2 text-xs text-muted sm:text-sm">Live Sites Shipped</p>
         </div>
         <div className="text-center sm:text-left">
-          <p className="font-display text-4xl font-semibold text-gold sm:text-5xl">
+          <p className="text-glow font-display text-4xl font-bold text-gold sm:text-5xl">
             <CountUp to={videos} />
           </p>
           <p className="mt-2 text-xs text-muted sm:text-sm">Cinematic Videos Produced</p>
         </div>
         <div className="text-center sm:text-left">
-          <p className="font-display text-4xl font-semibold text-gold sm:text-5xl">100%</p>
+          <p className="text-glow font-display text-4xl font-bold text-gold sm:text-5xl">100%</p>
           <p className="mt-2 text-xs text-muted sm:text-sm">Custom-Built, No Templates</p>
         </div>
       </Container>

@@ -56,8 +56,8 @@ export function Navbar() {
       )}
     >
       <Container className="flex h-20 items-center justify-between">
-        <Link href="/" className="font-display text-lg font-semibold tracking-tight text-cream">
-          Arman <span className="text-gold">Digital</span>
+        <Link href="/" className="font-display text-lg font-bold tracking-tight text-cream">
+          Arman <span className="bg-gradient-to-r from-gold to-gold-light bg-clip-text text-transparent">Digital</span>
         </Link>
 
         <nav className="hidden items-center gap-1 md:flex">
@@ -89,7 +89,7 @@ export function Navbar() {
           </a>
           <a
             href="#contact"
-            className="rounded-full bg-gold px-5 py-2.5 text-sm font-semibold text-ink transition-transform hover:-translate-y-0.5"
+            className="shine-btn rounded-full bg-gradient-to-b from-gold-light to-gold px-5 py-2.5 text-sm font-semibold text-ink shadow-[0_4px_20px_-4px_rgba(217,164,65,0.5)] transition-all hover:-translate-y-0.5 hover:shadow-[0_8px_28px_-4px_rgba(217,164,65,0.7)]"
           >
             Start a Project
           </a>
