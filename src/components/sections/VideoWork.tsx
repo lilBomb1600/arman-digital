@@ -17,7 +17,7 @@ export function VideoWork() {
         <div className="mt-14 space-y-10">
           {videoWork.map((project) => (
             <Reveal key={project.id}>
-              <div className="grid overflow-hidden rounded-[2rem] border border-border bg-surface lg:grid-cols-2">
+              <div className="grid overflow-hidden rounded-[2rem] border border-border bg-surface transition-colors duration-300 hover:border-gold/30 lg:grid-cols-2">
                 <div className="relative aspect-video bg-ink lg:aspect-auto">
                   <video
                     className="h-full w-full object-cover"

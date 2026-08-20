@@ -25,10 +25,10 @@ export function Contact() {
             <div className="mt-10 grid gap-4 sm:grid-cols-2">
               <a
                 href={studio.phoneHref}
-                className="group flex items-center justify-between rounded-2xl border border-border bg-ink px-6 py-5 transition-colors hover:border-gold/50"
+                className="group flex items-center justify-between rounded-2xl border border-border bg-ink px-6 py-5 transition-all duration-300 hover:-translate-y-1 hover:border-gold/50"
               >
                 <div className="flex items-center gap-4">
-                  <span className="flex h-11 w-11 items-center justify-center rounded-full bg-gold/10 text-gold">
+                  <span className="flex h-11 w-11 items-center justify-center rounded-full bg-gold/10 text-gold transition-transform duration-300 group-hover:scale-110">
                     <Phone className="h-5 w-5" />
                   </span>
                   <div>
@@ -41,10 +41,10 @@ export function Contact() {
 
               <a
                 href={studio.emailHref}
-                className="group flex items-center justify-between rounded-2xl border border-border bg-ink px-6 py-5 transition-colors hover:border-gold/50"
+                className="group flex items-center justify-between rounded-2xl border border-border bg-ink px-6 py-5 transition-all duration-300 hover:-translate-y-1 hover:border-gold/50"
               >
                 <div className="flex items-center gap-4">
-                  <span className="flex h-11 w-11 items-center justify-center rounded-full bg-gold/10 text-gold">
+                  <span className="flex h-11 w-11 items-center justify-center rounded-full bg-gold/10 text-gold transition-transform duration-300 group-hover:scale-110">
                     <Mail className="h-5 w-5" />
                   </span>
                   <div>

@@ -1,7 +1,7 @@
 import { ArrowUpRight, Sparkles } from "lucide-react";
 import { Container } from "@/components/ui/Container";
 import { SectionHeading } from "@/components/ui/SectionHeading";
-import { Reveal } from "@/components/ui/Reveal";
+import { Reveal, RevealGroup, RevealItem } from "@/components/ui/Reveal";
 import { work } from "@/data/work";
 
 export function Work() {
@@ -20,9 +20,9 @@ export function Work() {
         <div className="mt-14 space-y-10">
           {live.map((project) => (
             <Reveal key={project.id}>
-              <div className="grid overflow-hidden rounded-[2rem] border border-border bg-surface lg:grid-cols-2">
-                <div className="relative aspect-[4/3] bg-ink lg:aspect-auto">
-                  <div className="absolute inset-0 overflow-hidden">
+              <div className="group grid overflow-hidden rounded-[2rem] border border-border bg-surface transition-colors duration-300 hover:border-gold/30 lg:grid-cols-2">
+                <div className="relative aspect-[4/3] overflow-hidden bg-ink lg:aspect-auto">
+                  <div className="absolute inset-0 overflow-hidden transition-transform duration-700 ease-out group-hover:scale-105">
                     <iframe
                       src={project.liveUrl}
                       title={project.client}
@@ -53,10 +53,10 @@ export function Work() {
                       href={project.liveUrl}
                       target="_blank"
                       rel="noreferrer"
-                      className="group mt-8 flex w-fit items-center gap-2 rounded-full bg-gold px-6 py-3 text-sm font-semibold text-ink transition-transform hover:-translate-y-0.5"
+                      className="group/btn mt-8 flex w-fit items-center gap-2 rounded-full bg-gold px-6 py-3 text-sm font-semibold text-ink transition-transform hover:-translate-y-0.5"
                     >
                       Visit Live Site
-                      <ArrowUpRight className="h-4 w-4 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
+                      <ArrowUpRight className="h-4 w-4 transition-transform group-hover/btn:translate-x-0.5 group-hover/btn:-translate-y-0.5" />
                     </a>
                   )}
                 </div>
@@ -66,19 +66,19 @@ export function Work() {
         </div>
 
         {upcoming.length > 0 && (
-          <div className="mt-8 grid gap-6 sm:grid-cols-2">
-            {upcoming.map((project, i) => (
-              <Reveal key={project.id} delay={i * 0.05}>
-                <div className="flex h-full flex-col rounded-3xl border border-dashed border-border bg-transparent p-8">
+          <RevealGroup className="mt-8 grid gap-6 sm:grid-cols-2">
+            {upcoming.map((project) => (
+              <RevealItem key={project.id}>
+                <div className="flex h-full flex-col rounded-3xl border border-dashed border-border bg-transparent p-8 transition-colors duration-300 hover:border-gold/30">
                   <span className="mb-3 inline-flex w-fit items-center rounded-full bg-surface px-3 py-1 text-xs font-semibold text-muted">
                     {project.category}
                   </span>
                   <h3 className="font-display text-xl font-semibold text-cream">{project.client}</h3>
                   <p className="mt-3 text-sm leading-relaxed text-muted">{project.summary}</p>
                 </div>
-              </Reveal>
+              </RevealItem>
             ))}
-          </div>
+          </RevealGroup>
         )}
       </Container>
     </section>

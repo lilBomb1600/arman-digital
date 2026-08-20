@@ -9,8 +9,16 @@ export function Hero() {
   return (
     <section className="relative overflow-hidden pb-20 pt-20 sm:pb-28 sm:pt-28">
       <div className="pointer-events-none absolute inset-0 -z-10">
-        <div className="absolute -left-24 top-0 h-96 w-96 rounded-full bg-gold/10 blur-3xl" />
-        <div className="absolute right-0 top-1/3 h-80 w-80 rounded-full bg-gold/5 blur-3xl" />
+        <motion.div
+          animate={{ x: [0, 30, -10, 0], y: [0, -20, 15, 0] }}
+          transition={{ duration: 16, repeat: Infinity, ease: "easeInOut" }}
+          className="absolute -left-24 top-0 h-96 w-96 rounded-full bg-gold/10 blur-3xl motion-reduce:animate-none"
+        />
+        <motion.div
+          animate={{ x: [0, -25, 15, 0], y: [0, 20, -15, 0] }}
+          transition={{ duration: 20, repeat: Infinity, ease: "easeInOut" }}
+          className="absolute right-0 top-1/3 h-80 w-80 rounded-full bg-gold/5 blur-3xl motion-reduce:animate-none"
+        />
       </div>
 
       <Container>
@@ -20,7 +28,10 @@ export function Hero() {
           transition={{ duration: 0.6 }}
           className="mb-6 inline-flex items-center gap-2 rounded-full border border-border bg-surface px-4 py-2 text-xs font-medium text-muted"
         >
-          <span className="h-1.5 w-1.5 rounded-full bg-gold" />
+          <span className="relative flex h-1.5 w-1.5">
+            <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-gold opacity-75" />
+            <span className="relative inline-flex h-1.5 w-1.5 rounded-full bg-gold" />
+          </span>
           Now booking new projects
         </motion.div>
 
