@@ -60,7 +60,7 @@ export function VideoCarousel({
         )}
       </div>
 
-      <div className="relative overflow-hidden rounded-[2rem] border border-border bg-surface transition-all duration-300 hover:border-gold/40 hover:shadow-[0_30px_70px_-20px_rgba(217,164,65,0.3)]">
+      <div className="glow-ring relative overflow-hidden rounded-[2rem] border border-white/5 bg-surface transition-shadow duration-300 hover:shadow-[0_30px_80px_-20px_rgba(217,164,65,0.4)]">
         <AnimatePresence mode="wait" custom={direction}>
           <motion.div
             key={project.id}
@@ -87,9 +87,17 @@ export function VideoCarousel({
                 playsInline
                 preload="metadata"
               />
+              <div className="pointer-events-none absolute inset-x-0 top-0 h-16 bg-gradient-to-b from-ink/60 to-transparent" />
+              <span className="pointer-events-none absolute left-3 top-3 inline-flex items-center gap-1.5 rounded-full border border-white/10 bg-ink/70 px-2.5 py-1 text-[10px] font-semibold uppercase tracking-wide text-cream/80 backdrop-blur">
+                <Clapperboard className="h-3 w-3 text-gold" />
+                {String(index + 1).padStart(2, "0")} / {String(items.length).padStart(2, "0")}
+              </span>
             </div>
 
-            <div className="flex flex-col justify-center p-8 sm:p-12">
+            <div className="relative flex flex-col justify-center p-8 sm:p-12">
+              <span className="pointer-events-none absolute right-6 top-4 select-none font-display text-6xl font-bold text-gold/[0.07] sm:text-7xl">
+                {String(index + 1).padStart(2, "0")}
+              </span>
               <span className="mb-3 inline-flex w-fit items-center gap-1.5 rounded-full bg-gold/10 px-3 py-1 text-xs font-semibold text-gold">
                 <Clapperboard className="h-3.5 w-3.5" />
                 {project.category}
@@ -118,7 +126,9 @@ export function VideoCarousel({
               onClick={() => setIndex([i, i > index ? 1 : -1])}
               className={cn(
                 "h-1.5 rounded-full transition-all duration-300",
-                i === index ? "w-6 bg-gold" : "w-1.5 bg-border hover:bg-gold/50"
+                i === index
+                  ? "w-6 bg-gold shadow-[0_0_12px_-1px_rgba(217,164,65,0.8)]"
+                  : "w-1.5 bg-border hover:bg-gold/50"
               )}
             />
           ))}
