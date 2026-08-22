@@ -65,4 +65,15 @@ export const videoWork: VideoCaseStudy[] = [
     videoSrc: "/videos/dome-treehouse-walkthrough.mp4",
     poster: "/videos/dome-treehouse-poster.jpg",
   },
+  {
+    id: "tuscan-villa-suite",
+    group: "property",
+    category: "Airbnb Walkthrough Video",
+    title: "Tuscan Villa Suite",
+    description:
+      "An ocean-view patio at the Tuscan Villa Suite in Pacifica, CA, a coastal town just south of San Francisco — captured in one continuous golden-hour take from the living room out to the patio overlooking the Pacific.",
+    deliverables: ["Ocean-view patio at golden hour", "Continuous cinematic take", "Pacifica, CA coastal retreat", "Ready for the listing & social"],
+    videoSrc: "/videos/hillside-patio-sunset.mp4",
+    poster: "/videos/hillside-patio-sunset-poster.jpg",
+  },
 ];
