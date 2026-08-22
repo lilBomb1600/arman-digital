@@ -1,5 +1,6 @@
 import { Mail, Phone } from "lucide-react";
 import { Container } from "@/components/ui/Container";
+import { InstagramIcon } from "@/components/ui/InstagramIcon";
 import { studio } from "@/data/business";
 
 export function Footer() {
@@ -20,6 +21,10 @@ export function Footer() {
           <a href={studio.emailHref} className="flex items-center gap-2 hover:text-cream">
             <Mail className="h-4 w-4 text-gold" />
             {studio.email}
+          </a>
+          <a href={studio.social.instagram} target="_blank" rel="noreferrer" className="flex items-center gap-2 hover:text-cream">
+            <InstagramIcon className="h-4 w-4 text-gold" />
+            Instagram
           </a>
         </div>
       </Container>

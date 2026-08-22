@@ -5,6 +5,7 @@ import Link from "next/link";
 import { motion, AnimatePresence } from "framer-motion";
 import { Menu, X, Phone } from "lucide-react";
 import { Container } from "@/components/ui/Container";
+import { InstagramIcon } from "@/components/ui/InstagramIcon";
 import { cn } from "@/lib/utils";
 import { studio } from "@/data/business";
 
@@ -83,6 +84,15 @@ export function Navbar() {
         </nav>
 
         <div className="hidden items-center gap-4 md:flex">
+          <a
+            href={studio.social.instagram}
+            target="_blank"
+            rel="noreferrer"
+            aria-label="Arman Digital on Instagram"
+            className="text-muted transition-colors hover:text-gold"
+          >
+            <InstagramIcon className="h-[18px] w-[18px]" />
+          </a>
           <a href={studio.phoneHref} className="flex items-center gap-2 text-sm font-medium text-muted hover:text-cream">
             <Phone className="h-4 w-4 text-gold" />
             {studio.phone}

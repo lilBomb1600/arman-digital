@@ -9,6 +9,6 @@ export const studio = {
   emailHref: "mailto:ak5297@yahoo.com",
   location: "Bay Area, CA",
   social: {
-    instagram: "",
+    instagram: "https://www.instagram.com/armank.digital",
   },
 } as const;
