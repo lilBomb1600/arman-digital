@@ -11,4 +11,8 @@ export const studio = {
   social: {
     instagram: "https://www.instagram.com/armank.digital",
   },
+  cal: {
+    username: "armankdigital",
+    eventSlug: "15min",
+  },
 } as const;

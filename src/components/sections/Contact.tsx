@@ -1,7 +1,8 @@
-import { Mail, Phone, ArrowUpRight } from "lucide-react";
+import { Mail, Phone, ArrowUpRight, CalendarDays } from "lucide-react";
 import { Container } from "@/components/ui/Container";
 import { Reveal } from "@/components/ui/Reveal";
 import { SectionGlow } from "@/components/ui/SectionGlow";
+import { BookCallButton } from "@/components/ui/BookCallButton";
 import { studio } from "@/data/business";
 
 export function Contact() {
@@ -22,9 +23,14 @@ export function Contact() {
               <p className="mt-4 text-balance leading-relaxed text-muted">
                 Reach out and tell me a bit about your business — I'll get back to you within a day.
               </p>
+
+              <BookCallButton className="group mt-8 flex w-fit items-center gap-2 rounded-full bg-gradient-to-b from-gold-light to-gold px-6 py-3.5 text-sm font-semibold text-ink shadow-[0_6px_24px_-6px_rgba(217,164,65,0.55)] transition-all hover:-translate-y-1 hover:shadow-[0_10px_32px_-6px_rgba(217,164,65,0.75)]">
+                <CalendarDays className="h-4 w-4" />
+                Book a Free 15-Min Call
+              </BookCallButton>
             </div>
 
-            <div className="mt-10 grid gap-4 sm:grid-cols-2">
+            <div className="mt-6 grid gap-4 sm:grid-cols-2">
               <a
                 href={studio.phoneHref}
                 className="group flex items-center justify-between rounded-2xl border border-border bg-ink px-6 py-5 transition-all duration-300 hover:-translate-y-1 hover:border-gold/50 hover:shadow-[0_15px_40px_-12px_rgba(217,164,65,0.35)]"
