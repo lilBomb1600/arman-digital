@@ -79,4 +79,14 @@ export const work: CaseStudy[] = [
     liveUrl: "https://iron-therapy-gym.vercel.app",
     status: "live",
   },
+  {
+    id: "feels-good-barbershop",
+    client: "Feel Goods Barbershop",
+    category: "Barbershop",
+    summary:
+      "A vintage Americana redesign for a Pittsburg family barbershop with no existing website — a spinning red/cream/navy barber pole built as a real SVG pattern, a vintage price board, and a real 4.6-star reviews wall pulled from their Booksy page.",
+    deliverables: ["Custom website design & build", "Real-time booking link", "Reviews showcase", "Mobile-first, live on the web"],
+    liveUrl: "https://feels-good-barbershop.vercel.app",
+    status: "live",
+  },
 ];
