@@ -55,6 +55,17 @@ export const videoWork: VideoCaseStudy[] = [
     poster: "/videos/lexus-ls430-poster.jpg",
   },
   {
+    id: "porsche-cayenne-turbo",
+    group: "car",
+    category: "Car Walkthrough Video",
+    title: "2026 Porsche Cayenne Turbo Electric",
+    description:
+      "A close-detail exterior pass — wheels, Turbo badging, and the doors — followed by an interior tour of the red and black cabin, panoramic sunroof, and cargo area, cut into one continuous walkaround. Built for listings, Marketplace, and social.",
+    deliverables: ["Exterior detail pass", "Interior cabin walkthrough", "Edited into one continuous cut", "Ready for listings & social"],
+    videoSrc: "/videos/porsche-cayenne-turbo-walkaround.mp4",
+    poster: "/videos/porsche-cayenne-turbo-poster.jpg",
+  },
+  {
     id: "porsche-carrera-s",
     group: "car",
     category: "Car Walkthrough Video",
