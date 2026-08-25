@@ -55,6 +55,17 @@ export const videoWork: VideoCaseStudy[] = [
     poster: "/videos/lexus-ls430-poster.jpg",
   },
   {
+    id: "porsche-carrera-s",
+    group: "car",
+    category: "Car Walkthrough Video",
+    title: "2008 Porsche 911 Carrera S",
+    description:
+      "A close-detail exterior pass — wheels, side profile, quad exhaust, and the Carrera S badge — followed by an interior tour of the sand beige cabin, sunroof, and rear seats, cut into one continuous walkaround. Built for listings, Marketplace, and social.",
+    deliverables: ["Exterior detail pass", "Interior cabin walkthrough", "Edited into one continuous cut", "Ready for listings & social"],
+    videoSrc: "/videos/porsche-carrera-s-walkaround.mp4",
+    poster: "/videos/porsche-carrera-s-poster.jpg",
+  },
+  {
     id: "dome-treehouse",
     group: "property",
     category: "Airbnb Walkthrough Video",
