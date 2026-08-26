@@ -109,4 +109,14 @@ export const work: CaseStudy[] = [
     liveUrl: "https://gm-landscape.vercel.app",
     status: "live",
   },
+  {
+    id: "mari-eli-cleaning",
+    client: "Mari & Eli Cleaning Service",
+    category: "Home Cleaning",
+    summary:
+      "A fully graphic, no-photo site for a Concord cleaning company founded by two Brazilian-born cleaners in 2007 — an original hand-drawn azulejo tile pattern that scatters and springs into a registered grid as you scroll, built around their real 4.8-star, 122-review Yelp wall.",
+    deliverables: ["Custom website design & build", "Original tile-pattern motion system", "Reviews showcase", "Mobile-first, live on the web"],
+    liveUrl: "https://mari-eli-cleaning.vercel.app",
+    status: "live",
+  },
 ];
