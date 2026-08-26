@@ -14,7 +14,7 @@ export function WhoWeServe() {
     <section className="relative overflow-hidden border-t border-border/60 bg-surface/40 py-24 sm:py-28">
       <SectionGlow className="right-0 top-1/2 -translate-y-1/2" />
       <Container>
-        <SectionHeading eyebrow="Who I Work With" title="Built for businesses that live in the real world" />
+        <SectionHeading title="Built for businesses that live in the real world" />
       </Container>
 
       <Reveal className="mt-10 space-y-4">

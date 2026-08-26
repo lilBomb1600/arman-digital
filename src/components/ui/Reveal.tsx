@@ -2,11 +2,11 @@
 
 import { motion, type Variants } from "framer-motion";
 
-const EASE = [0.16, 1, 0.3, 1] as const;
+const SPRING = { type: "spring", stiffness: 170, damping: 22, mass: 0.7 } as const;
 
 const item: Variants = {
-  hidden: { opacity: 0, y: 28 },
-  show: { opacity: 1, y: 0, transition: { duration: 0.7, ease: EASE } },
+  hidden: { opacity: 0, y: 28, scale: 0.98 },
+  show: { opacity: 1, y: 0, scale: 1, transition: SPRING },
 };
 
 export function Reveal({
@@ -24,7 +24,7 @@ export function Reveal({
       whileInView="show"
       viewport={{ once: true, margin: "-80px" }}
       variants={item}
-      transition={{ duration: 0.7, ease: EASE, delay }}
+      transition={{ ...SPRING, delay }}
       className={className}
     >
       {children}

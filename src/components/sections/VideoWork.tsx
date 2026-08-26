@@ -17,7 +17,6 @@ export function VideoWork() {
       <SectionGlow className="-left-32 bottom-0" />
       <Container>
         <SectionHeading
-          eyebrow="Video Work"
           title="Cinematic video, not just websites"
           description="Real walkthroughs, shot and edited to make a property or vehicle stand out — not just photos, and not just a website."
         />

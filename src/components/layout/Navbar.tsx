@@ -50,13 +50,15 @@ export function Navbar() {
   }, []);
 
   return (
-    <header
-      className={cn(
-        "sticky top-0 z-50 border-b bg-ink/85 backdrop-blur transition-shadow",
-        scrolled ? "border-border shadow-lg shadow-black/20" : "border-border/60"
-      )}
-    >
-      <Container className="flex h-20 items-center justify-between">
+    <header className="sticky top-0 z-50 px-3 pt-3 sm:px-4 sm:pt-4">
+      <motion.div
+        animate={{ height: scrolled ? 60 : 72 }}
+        transition={{ type: "spring", stiffness: 300, damping: 30 }}
+        className={cn(
+          "glass-panel mx-auto flex max-w-6xl items-center justify-between rounded-2xl px-4 transition-shadow duration-300 sm:px-6",
+          scrolled ? "shadow-xl shadow-black/40" : "shadow-lg shadow-black/20"
+        )}
+      >
         <Link href="/" className="font-display text-lg font-bold tracking-tight text-cream">
           Arman <span className="bg-gradient-to-r from-gold to-gold-light bg-clip-text text-transparent">Digital</span>
         </Link>
@@ -112,7 +114,7 @@ export function Navbar() {
         >
           {open ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
         </button>
-      </Container>
+      </motion.div>
 
       <AnimatePresence>
         {open && (
@@ -121,7 +123,7 @@ export function Navbar() {
             animate={{ height: "auto", opacity: 1 }}
             exit={{ height: 0, opacity: 0 }}
             transition={{ duration: 0.25, ease: [0.16, 1, 0.3, 1] }}
-            className="overflow-hidden border-t border-border/60 bg-ink md:hidden"
+            className="glass-panel mx-auto mt-2 max-w-6xl overflow-hidden rounded-2xl md:hidden"
           >
             <Container className="flex flex-col gap-1 py-4">
               {links.map((l) => (

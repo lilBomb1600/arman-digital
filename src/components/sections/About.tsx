@@ -2,6 +2,7 @@ import { User } from "lucide-react";
 import { Container } from "@/components/ui/Container";
 import { Reveal } from "@/components/ui/Reveal";
 import { SectionGlow } from "@/components/ui/SectionGlow";
+import { GlassCard } from "@/components/ui/GlassCard";
 import { about } from "@/data/about";
 
 export function About() {
@@ -10,22 +11,19 @@ export function About() {
       <SectionGlow className="-right-32 -top-32" />
       <Container className="grid items-center gap-14 lg:grid-cols-[0.85fr_1.15fr]">
         <Reveal>
-          <div className="relative mx-auto aspect-square w-full max-w-sm overflow-hidden rounded-[2rem] border border-gold/20 bg-gradient-to-br from-surface to-surface-light shadow-[0_20px_60px_-15px_rgba(217,164,65,0.25)]">
+          <GlassCard className="relative mx-auto aspect-square w-full max-w-sm rounded-[2rem] shadow-[0_20px_60px_-15px_rgba(217,164,65,0.25)] hover:!border-gold/30">
             <div className="flex h-full w-full flex-col items-center justify-center gap-3 text-muted">
               <span className="flex h-16 w-16 items-center justify-center rounded-full bg-gold/10 text-gold">
                 <User className="h-7 w-7" />
               </span>
               <p className="text-xs uppercase tracking-widest">Photo coming soon</p>
             </div>
-          </div>
+          </GlassCard>
         </Reveal>
 
         <Reveal delay={0.1}>
-          <span className="mb-3 inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-[0.2em] text-gold">
-            <span className="h-px w-6 bg-gold" />
-            {about.eyebrow}
-          </span>
-          <h2 className="font-display text-balance text-3xl font-semibold text-cream sm:text-4xl">{about.heading}</h2>
+          <span className="mb-4 block h-[3px] w-10 rounded-full bg-gradient-to-r from-gold to-gold-light" />
+          <h2 className="font-display text-balance text-4xl font-semibold text-cream sm:text-5xl">{about.heading}</h2>
           <div className="mt-5 space-y-4 text-balance leading-relaxed text-muted">
             {about.paragraphs.map((p) => (
               <p key={p}>{p}</p>
@@ -33,7 +31,7 @@ export function About() {
           </div>
           <div className="mt-7 flex flex-wrap gap-2.5">
             {about.credentials.map((c) => (
-              <span key={c} className="rounded-full border border-border bg-surface px-4 py-2 text-xs font-medium text-cream/90">
+              <span key={c} className="glass-panel rounded-full px-4 py-2 text-xs font-medium text-cream/90">
                 {c}
               </span>
             ))}

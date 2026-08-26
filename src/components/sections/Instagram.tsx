@@ -4,6 +4,7 @@ import { Container } from "@/components/ui/Container";
 import { SectionHeading } from "@/components/ui/SectionHeading";
 import { Reveal, RevealGroup, RevealItem } from "@/components/ui/Reveal";
 import { SectionGlow } from "@/components/ui/SectionGlow";
+import { GlassCard } from "@/components/ui/GlassCard";
 import { InstagramIcon } from "@/components/ui/InstagramIcon";
 import { studio } from "@/data/business";
 
@@ -23,7 +24,6 @@ export function Instagram() {
       <Container>
         <div className="flex flex-col items-start justify-between gap-6 sm:flex-row sm:items-end">
           <SectionHeading
-            eyebrow="On Instagram"
             title="Follow the process"
             description="Behind-the-scenes builds, cinematic clips, and new sites going live — posted as they happen."
             className="max-w-xl"
@@ -41,7 +41,7 @@ export function Instagram() {
         </div>
 
         <Reveal delay={0.1}>
-          <div className="glow-ring mt-14 overflow-hidden rounded-[2rem] border border-white/5 bg-surface">
+          <GlassCard hoverLift={false} className="glow-ring mt-14 rounded-[2rem]">
             <div className="flex items-center gap-4 border-b border-border/60 p-6 sm:p-8">
               <div className="relative h-16 w-16 shrink-0 overflow-hidden rounded-full ring-2 ring-gold/60 ring-offset-2 ring-offset-surface sm:h-20 sm:w-20">
                 <Image src="/images/instagram/profile-picture.png" alt="Arman Digital Instagram profile picture" fill sizes="80px" className="object-cover" />
@@ -82,7 +82,7 @@ export function Instagram() {
                 </RevealItem>
               ))}
             </RevealGroup>
-          </div>
+          </GlassCard>
         </Reveal>
       </Container>
     </section>

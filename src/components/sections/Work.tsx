@@ -3,6 +3,7 @@ import { Container } from "@/components/ui/Container";
 import { SectionHeading } from "@/components/ui/SectionHeading";
 import { Reveal, RevealGroup, RevealItem } from "@/components/ui/Reveal";
 import { SectionGlow } from "@/components/ui/SectionGlow";
+import { GlassCard } from "@/components/ui/GlassCard";
 import { work } from "@/data/work";
 
 export function Work() {
@@ -14,7 +15,6 @@ export function Work() {
       <SectionGlow className="-right-40 top-10" />
       <Container>
         <SectionHeading
-          eyebrow="Recent Work"
           title="A look at what's already live"
           description="Real projects, built for real businesses — this is what your site could look like."
         />
@@ -24,7 +24,7 @@ export function Work() {
             const domain = project.liveUrl ? project.liveUrl.replace(/^https?:\/\//, "").replace(/\/$/, "") : "";
             return (
             <Reveal key={project.id}>
-              <div className="glow-ring group grid overflow-hidden rounded-[2rem] border border-white/5 bg-surface transition-all duration-300 hover:shadow-[0_30px_80px_-20px_rgba(217,164,65,0.4)] lg:grid-cols-2">
+              <GlassCard tilt className="glow-ring group grid rounded-[2rem] !bg-surface/70 transition-shadow duration-300 hover:shadow-[0_30px_80px_-20px_rgba(217,164,65,0.4)] lg:grid-cols-2">
                 <div className="relative aspect-[4/3] overflow-hidden bg-ink lg:aspect-auto">
                   <div className="absolute inset-x-0 top-0 z-10 flex items-center gap-1.5 border-b border-white/5 bg-ink/90 px-3.5 py-2.5 backdrop-blur">
                     <span className="h-2.5 w-2.5 rounded-full bg-red-400/60" />
@@ -80,7 +80,7 @@ export function Work() {
                     </a>
                   )}
                 </div>
-              </div>
+              </GlassCard>
             </Reveal>
             );
           })}

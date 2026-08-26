@@ -4,13 +4,11 @@ import { motion } from "framer-motion";
 import { cn } from "@/lib/utils";
 
 export function SectionHeading({
-  eyebrow,
   title,
   description,
   align = "left",
   className,
 }: {
-  eyebrow?: string;
   title: string;
   description?: string;
   align?: "left" | "center";
@@ -18,21 +16,16 @@ export function SectionHeading({
 }) {
   return (
     <div className={cn("max-w-2xl", align === "center" && "mx-auto text-center", className)}>
-      {eyebrow && (
-        <span className="mb-3 inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-[0.2em] text-gold">
-          <motion.span
-            initial={{ scaleX: 0 }}
-            whileInView={{ scaleX: 1 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.6, ease: [0.16, 1, 0.3, 1] }}
-            style={{ transformOrigin: "left" }}
-            className="h-px w-6 bg-gold"
-          />
-          {eyebrow}
-        </span>
-      )}
-      <h2 className="font-display text-balance text-3xl font-semibold text-cream sm:text-4xl">{title}</h2>
-      {description && <p className="mt-4 text-balance leading-relaxed text-muted">{description}</p>}
+      <motion.span
+        initial={{ scaleX: 0 }}
+        whileInView={{ scaleX: 1 }}
+        viewport={{ once: true }}
+        transition={{ duration: 0.6, ease: [0.16, 1, 0.3, 1] }}
+        style={{ transformOrigin: align === "center" ? "center" : "left" }}
+        className={cn("mb-4 block h-[3px] w-10 rounded-full bg-gradient-to-r from-gold to-gold-light", align === "center" && "mx-auto")}
+      />
+      <h2 className="font-display text-balance text-4xl font-semibold text-cream sm:text-5xl">{title}</h2>
+      {description && <p className="mt-4 max-w-xl text-balance leading-relaxed text-muted">{description}</p>}
     </div>
   );
 }

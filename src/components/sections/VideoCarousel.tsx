@@ -4,6 +4,7 @@ import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { ChevronLeft, ChevronRight, Clapperboard, type LucideIcon } from "lucide-react";
 import type { VideoCaseStudy } from "@/data/videoWork";
+import { GlassCard } from "@/components/ui/GlassCard";
 import { cn } from "@/lib/utils";
 
 const EASE = [0.16, 1, 0.3, 1] as const;
@@ -60,7 +61,7 @@ export function VideoCarousel({
         )}
       </div>
 
-      <div className="glow-ring relative overflow-hidden rounded-[2rem] border border-white/5 bg-surface transition-shadow duration-300 hover:shadow-[0_30px_80px_-20px_rgba(217,164,65,0.4)]">
+      <GlassCard hoverLift={false} className="glow-ring relative rounded-[2rem] transition-shadow duration-300 hover:shadow-[0_30px_80px_-20px_rgba(217,164,65,0.4)]">
         <AnimatePresence mode="wait" custom={direction}>
           <motion.div
             key={project.id}
@@ -115,7 +116,7 @@ export function VideoCarousel({
             </div>
           </motion.div>
         </AnimatePresence>
-      </div>
+      </GlassCard>
 
       {items.length > 1 && (
         <div className="mt-5 flex justify-center gap-2">
