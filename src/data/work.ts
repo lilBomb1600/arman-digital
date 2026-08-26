@@ -99,4 +99,14 @@ export const work: CaseStudy[] = [
     liveUrl: "https://oasis-cafe-six.vercel.app",
     status: "live",
   },
+  {
+    id: "gm-landscape",
+    client: "G&M Landscape Services",
+    category: "Landscaping & Hardscape",
+    summary:
+      "A liquid-glass, motion-heavy site for a 30-year family-owned Pittsburg landscaping crew — frosted glass UI with a cursor-reactive glow and 3D card tilt floating over their own real project photography, plus their real 5-star Yelp review.",
+    deliverables: ["Custom website design & build", "Service & portfolio gallery", "Reviews showcase", "Mobile-first, live on the web"],
+    liveUrl: "https://gm-landscape.vercel.app",
+    status: "live",
+  },
 ];
