@@ -89,4 +89,14 @@ export const work: CaseStudy[] = [
     liveUrl: "https://feels-good-barbershop.vercel.app",
     status: "live",
   },
+  {
+    id: "oasis-cafe",
+    client: "Oasis Cafe",
+    category: "Halal Café",
+    summary:
+      "A halal Lafayette café rebuilt as a field-survey document of the oasis it's named for — the menu itself organized as descending depth strata down to a glowing aquifer, with a real 4.3-star Yelp reviews wall and real photos of the place.",
+    deliverables: ["Custom website design & build", "Full menu system", "Reviews & photo showcase", "Mobile-first, live on the web"],
+    liveUrl: "https://oasis-cafe-six.vercel.app",
+    status: "live",
+  },
 ];
