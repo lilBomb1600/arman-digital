@@ -119,4 +119,14 @@ export const work: CaseStudy[] = [
     liveUrl: "https://mari-eli-cleaning.vercel.app",
     status: "live",
   },
+  {
+    id: "aa-auto-repair",
+    client: "AA Automotive Repair",
+    category: "Auto Repair",
+    summary:
+      "A motion-heavy site for a 24-year family-owned Concord repair shop, built in the spirit of a top-tier digital agency's own reel — a scroll-scrubbed garage door that rolls open over real shop photos, a gauge-cluster radial nav, and a real 4.9-star, 208-review Yelp wall.",
+    deliverables: ["Custom website design & build", "Scroll-scrubbed garage-door hero", "Radial gauge-cluster nav", "Mobile-first, live on the web"],
+    liveUrl: "https://aa-auto-repair-xi.vercel.app",
+    status: "live",
+  },
 ];
