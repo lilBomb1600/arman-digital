@@ -1,0 +1,139 @@
+{
+  "version": 1,
+  "project": {
+    "name": "arman-digital",
+    "productType": null,
+    "stack": [
+      "nextjs",
+      "react",
+      "tailwind-v4"
+    ]
+  },
+  "sources": {
+    "tokens": [
+      "src/app/globals.css"
+    ],
+    "components": [
+      "src/components/ui"
+    ],
+    "assets": [
+      "public/images"
+    ],
+    "instructions": [
+      "AGENTS.md",
+      "CLAUDE.md"
+    ]
+  },
+  "design": {
+    "colorMode": "light",
+    "colors": {
+      "--color-ink": {
+        "value": "#0b0d10",
+        "source": "src/app/globals.css"
+      },
+      "--color-surface": {
+        "value": "#15181c",
+        "source": "src/app/globals.css"
+      },
+      "--color-surface-light": {
+        "value": "#1d2126",
+        "source": "src/app/globals.css"
+      },
+      "--color-border": {
+        "value": "#2a2f36",
+        "source": "src/app/globals.css"
+      },
+      "--color-cream": {
+        "value": "#f5f3ee",
+        "source": "src/app/globals.css"
+      },
+      "--color-muted": {
+        "value": "#9aa0a8",
+        "source": "src/app/globals.css"
+      },
+      "--color-gold": {
+        "value": "#d9a441",
+        "source": "src/app/globals.css"
+      },
+      "--color-gold-light": {
+        "value": "#f0c975",
+        "source": "src/app/globals.css"
+      },
+      "--color-gold-dark": {
+        "value": "#a06a1c",
+        "source": "src/app/globals.css"
+      }
+    },
+    "typography": {
+      "--font-display": {
+        "value": "var(--font-display)",
+        "source": "src/app/globals.css"
+      },
+      "--font-body": {
+        "value": "var(--font-body)",
+        "source": "src/app/globals.css"
+      }
+    },
+    "spacing": {},
+    "radius": {},
+    "shadows": {},
+    "motion": {},
+    "density": "unknown"
+  },
+  "components": {
+    "installed": [
+      "BookCallButton",
+      "Container",
+      "CursorGlow",
+      "GlassCard",
+      "InstagramIcon",
+      "Marquee",
+      "Reveal",
+      "ScrollProgress",
+      "SectionGlow",
+      "SectionHeading"
+    ],
+    "preferredPrimitives": [],
+    "patterns": []
+  },
+  "constraints": {
+    "must": [],
+    "avoid": []
+  },
+  "decisions": [],
+  "evidence": [
+    {
+      "fact": "components.installed",
+      "source": "src/components/ui"
+    },
+    {
+      "fact": "design.colorMode:light",
+      "source": "src/app/globals.css"
+    },
+    {
+      "fact": "design.tokens",
+      "source": "src/app/globals.css"
+    },
+    {
+      "fact": "project.instructions",
+      "source": "AGENTS.md"
+    },
+    {
+      "fact": "project.instructions",
+      "source": "CLAUDE.md"
+    },
+    {
+      "fact": "project.stack:nextjs",
+      "source": "package.json"
+    },
+    {
+      "fact": "project.stack:react",
+      "source": "package.json"
+    },
+    {
+      "fact": "project.stack:tailwind-v4",
+      "source": "package.json"
+    }
+  ],
+  "generatedAt": "2026-08-27T03:11:48.954Z"
+}

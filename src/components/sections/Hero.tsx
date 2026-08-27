@@ -4,6 +4,7 @@ import { motion, type Variants } from "framer-motion";
 import { ArrowRight, Phone } from "lucide-react";
 import { Container } from "@/components/ui/Container";
 import { CursorGlow } from "@/components/ui/CursorGlow";
+import { HeroPreviewStack } from "@/components/sections/HeroPreviewStack";
 import { studio } from "@/data/business";
 
 const EASE = [0.16, 1, 0.3, 1] as const;
@@ -33,14 +34,15 @@ const headlineWord: Variants = {
 
 export function Hero() {
   return (
-    <section className="relative overflow-hidden pb-20 pt-20 sm:pb-28 sm:pt-28">
+    <section id="hero" className="relative overflow-hidden pb-20 pt-20 sm:pb-28 sm:pt-28">
       <div className="pointer-events-none absolute inset-0 -z-10">
         <div className="absolute inset-0 bg-[radial-gradient(ellipse_70%_55%_at_30%_0%,rgba(217,164,65,0.1),transparent_65%)]" />
         <CursorGlow />
         <div className="absolute inset-x-0 bottom-0 h-40 bg-gradient-to-b from-transparent to-ink" />
       </div>
 
-      <Container>
+      <Container className="lg:grid lg:grid-cols-[1.1fr_0.9fr] lg:items-center lg:gap-8">
+      <div>
         <motion.div
           initial={{ opacity: 0, y: 16 }}
           animate={{ opacity: 1, y: 0 }}
@@ -106,6 +108,9 @@ export function Hero() {
             {studio.phone}
           </a>
         </motion.div>
+      </div>
+
+      <HeroPreviewStack />
       </Container>
     </section>
   );

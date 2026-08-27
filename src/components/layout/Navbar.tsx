@@ -6,6 +6,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import { Menu, X, Phone } from "lucide-react";
 import { Container } from "@/components/ui/Container";
 import { InstagramIcon } from "@/components/ui/InstagramIcon";
+import { CommandMenu } from "@/components/layout/CommandMenu";
 import { cn } from "@/lib/utils";
 import { studio } from "@/data/business";
 
@@ -86,6 +87,7 @@ export function Navbar() {
         </nav>
 
         <div className="hidden items-center gap-4 md:flex">
+          <CommandMenu />
           <a
             href={studio.social.instagram}
             target="_blank"

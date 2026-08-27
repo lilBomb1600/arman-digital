@@ -5,6 +5,7 @@ import { Navbar } from "@/components/layout/Navbar";
 import { Footer } from "@/components/layout/Footer";
 import { ScrollProgress } from "@/components/ui/ScrollProgress";
 import { studio } from "@/data/business";
+import { cn } from "@/lib/utils";
 
 const display = Space_Grotesk({
   variable: "--font-display",
@@ -31,7 +32,7 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
-    <html lang="en" className={`${display.variable} ${body.variable} h-full antialiased`}>
+    <html lang="en" className={cn("dark h-full antialiased", display.variable, body.variable)}>
       <body className="flex min-h-full flex-col bg-ink text-cream">
         <div className="pointer-events-none fixed inset-0 z-[54] bg-[radial-gradient(ellipse_at_center,transparent_35%,rgba(0,0,0,0.55)_100%)]" />
         <div className="grain-overlay pointer-events-none fixed inset-0 z-[55] opacity-[0.05]" />
