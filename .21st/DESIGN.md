@@ -8,7 +8,7 @@ Generated from project sources at 2026-08-27T03:11:48.954Z.
 - Name: arman-digital
 - Product type: Unknown
 - Stack: nextjs, react, tailwind-v4
-- Color mode: light
+- Color mode: dark (always — no light mode)
 - Density: unknown
 
 ## Sources
@@ -20,8 +20,8 @@ Generated from project sources at 2026-08-27T03:11:48.954Z.
 
 ## Components
 
-- Installed: BookCallButton, Container, CursorGlow, GlassCard, InstagramIcon, Marquee, Reveal, ScrollProgress, SectionGlow, SectionHeading
-- Preferred primitives: None detected
+- Installed: BookCallButton, Container, CursorGlow, GlassCard, InstagramIcon, Marquee, Reveal, ScrollProgress, SectionGlow, SectionHeading, CommandMenu, HeroPreviewStack, Testimonials, plus shadcn command/dialog/button/input/input-group/textarea
+- Preferred primitives: GlassCard for any card/panel, Reveal/RevealGroup for scroll-in, Marquee for infinite rows
 
 ## Tokens
 
@@ -46,13 +46,15 @@ Generated from project sources at 2026-08-27T03:11:48.954Z.
 
 ### Must
 
-- None recorded
+- This site has no light mode — :root and .dark both resolve to the same ink/gold/cream palette on purpose. Don't add light-mode-specific styling.
+- Never invent reviews, prices, or business facts on this site or the client sites it showcases — real data only.
+- No eyebrow/kicker label above a heading — SectionHeading uses a bare accent line instead, on purpose.
 
 ### Avoid
 
-- None recorded
+- A shared wrapper/card component (like GlassCard) must never interpose an extra DOM element between the className a consumer controls and {children} — it silently breaks any grid/flex layout the consumer applies to that component.
 
 ## Decisions
 
-- None recorded
+- 2026-08-27: Bolder signature moments over another material/animation-only pass — a real ⌘K command palette (shadcn Command+Dialog), a real testimonial wall pulled from each client site's own reviews, and a floating hero preview stack of real live-site screenshots. Preserved the existing ink/gold/cream identity and all real content; no fabricated reviews or facts.
 

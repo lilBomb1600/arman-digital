@@ -25,7 +25,7 @@
     ]
   },
   "design": {
-    "colorMode": "light",
+    "colorMode": "dark",
     "colors": {
       "--color-ink": {
         "value": "#0b0d10",
@@ -91,16 +91,38 @@
       "Reveal",
       "ScrollProgress",
       "SectionGlow",
-      "SectionHeading"
+      "SectionHeading",
+      "CommandMenu",
+      "HeroPreviewStack",
+      "Testimonials",
+      "command (shadcn)",
+      "dialog (shadcn)",
+      "button (shadcn)",
+      "input (shadcn)",
+      "input-group (shadcn)",
+      "textarea (shadcn)"
     ],
-    "preferredPrimitives": [],
+    "preferredPrimitives": ["GlassCard for any card/panel", "Reveal/RevealGroup for scroll-in", "Marquee for infinite rows"],
     "patterns": []
   },
   "constraints": {
-    "must": [],
-    "avoid": []
+    "must": [
+      "This site has no light mode — :root and .dark both resolve to the same ink/gold/cream palette on purpose. Don't add light-mode-specific styling.",
+      "Never invent reviews, prices, or business facts on this site or the client sites it showcases — real data only.",
+      "No eyebrow/kicker label above a heading (a small uppercase line stacked above an <h2>/<h1>) — SectionHeading uses a bare accent line instead, on purpose."
+    ],
+    "avoid": [
+      "A shared wrapper/card component (like GlassCard) must never interpose an extra DOM element between the className a consumer controls and {children} — it silently breaks any grid/flex layout the consumer applies to that component."
+    ]
   },
-  "decisions": [],
+  "decisions": [
+    {
+      "date": "2026-08-27",
+      "choice": "Bolder signature moments over another material/animation-only pass: a real ⌘K command palette (shadcn Command+Dialog), a real testimonial wall pulled from each client site's own reviews, and a floating hero preview stack of real live-site screenshots.",
+      "why": "User asked for 'more pop, more change, more excitement' after an already-completed glass-material + spring-animation pass, and explicitly asked to use the newly installed 21st/shadcn tooling.",
+      "constraints": ["preserve the existing ink/gold/cream identity and all real content", "no fabricated reviews or facts"]
+    }
+  ],
   "evidence": [
     {
       "fact": "components.installed",
