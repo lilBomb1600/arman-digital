@@ -129,4 +129,14 @@ export const work: CaseStudy[] = [
     liveUrl: "https://aa-auto-repair-xi.vercel.app",
     status: "live",
   },
+  {
+    id: "porsche-walnut-creek",
+    client: "Porsche Walnut Creek",
+    category: "Porsche Dealer · 3D Concept",
+    summary:
+      "A concept site for a Walnut Creek Porsche dealer, built around a live 3D protection studio: pick a real Porsche paint, see exactly where paint protection film ends, preview tint and ceramic, then send the build to finance. Photographic 8k scenes, a tail-light hero, and a heritage timeline.",
+    deliverables: ["Real-time 3D configurator (WebGL)", "Showroom finance handoff", "Cinematic scroll hero", "Mobile-first, live on the web"],
+    liveUrl: "https://porsche-walnut-creek.vercel.app",
+    status: "live",
+  },
 ];
