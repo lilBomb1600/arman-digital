@@ -5,6 +5,7 @@ import { Reveal, RevealGroup, RevealItem } from "@/components/ui/Reveal";
 import { SectionGlow } from "@/components/ui/SectionGlow";
 import { GlassCard } from "@/components/ui/GlassCard";
 import { work } from "@/data/work";
+import { SitePreview } from "./SitePreview";
 
 export function Work() {
   const live = work.filter((w) => w.status === "live");
@@ -25,23 +26,18 @@ export function Work() {
             return (
             <Reveal key={project.id}>
               <GlassCard tilt className="glow-ring group grid rounded-[2rem] !bg-surface/70 transition-shadow duration-300 hover:shadow-[0_30px_80px_-20px_rgba(217,164,65,0.4)] lg:grid-cols-2">
-                <div className="relative aspect-[4/3] overflow-hidden bg-ink lg:aspect-auto">
-                  <div className="absolute inset-x-0 top-0 z-10 flex items-center gap-1.5 border-b border-white/5 bg-ink/90 px-3.5 py-2.5 backdrop-blur">
+                <div data-site-card className="relative aspect-[4/3] overflow-hidden bg-ink lg:aspect-auto lg:min-h-[420px]">
+                  <div className="absolute inset-x-0 top-0 z-10 flex items-center gap-1.5 border-b border-white/5 bg-ink/95 px-3.5 py-2.5">
                     <span className="h-2.5 w-2.5 rounded-full bg-red-400/60" />
                     <span className="h-2.5 w-2.5 rounded-full bg-yellow-400/60" />
                     <span className="h-2.5 w-2.5 rounded-full bg-green-400/60" />
                     <span className="ml-2 truncate rounded-full bg-white/5 px-3 py-0.5 text-[10px] text-cream/50">{domain}</span>
                   </div>
-                  <div className="absolute inset-0 overflow-hidden transition-transform duration-700 ease-out group-hover:scale-105">
-                    <iframe
-                      src={project.liveUrl}
-                      title={project.client}
-                      className="pointer-events-none h-[1000px] w-[1440px] origin-top-left scale-[0.32] border-0 sm:scale-[0.4] lg:scale-[0.42]"
-                      loading="lazy"
-                    />
+                  <div className="absolute inset-x-0 bottom-0 top-[37px] overflow-hidden transition-transform duration-700 ease-out group-hover:scale-105">
+                    <SitePreview id={project.id} url={project.liveUrl} title={project.client} />
                   </div>
-                  <div className="absolute inset-0 bg-gradient-to-t from-ink/70 via-transparent to-transparent" />
-                  <span className="absolute right-3 top-12 z-10 inline-flex items-center gap-1.5 rounded-full border border-white/10 bg-ink/80 px-2.5 py-1 text-[10px] font-semibold uppercase tracking-wide text-cream/80 backdrop-blur">
+                  <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-ink/70 via-transparent to-transparent" />
+                  <span className="absolute right-3 top-12 z-10 inline-flex items-center gap-1.5 rounded-full border border-white/10 bg-ink/90 px-2.5 py-1 text-[10px] font-semibold uppercase tracking-wide text-cream/80">
                     <span className="relative flex h-1.5 w-1.5">
                       <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-emerald-400 opacity-75" />
                       <span className="relative inline-flex h-1.5 w-1.5 rounded-full bg-emerald-400" />

@@ -51,17 +51,29 @@ export function CursorGlow({
       y.set(((e.clientY - rect.top) / rect.height) * 100);
     }
 
-    // Gentle idle drift until the visitor actually moves the mouse here.
+    // Gentle idle drift until the visitor actually moves the mouse here; only while the section
+    // is on screen, and never on touch screens, where there's no cursor to follow.
     let t = 0;
-    idle = setInterval(() => {
+    const drift = () => {
       if (userMoved) return;
       t += 0.01;
       x.set(50 + Math.sin(t) * 18);
       y.set(35 + Math.cos(t * 0.8) * 12);
-    }, 50);
+    };
+    const touch = window.matchMedia("(hover: none)").matches;
+    const io = new IntersectionObserver(([e]) => {
+      if (e.isIntersecting && !touch && !userMoved) {
+        if (!idle) idle = setInterval(drift, 50);
+      } else if (idle) {
+        clearInterval(idle);
+        idle = null;
+      }
+    });
+    io.observe(el);
 
     el.addEventListener("mousemove", handleMove);
     return () => {
+      io.disconnect();
       el.removeEventListener("mousemove", handleMove);
       if (idle) clearInterval(idle);
     };
