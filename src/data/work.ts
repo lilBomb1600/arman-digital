@@ -139,4 +139,14 @@ export const work: CaseStudy[] = [
     liveUrl: "https://porsche-walnut-creek.vercel.app",
     status: "live",
   },
+  {
+    id: "castagna-pasticceria",
+    client: "Castagna Pasticceria",
+    category: "Pasticceria & Gelateria",
+    summary:
+      "A concept site for a Lafayette pasticceria: a 4K film of espresso poured over their gelato, their real pastry case with its handwritten prices, and a QR table menu the owner edits from a Google Sheet. The same table cards send guests to the shop's Google reviews.",
+    deliverables: ["Custom website design & build", "QR table menu & printable table cards", "Owner-editable menu (Google Sheets)", "Mobile-first, live on the web"],
+    liveUrl: "https://castagna-pasticceria.vercel.app",
+    status: "live",
+  },
 ];
