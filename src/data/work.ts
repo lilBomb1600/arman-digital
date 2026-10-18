@@ -149,4 +149,14 @@ export const work: CaseStudy[] = [
     liveUrl: "https://castagna-pasticceria.vercel.app",
     status: "live",
   },
+  {
+    id: "kold-krate",
+    client: "Kold Krate",
+    category: "Redwood Cold Plunges · Concept",
+    summary:
+      "A concept site for a Santa Cruz maker who builds cold and hot plunges by hand from California redwood. His open tub on film, a lumberyard look of mill stamps, kraft tally tags and lumber crayon, a pinned tour of what's built into the tub, a cold-or-hot chooser, and a quote tag.",
+    deliverables: ["Custom website design & build", "Hero film animated from his photo", "Cold / hot chooser & quote flow", "Mobile-first, live on the web"],
+    liveUrl: "https://kold-krate.vercel.app",
+    status: "live",
+  },
 ];
