@@ -150,6 +150,16 @@ export const work: CaseStudy[] = [
     status: "live",
   },
   {
+    id: "esparzas-resin",
+    client: "Esparza's Resin",
+    category: "Epoxy Floors · Concept",
+    summary:
+      "A bilingual concept site for a Watsonville epoxy floor installer. The first screen is a live metallic epoxy floor you can swirl with your finger and recolor, or mix your own colors. A flake designer throws chips onto a garage floor, and the free estimate form sends your square footage and design straight to his phone or Instagram.",
+    deliverables: ["Interactive metallic floor (WebGL)", "Flake floor designer", "English / Spanish", "Estimate by text or Instagram DM"],
+    liveUrl: "https://esparzas-resin.vercel.app",
+    status: "live",
+  },
+  {
     id: "kold-krate",
     client: "Kold Krate",
     category: "Redwood Cold Plunges · Concept",
