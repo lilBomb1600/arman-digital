@@ -294,7 +294,7 @@ export const work: CaseStudy[] = [
     client: "Sugar Rush",
     category: "Dessert Shop · Concept",
     summary:
-      "A made-up sweet shop with a piñata you can break in the first screen. The menu and photos come from two real Bay Area dessert spots, used with permission: party cakes, croffles, snowflake bingsu and boba, laid out like party-store aisles.",
+      "A made-up sweet shop with a piñata you can break in the first screen. The menu comes from two real Bay Area dessert spots, used with permission: party cakes, croffles, snowflake bingsu and boba, laid out like party-store aisles.",
     deliverables: ["Breakable piñata hero", "Seven menu aisles", "Party box builder", "Mobile-first, live on the web"],
     liveUrl: "https://sugar-rush-cyan.vercel.app",
     status: "live",
