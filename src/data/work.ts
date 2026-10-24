@@ -260,6 +260,46 @@ export const work: CaseStudy[] = [
     status: "live",
   },
   {
+    id: "astro-kids-daycare",
+    client: "Astro Kids Daycare",
+    category: "Home Daycare · Concept",
+    summary:
+      "A concept site for a licensed Montessori-inspired home daycare in Walnut Creek, drawn as a star wheel. Turn the disk and the real weekday schedule passes under the window as constellations, then the state record, the 1 : 3 ratio, reviews and tuition by days a week.",
+    deliverables: ["Turnable day-wheel schedule", "State record & reviews", "Tuition by days a week", "Call to book a tour"],
+    liveUrl: "https://astro-kids-daycare.vercel.app",
+    status: "live",
+  },
+  {
+    id: "mayrik-childcare",
+    client: "Mayrik Childcare",
+    category: "Home Preschool · Concept",
+    summary:
+      "A concept site for a licensed Concord home preschool, built like the soft-play gym in its converted garage. Foam pieces tumble into the hero under real physics, and every one you tap is added to a tour text, followed by the state record, the week, the food and the daily texts parents get.",
+    deliverables: ["Foam-piece physics hero", "Tap-to-build tour text", "State record & Yelp reviews", "Mobile-first, live on the web"],
+    liveUrl: "https://mayrik-childcare.vercel.app",
+    status: "live",
+  },
+  {
+    id: "miles-of-smiles",
+    client: "Miles of Smiles",
+    category: "Daycare & Preschool · Concept",
+    summary:
+      "A concept site for an in-home daycare and preschool in Concord, told as a circle-time felt board. Slide the smile to your child's age and the board re-sets with their day; hours, food and outdoor time sit in a pocket chart that shows whether it's open right now.",
+    deliverables: ["Felt-board illustration, no photos", "Slide-to-age day board", "Live open / closed pocket chart", "Call in one tap"],
+    liveUrl: "https://miles-of-smiles-lilac.vercel.app",
+    status: "live",
+  },
+  {
+    id: "sugar-rush",
+    client: "Sugar Rush",
+    category: "Dessert Shop · Concept",
+    summary:
+      "A made-up sweet shop with a piñata you can break in the first screen. The menu and photos come from two real Bay Area dessert spots, used with permission: party cakes, croffles, snowflake bingsu and boba, laid out like party-store aisles.",
+    deliverables: ["Breakable piñata hero", "Seven menu aisles", "Party box builder", "Mobile-first, live on the web"],
+    liveUrl: "https://sugar-rush-cyan.vercel.app",
+    status: "live",
+  },
+  {
     id: "kold-krate",
     client: "Kold Krate",
     category: "Redwood Cold Plunges · Concept",
