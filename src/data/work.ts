@@ -160,6 +160,106 @@ export const work: CaseStudy[] = [
     status: "live",
   },
   {
+    id: "fit-fuel-meals",
+    client: "FitFuel Meals",
+    category: "Meal Prep · Concept",
+    summary:
+      "A bilingual concept site for a Hayward meal-prep chef, built from his own kitchen reels and meal photos. You scroll through his kitchen, build a box of 10 from this Sunday's menu, and the order is written for you to paste into his Instagram DM. Spanish first, with a real English switch.",
+    deliverables: ["Dark cinematic build from his own reels", "Build-your-box tool from the weekly menu", "Spanish / English", "Orders by Instagram DM"],
+    liveUrl: "https://fit-fuel-meals-delta.vercel.app",
+    status: "live",
+  },
+  {
+    id: "premium-ppf",
+    client: "PREMIUM",
+    category: "Wraps, PPF & Tint · Concept",
+    summary:
+      "A concept site for a Richmond wrap, paint protection film and window tint shop. A fan of film swatches recolors a real Range Rover roof from his jobs, a diagram shows what each PPF package covers, and a quote builder writes the text for you.",
+    deliverables: ["Swatch-fan color preview", "PPF coverage diagram", "Real before / after jobs", "Free quote by text"],
+    liveUrl: "https://premium-ppf.vercel.app",
+    status: "live",
+  },
+  {
+    id: "nails-by-june",
+    client: "Nails By June",
+    category: "Nail Studio · Concept",
+    summary:
+      "A concept site for a cozy Pleasant Hill nail studio, drawn as her manicure table seen from above, with a lamp that follows your cursor, her polish bottles and her real nail photos.",
+    deliverables: ["Illustrated manicure-table scene", "Services & studio photos", "Call or text to book", "Mobile-first, live on the web"],
+    liveUrl: "https://nails-by-june.vercel.app",
+    status: "live",
+  },
+  {
+    id: "taqueria-los-mexicanos",
+    client: "Taquería Los Mexicanos",
+    category: "Taquería · Concept",
+    summary:
+      "A bilingual concept site for an Antioch taquería, styled like the Day-Glo dance posters on a Mexican street, with their full menu, real food photos and party packages.",
+    deliverables: ["Dance-poster art direction", "Full menu", "Spanish / English", "Order by phone or WhatsApp"],
+    liveUrl: "https://taqueria-los-mexicanos.vercel.app",
+    status: "live",
+  },
+  {
+    id: "simsers-handy-service",
+    client: "Simsers Handy Service",
+    category: "Handyman · Concept",
+    summary:
+      "A concept site for a Pittsburg handyman built like a breaker panel: every switch is a room of the house, so you flip the kitchen or the garage to see the jobs he does there. Real job photos and quotes by text.",
+    deliverables: ["Breaker-panel room picker", "Real job photos", "Quote by text", "Mobile-first, live on the web"],
+    liveUrl: "https://simsers-handy-service.vercel.app",
+    status: "live",
+  },
+  {
+    id: "portal-artesanal",
+    client: "Portal Artesanal",
+    category: "Mexican Crafts Boutique · Concept",
+    summary:
+      "A bilingual concept site for a Walnut Creek shop of handmade goods from Mexico, under strings of papel picado, with their real products, workshops and Día de Muertos pieces.",
+    deliverables: ["Papel picado art direction", "Products & workshops", "Spanish / English", "Mobile-first, live on the web"],
+    liveUrl: "https://portal-artesanal.vercel.app",
+    status: "live",
+  },
+  {
+    id: "tax-services-inc",
+    client: "Tax Services, Inc.",
+    category: "Family Tax Office · Concept",
+    summary:
+      "A concept site for a Walnut Creek family tax office open since 1998, printed like security paper with a guilloche rosette, and written in the voice of the family that runs it.",
+    deliverables: ["Security-paper art direction", "Services & how it works", "Call to book", "Mobile-first, live on the web"],
+    liveUrl: "https://tax-services-inc.vercel.app",
+    status: "live",
+  },
+  {
+    id: "angelica-martinez-real-estate",
+    client: "Angelica Martinez Real Estate",
+    category: "Real Estate Broker · Concept",
+    summary:
+      "A concept site for a Martinez real estate broker, drawn as a hand-tinted fire-insurance map of downtown Martinez, with credited photos of the town and her office on Ferry St.",
+    deliverables: ["Hand-tinted map art direction", "Credited town photography", "Call or get directions", "Mobile-first, live on the web"],
+    liveUrl: "https://angelica-martinez-real-estate.vercel.app",
+    status: "live",
+  },
+  {
+    id: "four-paws-grooming",
+    client: "Four Paws Grooming",
+    category: "Dog Grooming · Concept",
+    summary:
+      "A concept site for a Walnut Creek dog groomer that hand dries and scissor finishes every dog: a grooming chart you trim with your cursor, and their real before-and-after photos.",
+    deliverables: ["Interactive grooming chart", "Real before / after photos", "Call to book", "Mobile-first, live on the web"],
+    liveUrl: "https://four-paws-grooming.vercel.app",
+    status: "live",
+  },
+  {
+    id: "lima-jumpers",
+    client: "Lima Jumpers",
+    category: "Party Rentals · Concept",
+    summary:
+      "A concept site for a Concord bounce house and water slide rental, with a yard-fit tool that checks which rental fits your space before you text to book.",
+    deliverables: ["Will-it-fit yard tool", "Rentals with real sizes", "Book by text", "Mobile-first, live on the web"],
+    liveUrl: "https://lima-jumpers.vercel.app",
+    status: "live",
+  },
+  {
     id: "kold-krate",
     client: "Kold Krate",
     category: "Redwood Cold Plunges · Concept",
