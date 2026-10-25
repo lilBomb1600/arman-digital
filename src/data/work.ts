@@ -160,6 +160,16 @@ export const work: CaseStudy[] = [
     status: "live",
   },
   {
+    id: "alumifred",
+    client: "Alumifred",
+    category: "Glass Showers & Railings · Concept",
+    summary:
+      "A concept site for a San Jose crew that installs frameless shower glass and glass railings. You draw your shower (layout, hardware, rough size) or measure a railing run, watch the drawing change as you pick, and it turns into a text to Fred. Built from his own job photos and video.",
+    deliverables: ["Draw-your-shower tool", "Railing measure tool", "Quote by text", "His real jobs and reel"],
+    liveUrl: "https://alumifred.vercel.app",
+    status: "live",
+  },
+  {
     id: "fit-fuel-meals",
     client: "FitFuel Meals",
     category: "Meal Prep · Concept",
