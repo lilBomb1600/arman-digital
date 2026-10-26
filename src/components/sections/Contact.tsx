@@ -5,8 +5,12 @@ import { SectionGlow } from "@/components/ui/SectionGlow";
 import { GlassCard } from "@/components/ui/GlassCard";
 import { BookCallButton } from "@/components/ui/BookCallButton";
 import { studio } from "@/data/business";
+import type { Lang } from "@/i18n/config";
+import { getDictionary } from "@/i18n/dictionaries";
 
-export function Contact() {
+export function Contact({ lang }: { lang: Lang }) {
+  const t = getDictionary(lang).contact;
+
   return (
     <section id="contact" className="relative overflow-hidden border-t border-border/60 py-24 sm:py-28">
       <SectionGlow className="left-1/2 top-1/2 h-[560px] w-[560px] -translate-x-1/2 -translate-y-1/2 bg-gold/[0.1]" />
@@ -16,15 +20,15 @@ export function Contact() {
             <div className="max-w-xl">
               <span className="mb-4 block h-[3px] w-10 rounded-full bg-gradient-to-r from-gold to-gold-light" />
               <h2 className="font-display text-balance text-3xl font-semibold text-cream sm:text-4xl">
-                Got a business that deserves to look this good?
+                {t.title}
               </h2>
               <p className="mt-4 text-balance leading-relaxed text-muted">
-                Reach out and tell me a bit about your business — I'll get back to you within a day.
+                {t.body}
               </p>
 
               <BookCallButton className="group mt-8 flex w-fit items-center gap-2 rounded-full bg-gradient-to-b from-gold-light to-gold px-6 py-3.5 text-sm font-semibold text-ink shadow-[0_6px_24px_-6px_rgba(217,164,65,0.55)] transition-all hover:-translate-y-1 hover:shadow-[0_10px_32px_-6px_rgba(217,164,65,0.75)]">
                 <CalendarDays className="h-4 w-4" />
-                Book a Free 15-Min Call
+                {t.book}
               </BookCallButton>
             </div>
 
@@ -38,7 +42,7 @@ export function Contact() {
                     <Phone className="h-5 w-5" />
                   </span>
                   <div>
-                    <p className="text-xs uppercase tracking-wide text-muted">Call or text</p>
+                    <p className="text-xs uppercase tracking-wide text-muted">{t.call}</p>
                     <p className="font-display text-lg font-semibold text-cream">{studio.phone}</p>
                   </div>
                 </div>
@@ -54,7 +58,7 @@ export function Contact() {
                     <Mail className="h-5 w-5" />
                   </span>
                   <div>
-                    <p className="text-xs uppercase tracking-wide text-muted">Email</p>
+                    <p className="text-xs uppercase tracking-wide text-muted">{t.email}</p>
                     <p className="font-display text-lg font-semibold text-cream">{studio.email}</p>
                   </div>
                 </div>

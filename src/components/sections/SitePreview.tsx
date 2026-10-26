@@ -10,7 +10,7 @@ let closeCurrent: (() => void) | null = null;
  * at once (that crashed phones on fast scrolls and pinch-zooms). On a desktop with a mouse, resting on the card for
  * a moment swaps in the real site, live, and leaving it unloads it again.
  */
-export function SitePreview({ id, url, title }: { id: string; url?: string; title: string }) {
+export function SitePreview({ id, url, alt, liveTitle }: { id: string; url?: string; alt: string; liveTitle: string }) {
   const box = useRef<HTMLDivElement>(null);
   const [live, setLive] = useState(false);
   const [loaded, setLoaded] = useState(false);
@@ -58,7 +58,7 @@ export function SitePreview({ id, url, title }: { id: string; url?: string; titl
         src={`/images/work/${id}.jpg`}
         srcSet={`/images/work/${id}-640.jpg 640w, /images/work/${id}.jpg 1200w`}
         sizes="(min-width: 1024px) 45vw, 92vw"
-        alt={`${title} website, top of the home page`}
+        alt={alt}
         loading="lazy"
         decoding="async"
         className="absolute inset-0 h-full w-full object-cover object-left-top"
@@ -66,7 +66,7 @@ export function SitePreview({ id, url, title }: { id: string; url?: string; titl
       {live && url && (
         <iframe
           src={url}
-          title={`${title}, live`}
+          title={liveTitle}
           onLoad={() => setLoaded(true)}
           className={`pointer-events-none absolute left-0 top-0 h-[1000px] w-[1440px] origin-top-left scale-[0.32] border-0 transition-opacity duration-500 sm:scale-[0.4] lg:scale-[0.42] ${loaded ? "opacity-100" : "opacity-0"}`}
         />

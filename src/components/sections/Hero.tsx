@@ -6,21 +6,10 @@ import { Container } from "@/components/ui/Container";
 import { CursorGlow } from "@/components/ui/CursorGlow";
 import { HeroPreviewStack } from "@/components/sections/HeroPreviewStack";
 import { studio } from "@/data/business";
+import type { Dictionary } from "@/i18n/dictionaries";
 
 const EASE = [0.16, 1, 0.3, 1] as const;
 const SPRING = { type: "spring", stiffness: 120, damping: 16, mass: 0.8 } as const;
-
-const HEADLINE = [
-  { text: "Websites", gold: false },
-  { text: "&", gold: false },
-  { text: "cinematic", gold: true },
-  { text: "media", gold: true },
-  { text: "for", gold: false },
-  { text: "businesses", gold: false },
-  { text: "that", gold: false },
-  { text: "mean", gold: false },
-  { text: "business.", gold: false },
-];
 
 const headlineContainer: Variants = {
   hidden: {},
@@ -32,7 +21,7 @@ const headlineWord: Variants = {
   show: { opacity: 1, y: 0, rotateX: 0, transition: SPRING },
 };
 
-export function Hero() {
+export function Hero({ t, description }: { t: Dictionary["hero"]; description: string }) {
   return (
     <section id="hero" className="relative overflow-hidden pb-20 pt-20 sm:pb-28 sm:pt-28">
       <div className="pointer-events-none absolute inset-0 -z-10">
@@ -53,7 +42,7 @@ export function Hero() {
             <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-gold opacity-75" />
             <span className="relative inline-flex h-1.5 w-1.5 rounded-full bg-gold" />
           </span>
-          Now booking new projects
+          {t.badge}
         </motion.div>
 
         <motion.h1
@@ -63,7 +52,7 @@ export function Hero() {
           style={{ perspective: 800 }}
           className="max-w-3xl text-balance font-display text-5xl font-bold leading-[1.05] tracking-tight text-cream sm:text-6xl lg:text-[5.25rem]"
         >
-          {HEADLINE.map((word, i) => (
+          {t.headline.map((word, i) => (
             <motion.span
               key={i}
               variants={headlineWord}
@@ -84,7 +73,7 @@ export function Hero() {
           transition={{ duration: 0.7, delay: 0.55 }}
           className="mt-6 max-w-xl text-balance text-lg leading-relaxed text-muted"
         >
-          {studio.description}
+          {description}
         </motion.p>
 
         <motion.div
@@ -97,7 +86,7 @@ export function Hero() {
             href="#work"
             className="shine-btn group flex items-center gap-2 rounded-full bg-gradient-to-b from-gold-light to-gold px-7 py-3.5 text-sm font-semibold text-ink shadow-[0_8px_30px_-6px_rgba(217,164,65,0.55)] transition-all hover:-translate-y-1 hover:shadow-[0_12px_40px_-6px_rgba(217,164,65,0.75)]"
           >
-            See the Work
+            {t.cta}
             <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-0.5" />
           </a>
           <a

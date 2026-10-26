@@ -3,14 +3,19 @@ import { SectionHeading } from "@/components/ui/SectionHeading";
 import { RevealGroup, RevealItem } from "@/components/ui/Reveal";
 import { SectionGlow } from "@/components/ui/SectionGlow";
 import { GlassCard } from "@/components/ui/GlassCard";
-import { process } from "@/data/businessTypes";
+import type { Lang } from "@/i18n/config";
+import { getDictionary } from "@/i18n/dictionaries";
+import { getProcess } from "@/i18n/content";
 
-export function Process() {
+export function Process({ lang }: { lang: Lang }) {
+  const t = getDictionary(lang).process;
+  const process = getProcess(lang);
+
   return (
     <section id="process" className="relative overflow-hidden border-t border-border/60 py-24 sm:py-28">
       <SectionGlow className="left-1/2 top-0 -translate-x-1/2" />
       <Container>
-        <SectionHeading title="Simple, direct, no runaround" align="center" className="mx-auto" />
+        <SectionHeading title={t.title} align="center" className="mx-auto" />
 
         <RevealGroup className="mt-14 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
           {process.map((step, i) => (

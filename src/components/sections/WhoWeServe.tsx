@@ -3,9 +3,13 @@ import { SectionHeading } from "@/components/ui/SectionHeading";
 import { Reveal } from "@/components/ui/Reveal";
 import { Marquee } from "@/components/ui/Marquee";
 import { SectionGlow } from "@/components/ui/SectionGlow";
-import { businessTypes } from "@/data/businessTypes";
+import type { Lang } from "@/i18n/config";
+import { getDictionary } from "@/i18n/dictionaries";
+import { getBusinessTypes } from "@/i18n/content";
 
-export function WhoWeServe() {
+export function WhoWeServe({ lang }: { lang: Lang }) {
+  const t = getDictionary(lang).whoWeServe;
+  const businessTypes = getBusinessTypes(lang);
   const half = Math.ceil(businessTypes.length / 2);
   const rowA = businessTypes.slice(0, half);
   const rowB = businessTypes.slice(half);
@@ -14,7 +18,7 @@ export function WhoWeServe() {
     <section className="relative overflow-hidden border-t border-border/60 bg-surface/40 py-24 sm:py-28">
       <SectionGlow className="right-0 top-1/2 -translate-y-1/2" />
       <Container>
-        <SectionHeading title="Built for businesses that live in the real world" />
+        <SectionHeading title={t.title} />
       </Container>
 
       <Reveal className="mt-10 space-y-4">

@@ -7,25 +7,34 @@ import { SectionGlow } from "@/components/ui/SectionGlow";
 import { GlassCard } from "@/components/ui/GlassCard";
 import { InstagramIcon } from "@/components/ui/InstagramIcon";
 import { studio } from "@/data/business";
+import type { Lang } from "@/i18n/config";
+import { fill } from "@/i18n/config";
+import { getDictionary } from "@/i18n/dictionaries";
 
 const posts = [
-  { src: "/images/instagram/post-1-intro.png", alt: "Arman Digital brand introduction post" },
-  { src: "/images/instagram/post-2-gt3.png", alt: "Porsche GT3 cinematic video highlight" },
-  { src: "/images/instagram/post-3-treehouse.png", alt: "Dome treehouse video highlight" },
-  { src: "/images/instagram/post-4-stats.png", alt: "Arman Digital credibility stats card" },
-];
+  { src: "/images/instagram/post-1-intro.png", key: "intro" },
+  { src: "/images/instagram/post-2-gt3.png", key: "gt3" },
+  { src: "/images/instagram/post-3-treehouse.png", key: "treehouse" },
+  { src: "/images/instagram/post-4-stats.png", key: "stats" },
+] as const;
+
+/** Quoted from the live @armank.digital profile, so it stays exactly as written there, in English, on both pages. */
+const BIO =
+  "Digital Creator | Building impactful websites and cinematic media for local businesses in the Bay Area. Let’s connect to elevate your brand.";
 
 const handle = studio.social.instagram.replace(/^https?:\/\/(www\.)?instagram\.com\//, "@").replace(/\/$/, "");
 
-export function Instagram() {
+export function Instagram({ lang }: { lang: Lang }) {
+  const t = getDictionary(lang).instagram;
+
   return (
     <section id="instagram" className="relative overflow-hidden border-t border-border/60 py-24 sm:py-28">
       <SectionGlow className="-left-40 bottom-0 bg-gold/[0.08]" />
       <Container>
         <div className="flex flex-col items-start justify-between gap-6 sm:flex-row sm:items-end">
           <SectionHeading
-            title="Follow the process"
-            description="Behind-the-scenes builds, cinematic clips, and new sites going live — posted as they happen."
+            title={t.title}
+            description={t.description}
             className="max-w-xl"
           />
           <a
@@ -35,7 +44,7 @@ export function Instagram() {
             className="shine-btn group flex w-fit shrink-0 items-center gap-2 rounded-full bg-gradient-to-b from-gold-light to-gold px-6 py-3 text-sm font-semibold text-ink shadow-[0_6px_24px_-6px_rgba(217,164,65,0.55)] transition-all hover:-translate-y-1 hover:shadow-[0_10px_32px_-6px_rgba(217,164,65,0.75)]"
           >
             <InstagramIcon className="h-4 w-4" />
-            Follow {handle}
+            {fill(t.follow, { handle })}
             <ArrowUpRight className="h-4 w-4 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
           </a>
         </div>
@@ -44,12 +53,12 @@ export function Instagram() {
           <GlassCard hoverLift={false} className="glow-ring mt-14 rounded-[2rem]">
             <div className="flex items-center gap-4 border-b border-border/60 p-6 sm:p-8">
               <div className="relative h-16 w-16 shrink-0 overflow-hidden rounded-full ring-2 ring-gold/60 ring-offset-2 ring-offset-surface sm:h-20 sm:w-20">
-                <Image src="/images/instagram/profile-picture.png" alt="Arman Digital Instagram profile picture" fill sizes="80px" className="object-cover" />
+                <Image src="/images/instagram/profile-picture.png" alt={t.profileAlt} fill sizes="80px" className="object-cover" />
               </div>
               <div className="min-w-0">
                 <p className="truncate font-display text-lg font-semibold text-cream sm:text-xl">{handle}</p>
-                <p className="mt-1 max-w-md text-sm leading-relaxed text-muted">
-                  Digital Creator | Building impactful websites and cinematic media for local businesses in the Bay Area. Let&rsquo;s connect to elevate your brand.
+                <p lang={lang === "en" ? undefined : "en"} className="mt-1 max-w-md text-sm leading-relaxed text-muted">
+                  {BIO}
                 </p>
               </div>
             </div>
@@ -65,7 +74,7 @@ export function Instagram() {
                   >
                     <Image
                       src={post.src}
-                      alt={post.alt}
+                      alt={t.posts[post.key]}
                       fill
                       sizes="(min-width: 640px) 25vw, 50vw"
                       className="object-cover transition-transform duration-500 ease-out group-hover:scale-110"

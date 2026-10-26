@@ -2,8 +2,14 @@ import { Mail, Phone } from "lucide-react";
 import { Container } from "@/components/ui/Container";
 import { InstagramIcon } from "@/components/ui/InstagramIcon";
 import { studio } from "@/data/business";
+import type { Lang } from "@/i18n/config";
+import { getDictionary } from "@/i18n/dictionaries";
+import { getStudioCopy } from "@/i18n/content";
 
-export function Footer() {
+export function Footer({ lang }: { lang: Lang }) {
+  const t = getDictionary(lang).footer;
+  const { tagline } = getStudioCopy(lang);
+
   return (
     <footer className="border-t border-border/60 bg-surface">
       <Container className="flex flex-col items-start justify-between gap-8 py-14 sm:flex-row sm:items-center">
@@ -11,7 +17,7 @@ export function Footer() {
           <p className="font-display text-lg font-semibold text-cream">
             Arman <span className="text-gold">Digital</span>
           </p>
-          <p className="mt-2 max-w-sm text-sm leading-relaxed text-muted">{studio.tagline}</p>
+          <p className="mt-2 max-w-sm text-sm leading-relaxed text-muted">{tagline}</p>
         </div>
         <div className="flex flex-col gap-3 text-sm text-muted">
           <a href={studio.phoneHref} className="flex items-center gap-2 hover:text-cream">
@@ -24,12 +30,12 @@ export function Footer() {
           </a>
           <a href={studio.social.instagram} target="_blank" rel="noreferrer" className="flex items-center gap-2 hover:text-cream">
             <InstagramIcon className="h-4 w-4 text-gold" />
-            Instagram
+            {t.instagram}
           </a>
         </div>
       </Container>
       <Container className="border-t border-border/60 py-6">
-        <p className="text-xs text-muted">© {new Date().getFullYear()} Arman Digital. All rights reserved.</p>
+        <p className="text-xs text-muted">© {new Date().getFullYear()} Arman Digital. {t.rights}</p>
       </Container>
     </footer>
   );

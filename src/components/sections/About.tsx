@@ -3,9 +3,14 @@ import { Container } from "@/components/ui/Container";
 import { Reveal } from "@/components/ui/Reveal";
 import { SectionGlow } from "@/components/ui/SectionGlow";
 import { GlassCard } from "@/components/ui/GlassCard";
-import { about } from "@/data/about";
+import type { Lang } from "@/i18n/config";
+import { getDictionary } from "@/i18n/dictionaries";
+import { getAbout } from "@/i18n/content";
 
-export function About() {
+export function About({ lang }: { lang: Lang }) {
+  const t = getDictionary(lang).about;
+  const about = getAbout(lang);
+
   return (
     <section id="about" className="relative overflow-hidden border-t border-border/60 py-24 sm:py-28">
       <SectionGlow className="-right-32 -top-32" />
@@ -16,7 +21,7 @@ export function About() {
               <span className="flex h-16 w-16 items-center justify-center rounded-full bg-gold/10 text-gold">
                 <User className="h-7 w-7" />
               </span>
-              <p className="text-xs uppercase tracking-widest">Photo coming soon</p>
+              <p className="text-xs uppercase tracking-widest">{t.photoSoon}</p>
             </div>
           </GlassCard>
         </Reveal>

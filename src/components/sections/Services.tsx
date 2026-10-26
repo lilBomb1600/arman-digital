@@ -4,16 +4,21 @@ import { SectionHeading } from "@/components/ui/SectionHeading";
 import { RevealGroup, RevealItem } from "@/components/ui/Reveal";
 import { SectionGlow } from "@/components/ui/SectionGlow";
 import { GlassCard } from "@/components/ui/GlassCard";
-import { services } from "@/data/services";
+import type { Lang } from "@/i18n/config";
+import { getDictionary } from "@/i18n/dictionaries";
+import { getServices } from "@/i18n/content";
 
-export function Services() {
+export function Services({ lang }: { lang: Lang }) {
+  const t = getDictionary(lang).services;
+  const services = getServices(lang);
+
   return (
     <section id="services" className="relative overflow-hidden border-t border-border/60 py-24 sm:py-28">
       <SectionGlow className="-left-40 top-1/4" />
       <Container>
         <SectionHeading
-          title="Full-service creative, without the agency overhead"
-          description="One person, direct communication, real craft — from your website to the video that sells it."
+          title={t.title}
+          description={t.description}
         />
 
         <RevealGroup className="mt-14 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">

@@ -4,6 +4,8 @@ import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { ChevronLeft, ChevronRight, Clapperboard, type LucideIcon } from "lucide-react";
 import type { VideoCaseStudy } from "@/data/videoWork";
+import type { Dictionary } from "@/i18n/dictionaries";
+import { fill } from "@/i18n/config";
 import { GlassCard } from "@/components/ui/GlassCard";
 import { cn } from "@/lib/utils";
 
@@ -13,10 +15,12 @@ export function VideoCarousel({
   items,
   label,
   icon: Icon,
+  t,
 }: {
   items: VideoCaseStudy[];
   label: string;
   icon: LucideIcon;
+  t: Pick<Dictionary["videoWork"], "prev" | "next" | "goTo">;
 }) {
   const [[index, direction], setIndex] = useState<[number, number]>([0, 0]);
 
@@ -44,14 +48,14 @@ export function VideoCarousel({
               {String(index + 1).padStart(2, "0")} / {String(items.length).padStart(2, "0")}
             </span>
             <button
-              aria-label={`Previous ${label.toLowerCase()} video`}
+              aria-label={fill(t.prev, { label: label.toLowerCase() })}
               onClick={() => go(-1)}
               className="flex h-9 w-9 items-center justify-center rounded-full border border-border text-cream transition-all hover:-translate-x-0.5 hover:border-gold hover:text-gold hover:shadow-[0_0_16px_-2px_rgba(217,164,65,0.6)]"
             >
               <ChevronLeft className="h-4 w-4" />
             </button>
             <button
-              aria-label={`Next ${label.toLowerCase()} video`}
+              aria-label={fill(t.next, { label: label.toLowerCase() })}
               onClick={() => go(1)}
               className="flex h-9 w-9 items-center justify-center rounded-full border border-border text-cream transition-all hover:translate-x-0.5 hover:border-gold hover:text-gold hover:shadow-[0_0_16px_-2px_rgba(217,164,65,0.6)]"
             >
@@ -123,7 +127,7 @@ export function VideoCarousel({
           {items.map((item, i) => (
             <button
               key={item.id}
-              aria-label={`Go to ${item.title}`}
+              aria-label={fill(t.goTo, { title: item.title })}
               onClick={() => setIndex([i, i > index ? 1 : -1])}
               className={cn(
                 "h-1.5 rounded-full transition-all duration-300",

@@ -5,6 +5,7 @@ import { useInView, animate } from "framer-motion";
 import { Container } from "@/components/ui/Container";
 import { work } from "@/data/work";
 import { videoWork } from "@/data/videoWork";
+import type { Dictionary } from "@/i18n/dictionaries";
 
 function CountUp({ to }: { to: number }) {
   const ref = useRef<HTMLSpanElement>(null);
@@ -28,7 +29,7 @@ function CountUp({ to }: { to: number }) {
   );
 }
 
-export function Stats() {
+export function Stats({ t }: { t: Dictionary["stats"] }) {
   const liveSites = work.filter((w) => w.status === "live").length;
   const videos = videoWork.length;
 
@@ -40,17 +41,17 @@ export function Stats() {
           <p className="text-glow font-display text-4xl font-bold text-gold sm:text-5xl">
             <CountUp to={liveSites} />
           </p>
-          <p className="mt-2 text-xs text-muted sm:text-sm">Live Sites Shipped</p>
+          <p className="mt-2 text-xs text-muted sm:text-sm">{t.liveSites}</p>
         </div>
         <div className="text-center sm:text-left">
           <p className="text-glow font-display text-4xl font-bold text-gold sm:text-5xl">
             <CountUp to={videos} />
           </p>
-          <p className="mt-2 text-xs text-muted sm:text-sm">Cinematic Videos Produced</p>
+          <p className="mt-2 text-xs text-muted sm:text-sm">{t.videos}</p>
         </div>
         <div className="text-center sm:text-left">
           <p className="text-glow font-display text-4xl font-bold text-gold sm:text-5xl">100%</p>
-          <p className="mt-2 text-xs text-muted sm:text-sm">Custom-Built, No Templates</p>
+          <p className="mt-2 text-xs text-muted sm:text-sm">{t.custom}</p>
         </div>
       </Container>
     </section>

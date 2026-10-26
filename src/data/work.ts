@@ -6,6 +6,8 @@ export type CaseStudy = {
   deliverables: string[];
   liveUrl?: string;
   status: "live" | "coming-soon";
+  /** The client site itself has an English / Spanish switch. Shows a "También en español" badge on /es. */
+  bilingual?: boolean;
 };
 
 export const work: CaseStudy[] = [
@@ -158,6 +160,7 @@ export const work: CaseStudy[] = [
     deliverables: ["Interactive metallic floor (WebGL)", "Flake floor designer", "English / Spanish", "Estimate by text or Instagram DM"],
     liveUrl: "https://esparzas-resin.vercel.app",
     status: "live",
+    bilingual: true,
   },
   {
     id: "alumifred",
@@ -178,6 +181,7 @@ export const work: CaseStudy[] = [
     deliverables: ["Dark cinematic build from his own reels", "Build-your-box tool from the weekly menu", "Spanish / English", "Orders by Instagram DM"],
     liveUrl: "https://fit-fuel-meals-delta.vercel.app",
     status: "live",
+    bilingual: true,
   },
   {
     id: "premium-ppf",
@@ -208,6 +212,7 @@ export const work: CaseStudy[] = [
     deliverables: ["Dance-poster art direction", "Full menu", "Spanish / English", "Order by phone or WhatsApp"],
     liveUrl: "https://taqueria-los-mexicanos.vercel.app",
     status: "live",
+    bilingual: true,
   },
   {
     id: "simsers-handy-service",
@@ -228,6 +233,7 @@ export const work: CaseStudy[] = [
     deliverables: ["Papel picado art direction", "Products & workshops", "Spanish / English", "Mobile-first, live on the web"],
     liveUrl: "https://portal-artesanal.vercel.app",
     status: "live",
+    bilingual: true,
   },
   {
     id: "tax-services-inc",
