@@ -8,6 +8,7 @@ import { smsLink, studio } from "@/data/business";
 import type { Lang } from "@/i18n/config";
 import { getDictionary } from "@/i18n/dictionaries";
 import { getAddOns, getPricing } from "@/i18n/content";
+import { howItWorks, howItWorksEs } from "@/data/howItWorks";
 
 const goldButton =
   "shine-btn flex w-fit shrink-0 items-center gap-2 rounded-full bg-gradient-to-b from-gold-light to-gold px-6 py-3.5 text-sm font-semibold text-ink shadow-[0_6px_24px_-6px_rgba(217,164,65,0.55)] transition-all hover:-translate-y-1 hover:shadow-[0_10px_32px_-6px_rgba(217,164,65,0.75)] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gold";
@@ -20,6 +21,7 @@ export function Prices({ lang }: { lang: Lang }) {
   const t = getDictionary(lang).prices;
   const p = getPricing(lang);
   const extras = getAddOns(lang);
+  const how = lang === "es" ? howItWorksEs : howItWorks;
 
   return (
     <section id="prices" className="relative overflow-hidden border-t border-border/60 bg-surface/40 py-24 sm:py-28">
@@ -152,6 +154,52 @@ export function Prices({ lang }: { lang: Lang }) {
               </li>
             ))}
           </ul>
+        </Reveal>
+
+        {/* The two newer extras get a plain "how it works" instead of a live demo (Arman, 2026-10-29). */}
+        <Reveal className="mt-16">
+          <h3 className="font-display text-2xl font-semibold text-cream">{how.title}</h3>
+          <div className="mt-6 grid gap-6 lg:grid-cols-2">
+            {how.items.map((item) => (
+              <article key={item.id} className="tile flex h-full flex-col rounded-[2rem] border border-white/[0.06] p-7 sm:p-9">
+                <div className="flex flex-wrap items-baseline justify-between gap-x-4 gap-y-1">
+                  <h4 className="font-display text-xl font-semibold text-cream">{item.title}</h4>
+                  <p className="font-display font-semibold tabular-nums text-gold">{item.price}</p>
+                </div>
+                <ol className="mt-6 space-y-4">
+                  {item.steps.map((step, i) => (
+                    <li key={step} className="flex items-start gap-4">
+                      <span className="flex h-7 w-7 shrink-0 items-center justify-center rounded-full bg-gold/12 font-display text-sm font-semibold tabular-nums text-gold ring-1 ring-gold/25">
+                        {i + 1}
+                      </span>
+                      <p className="leading-relaxed text-cream/85">{step}</p>
+                    </li>
+                  ))}
+                </ol>
+                <figure className="mt-7 rounded-2xl bg-ink/60 p-4 ring-1 ring-white/[0.06]">
+                  <figcaption className="text-xs font-medium text-muted">{item.example.label}</figcaption>
+                  <div className="mt-3 flex flex-col gap-2">
+                    {item.example.lines.map((line) => (
+                      <p
+                        key={line.text}
+                        className={
+                          line.from === "you"
+                            ? "max-w-[85%] self-end rounded-2xl rounded-br-md bg-gold/90 px-3.5 py-2 text-sm leading-snug text-ink"
+                            : "max-w-[85%] self-start rounded-2xl rounded-bl-md bg-white/[0.08] px-3.5 py-2 text-sm leading-snug text-cream"
+                        }
+                      >
+                        {line.text}
+                      </p>
+                    ))}
+                  </div>
+                </figure>
+                <p className="mt-6 flex items-start gap-2.5 text-sm leading-relaxed text-muted">
+                  <Check className="mt-0.5 h-4 w-4 shrink-0 text-gold" />
+                  {item.rules}
+                </p>
+              </article>
+            ))}
+          </div>
         </Reveal>
 
         <Reveal className="mt-12 flex flex-col gap-3 sm:flex-row sm:flex-wrap sm:items-center">
