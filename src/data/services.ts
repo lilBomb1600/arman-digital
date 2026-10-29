@@ -3,42 +3,64 @@ export type Service = {
   title: string;
   description: string;
   bullets: string[];
+  /** Approved price to show next to it (see pricing.ts). Leave it out when there's no approved price yet. */
+  price?: string;
 };
 
+/** What Arman sells now, in his own voice. Prices must match pricing.ts. Spanish twin: services.es.ts. */
 export const services: Service[] = [
   {
     id: "websites",
-    title: "Website Design & Development",
+    title: "Websites",
     description:
-      "Custom-built websites for local businesses — fast, mobile-first, and built to actually convert visitors into customers, not just look nice.",
-    bullets: ["Custom design, no templates", "Mobile & SEO optimized", "Menu, booking & contact built in", "Free hosting setup & launch"],
+      "I build your site from scratch around your real photos, prices and reviews. It's made for phones first, because that's where your customers find you, and they can call or text you in one tap.",
+    bullets: ["No templates", "Made for phones first", "Call, text or book in one tap", "I set up the hosting and launch it"],
+    price: "from $1,000",
   },
   {
-    id: "video",
-    title: "Cinematic Video Production",
+    id: "reels",
+    title: "Reels for your business",
     description:
-      "Brand and marketing videos shot and edited with a cinematic eye — the kind of footage that makes a business feel premium the moment someone hits play.",
-    bullets: ["Brand & marketing videos", "Product & promo edits", "Social-ready cuts (Reels, TikTok, YouTube)"],
+      "Short videos for Instagram, TikTok and Facebook, cut from your own photos and clips. If you don't have much footage, I can mix in AI shots, and I'll always tell you which parts are AI.",
+    bullets: ["Your photos and clips", "Text and music on it", "A cover for your page", "Ready to post"],
+    price: "from $40 a Reel",
   },
   {
-    id: "airbnb",
-    title: "Airbnb Walkthrough Videos",
+    id: "monthly",
+    title: "4 Reels a month",
     description:
-      "Cinematic walkthroughs that show off a short-term rental the way photos never can — helping listings stand out and book faster.",
-    bullets: ["Full property walkthrough", "Drone shots where available", "Edited for the listing & social"],
+      "A new Reel every week so your page doesn't go quiet. Send me photos when you have them and I do the rest.",
+    bullets: ["One new Reel a week", "Cancel anytime", "Best price per Reel"],
+    price: "from $129 a month",
   },
   {
-    id: "auto",
-    title: "Car Walkthrough Videos",
+    id: "review-texter",
+    title: "Review texter",
     description:
-      "360° cinematic walkthrough videos for dealers and private sellers — built to make a listing stand out on the lot and online.",
-    bullets: ["Full interior & exterior walkthrough", "Detail & feature highlights", "Ready for Marketplace, Instagram & dealer sites"],
+      "After every job, your customer gets one text with your Google review link. You tap one button on your phone, and they write the review in their own words. Everyone gets the same text, so it plays by Google's rules.",
+    bullets: ["One tap after each job", "One reminder at most", "Reply STOP always works"],
+    price: "from $99 + $29 a month",
+  },
+  {
+    id: "chat-helper",
+    title: "Chat helper for your site",
+    description:
+      "A chat bubble on your website that answers questions at 11pm from your real prices, hours and services, in English or Spanish. When someone's ready, it sends them to you. It says it's an AI and never makes up a price.",
+    bullets: ["Answers from your real info", "English and Spanish", "Sends you the customer"],
+    price: "from $99 + $25 a month",
+  },
+  {
+    id: "walkthroughs",
+    title: "Walkthrough videos for cars and homes",
+    description:
+      "One clean walkthrough of a car or a place, shot and edited so it stands out more than photos do. For dealers, people selling a car, Airbnb hosts and realtors.",
+    bullets: ["Inside and out", "Edited into one continuous video", "Ready for Marketplace, listings and Instagram"],
   },
   {
     id: "branding",
-    title: "Logo & Brand Identity",
-    description:
-      "A logo and visual identity that looks as good on a storefront sign as it does on a phone screen.",
-    bullets: ["Custom logo design", "Color & typography system", "Brand assets for print & web"],
+    title: "Logo and branding",
+    description: "A logo and colors that look right on your sign, your truck and your Instagram.",
+    bullets: ["Custom logo", "Colors and fonts", "Files for print and web"],
+    price: "from $149",
   },
 ];

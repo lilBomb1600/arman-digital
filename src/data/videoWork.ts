@@ -16,7 +16,7 @@ export const videoWork: VideoCaseStudy[] = [
     category: "Real Estate Walkthrough Video",
     title: "Modern Minimalist Home",
     description:
-      "A full property walkthrough — front entry, backyard fire pit, rooftop deck and garden, living room, kitchen, dining, hallway, laundry, bedroom, and bathroom — cut into one continuous cinematic tour.",
+      "A full property walkthrough (front entry, backyard fire pit, rooftop deck and garden, living room, kitchen, dining, hallway, laundry, bedroom, and bathroom) cut into one continuous cinematic tour.",
     deliverables: ["Full exterior & interior coverage", "Fire pit & rooftop deck footage", "Every room, one continuous cut", "Ready for listings & social"],
     videoSrc: "/videos/house-walkthrough.mp4",
     poster: "/videos/house-poster.jpg",
@@ -27,7 +27,7 @@ export const videoWork: VideoCaseStudy[] = [
     category: "Car Walkthrough Video",
     title: "2025 Lexus ES 350",
     description:
-      "A full 360° exterior orbit followed by an interior cabin tour — steering wheel, dash, console, and back seats — cut into one continuous walkaround. Built for listings, Marketplace, and social.",
+      "A full 360° exterior orbit followed by an interior cabin tour (steering wheel, dash, console, and back seats) cut into one continuous walkaround. Built for listings, Marketplace, and social.",
     deliverables: ["Full exterior 360° orbit", "Interior cabin walkthrough", "Edited into one continuous cut", "Ready for listings & social"],
     videoSrc: "/videos/lexus-es350-walkaround.mp4",
     poster: "/videos/lexus-es350-poster.jpg",
@@ -38,7 +38,7 @@ export const videoWork: VideoCaseStudy[] = [
     category: "Car Walkthrough Video",
     title: "2022 Porsche 911 GT3",
     description:
-      "A full 360° exterior orbit of the 992 GT3 followed by an interior tour — gauge cluster, manual shift knob, and roll cage — cut into one continuous walkaround. Built for listings, Marketplace, and social.",
+      "A full 360° exterior orbit of the 992 GT3 followed by an interior tour (gauge cluster, manual shift knob, and roll cage) cut into one continuous walkaround. Built for listings, Marketplace, and social.",
     deliverables: ["Full exterior 360° orbit", "Interior cabin walkthrough", "Edited into one continuous cut", "Ready for listings & social"],
     videoSrc: "/videos/porsche-gt3-walkaround.mp4",
     poster: "/videos/porsche-gt3-poster.jpg",
@@ -49,7 +49,7 @@ export const videoWork: VideoCaseStudy[] = [
     category: "Car Walkthrough Video",
     title: "2005 Lexus LS 430",
     description:
-      "A full exterior 360° orbit, a close detail pass on the wheels and exhaust, then a front-to-back interior tour — dash, console, front seats, rear seats, sunroof, and trunk — cut into one continuous walkaround. Built for listings, Marketplace, and social.",
+      "A full exterior 360° orbit, a close detail pass on the wheels and exhaust, then a front-to-back interior tour (dash, console, front seats, rear seats, sunroof, and trunk) cut into one continuous walkaround. Built for listings, Marketplace, and social.",
     deliverables: ["Full exterior 360° orbit", "Wheel & exhaust detail pass", "Front & rear interior walkthrough", "Ready for listings & social"],
     videoSrc: "/videos/lexus-ls430-walkaround.mp4",
     poster: "/videos/lexus-ls430-poster.jpg",
@@ -60,7 +60,7 @@ export const videoWork: VideoCaseStudy[] = [
     category: "Car Walkthrough Video",
     title: "2026 Porsche Cayenne Turbo Electric",
     description:
-      "A close-detail exterior pass — wheels, Turbo badging, and the doors — followed by an interior tour of the red and black cabin, panoramic sunroof, and cargo area, cut into one continuous walkaround. Built for listings, Marketplace, and social.",
+      "A close-detail exterior pass (wheels, Turbo badging, and the doors) followed by an interior tour of the red and black cabin, panoramic sunroof, and cargo area, cut into one continuous walkaround. Built for listings, Marketplace, and social.",
     deliverables: ["Exterior detail pass", "Interior cabin walkthrough", "Edited into one continuous cut", "Ready for listings & social"],
     videoSrc: "/videos/porsche-cayenne-turbo-walkaround.mp4",
     poster: "/videos/porsche-cayenne-turbo-poster.jpg",
@@ -71,7 +71,7 @@ export const videoWork: VideoCaseStudy[] = [
     category: "Car Walkthrough Video",
     title: "2008 Porsche 911 Carrera S",
     description:
-      "A close-detail exterior pass — wheels, side profile, quad exhaust, and the Carrera S badge — followed by an interior tour of the sand beige cabin, sunroof, and rear seats, cut into one continuous walkaround. Built for listings, Marketplace, and social.",
+      "A close-detail exterior pass (wheels, side profile, quad exhaust, and the Carrera S badge) followed by an interior tour of the sand beige cabin, sunroof, and rear seats, cut into one continuous walkaround. Built for listings, Marketplace, and social.",
     deliverables: ["Exterior detail pass", "Interior cabin walkthrough", "Edited into one continuous cut", "Ready for listings & social"],
     videoSrc: "/videos/porsche-carrera-s-walkaround.mp4",
     poster: "/videos/porsche-carrera-s-poster.jpg",
@@ -82,7 +82,7 @@ export const videoWork: VideoCaseStudy[] = [
     category: "Airbnb Walkthrough Video",
     title: "Geodesic Dome Treehouse",
     description:
-      "A hillside dome retreat in Lafayette, CA — exterior at dusk, the dome living room and kitchen, both dome bedrooms, the main house's living room and bathrooms, deck views over the valley, and the hot tub and rec areas, cut into one continuous cinematic tour.",
+      "A hillside dome retreat in Lafayette, CA: exterior at dusk, the dome living room and kitchen, both dome bedrooms, the main house's living room and bathrooms, deck views over the valley, and the hot tub and rec areas, cut into one continuous cinematic tour.",
     deliverables: ["Full property exterior & interior coverage", "Every room & outdoor amenity", "Edited into one continuous cut", "Ready for the listing & social"],
     videoSrc: "/videos/dome-treehouse-walkthrough.mp4",
     poster: "/videos/dome-treehouse-poster.jpg",
@@ -93,7 +93,7 @@ export const videoWork: VideoCaseStudy[] = [
     category: "Airbnb Walkthrough Video",
     title: "Tuscan Villa Suite",
     description:
-      "An ocean-view patio at the Tuscan Villa Suite in Pacifica, CA, a coastal town just south of San Francisco — captured in one continuous golden-hour take from the living room out to the patio overlooking the Pacific.",
+      "An ocean-view patio at the Tuscan Villa Suite in Pacifica, CA, a coastal town just south of San Francisco, shot in one continuous golden-hour take from the living room out to the patio overlooking the Pacific.",
     deliverables: ["Ocean-view patio at golden hour", "Continuous cinematic take", "Pacifica, CA coastal retreat", "Ready for the listing & social"],
     videoSrc: "/videos/hillside-patio-sunset.mp4",
     poster: "/videos/hillside-patio-sunset-poster.jpg",

@@ -5,10 +5,10 @@ import {
   motion,
   useMotionTemplate,
   useMotionValue,
-  useReducedMotion,
   useSpring,
 } from "framer-motion";
 import { cn } from "@/lib/utils";
+import { usePrefersReducedMotion } from "@/lib/usePrefersReducedMotion";
 
 /**
  * Real glass material: backdrop-blur + saturate so whatever glow or color
@@ -28,7 +28,7 @@ export function GlassCard({
   hoverLift?: boolean;
 }) {
   const ref = useRef<HTMLDivElement>(null);
-  const prefersReducedMotion = useReducedMotion();
+  const prefersReducedMotion = usePrefersReducedMotion();
 
   const mouseXPercent = useMotionValue(50);
   const mouseYPercent = useMotionValue(50);

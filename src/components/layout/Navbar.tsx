@@ -14,7 +14,9 @@ import { homePath, type Lang } from "@/i18n/config";
 import type { Dictionary } from "@/i18n/dictionaries";
 import type { LiveSiteLink } from "@/i18n/content";
 
-const SECTION_LINKS = ["about", "services", "work", "process", "contact"] as const;
+const SECTION_LINKS = ["work", "reels", "prices", "process", "services", "about"] as const;
+/** Below 1280px the desktop bar only has room for the first four (Spanish labels run long); the menu and ⌘K list all. */
+const WIDE_ONLY = new Set<string>(["services", "about"]);
 
 export function Navbar({
   lang,
@@ -96,13 +98,14 @@ export function Navbar({
           Arman <span className="bg-gradient-to-r from-gold to-gold-light bg-clip-text text-transparent">Digital</span>
         </Link>
 
-        <nav className="hidden items-center gap-1 lg:flex">
+        <nav className="hidden items-center gap-1 lg:flex xl:gap-0.5">
           {links.map((l) => (
             <a
               key={l.id}
               href={l.href}
               className={cn(
-                "relative whitespace-nowrap px-3 py-2 text-sm font-medium transition-colors",
+                "relative whitespace-nowrap px-3 py-2 text-sm font-medium transition-colors xl:px-2.5",
+                WIDE_ONLY.has(l.id) && "hidden xl:block",
                 activeHref === `#${l.id}` ? "text-cream" : "text-muted hover:text-cream"
               )}
             >
@@ -111,15 +114,15 @@ export function Navbar({
                 <motion.span
                   layoutId="nav-indicator"
                   transition={{ type: "spring", stiffness: 380, damping: 30 }}
-                  className="absolute inset-x-3 -bottom-[1px] h-[2px] rounded-full bg-gold"
+                  className="absolute inset-x-3 -bottom-[1px] h-[2px] rounded-full bg-gold xl:inset-x-2.5"
                 />
               )}
             </a>
           ))}
         </nav>
 
-        {/* Spanish labels run longer, so the right-hand group sits a little tighter on /es. */}
-        <div className={cn("hidden items-center lg:flex", lang === "es" ? "gap-3" : "gap-4")}>
+        {/* Six section links plus this group fill the bar, so the group sits tight to leave the logo some air. */}
+        <div className="hidden items-center gap-3 lg:flex">
           <LanguageSwitch lang={lang} label={langLabel} markCurrent={onHome} />
           <CommandMenu lang={lang} t={command} liveSites={liveSites} />
           <a
@@ -140,7 +143,7 @@ export function Navbar({
             href={sectionHref("contact")}
             className="shine-btn whitespace-nowrap rounded-full bg-gradient-to-b from-gold-light to-gold px-5 py-2.5 text-sm font-semibold text-ink shadow-[0_4px_20px_-4px_rgba(217,164,65,0.5)] transition-all hover:-translate-y-0.5 hover:shadow-[0_8px_28px_-4px_rgba(217,164,65,0.7)]"
           >
-            {t.cta}
+            {t.ctaShort}
           </a>
         </div>
 

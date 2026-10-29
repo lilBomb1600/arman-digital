@@ -1,29 +1,34 @@
 export const businessTypes: string[] = [
-  "Restaurants & Cafés",
-  "Real Estate & Airbnb Hosts",
-  "Auto Dealers & Sellers",
-  "Salons & Spas",
-  "Gyms & Fitness Studios",
-  "Contractors & Home Services",
-  "Retail & Boutiques",
-  "Professional Services",
+  "Contractors and home services",
+  "Wrap, tint and PPF shops",
+  "Restaurants, cafés and taquerías",
+  "Bakers and dessert spots",
+  "Meal prep",
+  "Salons, barbers and nail studios",
+  "Auto repair and tire shops",
+  "Daycares",
+  "Boutiques and shops",
+  "Car dealers and sellers",
+  "Realtors and Airbnb hosts",
+  "Gyms",
 ];
 
+/** The real flow, step by step. Prices here must match pricing.ts. */
 export const process: { title: string; description: string }[] = [
   {
-    title: "Discovery Call",
-    description: "A quick call to learn about your business, your goals, and what you actually need — no jargon, no pressure.",
+    title: "Free demo",
+    description: "I build you a free demo from your own photos. A 1-page site or a Reel.",
   },
   {
-    title: "Design & Build",
-    description: "You get a custom design built around your real content — your menu, your photos, your story, your reviews.",
+    title: "You look at it",
+    description: "Check it out on your phone. If you like it, the prices are right above. If you don't, you owe me nothing.",
   },
   {
-    title: "Launch",
-    description: "Your site goes live on the web, fast, mobile-friendly, and ready to send customers to.",
+    title: "Pay to start",
+    description: "$300 to start a site. Videos get paid before the clean files go out. Then I finish it with your changes.",
   },
   {
-    title: "Ongoing Support",
-    description: "Need an update, a new photo, a new price? I'm one call away — this isn't a one-and-done handoff.",
+    title: "It goes live",
+    description: "Your site goes live. If you want, I keep it updated for $100 a month.",
   },
 ];

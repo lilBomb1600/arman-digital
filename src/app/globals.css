@@ -112,6 +112,26 @@ body {
   }
 }
 
+/* A solid card surface for things that repeat a lot (gallery cards, price panels). Same top-edge light as
+   .glass-panel, but painted, with no backdrop blur, so thirty of them cost nothing to scroll past. */
+.tile {
+  background:
+    linear-gradient(165deg, rgba(255, 255, 255, 0.055), rgba(255, 255, 255, 0.012)),
+    var(--color-surface);
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.08),
+    0 1px 2px rgba(0, 0, 0, 0.4);
+}
+
+/* Sideways rows that scroll by swipe, drag or buttons: no visible scrollbar. */
+.no-scrollbar {
+  scrollbar-width: none;
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
 .glow-ring {
   position: relative;
 }

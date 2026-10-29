@@ -39,9 +39,9 @@ const cards = [
 
 /**
  * A scattered pile of real live-site previews, floating gently. Static JPGs
- * rather than live iframes — this renders above the fold, and a handful of
- * eagerly-loaded cross-origin Next.js apps would tank first paint. Work.tsx
- * below still uses real lazy-loaded iframes for the actual portfolio grid.
+ * rather than live iframes: this renders above the fold, and a handful of
+ * eagerly-loaded cross-origin Next.js apps would tank first paint. The Work
+ * gallery below uses static screenshots too.
  */
 export function HeroPreviewStack() {
   return (

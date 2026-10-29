@@ -90,10 +90,11 @@ export function VideoCarousel({
                 poster={project.poster}
                 controls
                 playsInline
-                preload="metadata"
+                // Nothing downloads until someone presses play; the poster shows until then.
+                preload="none"
               />
               <div className="pointer-events-none absolute inset-x-0 top-0 h-16 bg-gradient-to-b from-ink/60 to-transparent" />
-              <span className="pointer-events-none absolute left-3 top-3 inline-flex items-center gap-1.5 rounded-full border border-white/10 bg-ink/70 px-2.5 py-1 text-[10px] font-semibold uppercase tracking-wide text-cream/80 backdrop-blur">
+              <span className="pointer-events-none absolute left-3 top-3 inline-flex items-center gap-1.5 rounded-full border border-white/10 bg-ink/80 px-2.5 py-1 text-[10px] font-semibold uppercase tracking-wide text-cream/80">
                 <Clapperboard className="h-3 w-3 text-gold" />
                 {String(index + 1).padStart(2, "0")} / {String(items.length).padStart(2, "0")}
               </span>

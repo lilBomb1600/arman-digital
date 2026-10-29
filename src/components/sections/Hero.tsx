@@ -8,7 +8,6 @@ import { HeroPreviewStack } from "@/components/sections/HeroPreviewStack";
 import { studio } from "@/data/business";
 import type { Dictionary } from "@/i18n/dictionaries";
 
-const EASE = [0.16, 1, 0.3, 1] as const;
 const SPRING = { type: "spring", stiffness: 120, damping: 16, mass: 0.8 } as const;
 
 const headlineContainer: Variants = {

@@ -6,7 +6,7 @@ export const aboutEs: typeof about = {
   heading: "Solo un muchacho del Área de la Bahía que hace las cosas bien.",
   paragraphs: [
     "Soy Arman. De día trabajo en Porsche. Fuera de eso, hago páginas web y grabo videos para negocios locales. Aprendí por mi cuenta, tengo certificaciones en HTML y JavaScript, y ahora estudio Ciencias de la Computación en Diablo Valley College.",
-    "Soy del Área de la Bahía, me encantan los deportes y de verdad disfruto conocer gente nueva. Creo que por eso me gusta tanto este trabajo. Cada proyecto empieza con una plática de verdad, no con un formulario. Y como no trabajo a través de una agencia, te doy precios reales y claros, sin cobrarte extra para cubrir los gastos de alguien más.",
+    "Soy de Pittsburg, en el East Bay. Me encantan los deportes y me gusta conocer gente nueva. Creo que por eso me gusta tanto este trabajo. Cada proyecto empieza con una plática de verdad, no con un formulario. Y como soy yo solo y no una agencia, mis precios están aquí mismo en la página, sin cobrarte extra para cubrir los gastos de alguien más.",
   ],
   credentials: [
     "Desarrollador autodidacta",

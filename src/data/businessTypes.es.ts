@@ -2,33 +2,36 @@ import type { process } from "./businessTypes";
 
 /** Spanish versions of businessTypes.ts, same shape and order. */
 export const businessTypesEs: string[] = [
-  "Restaurantes y cafés",
-  "Bienes raíces y anfitriones de Airbnb",
+  "Contratistas y servicios para la casa",
+  "Talleres de wraps, polarizado y PPF",
+  "Restaurantes, cafés y taquerías",
+  "Reposterías y postres",
+  "Meal prep",
+  "Salones, barberías y uñas",
+  "Talleres mecánicos y llanteras",
+  "Guarderías",
+  "Boutiques y tiendas",
   "Agencias y vendedores de carros",
-  "Salones y spas",
-  "Gimnasios y estudios de fitness",
-  "Contratistas y servicios para el hogar",
-  "Tiendas y boutiques",
-  "Servicios profesionales",
+  "Realtors y anfitriones de Airbnb",
+  "Gimnasios",
 ];
 
 export const processEs: typeof process = [
   {
-    title: "Llamada para conocernos",
+    title: "Demo gratis",
+    description: "Te hago un demo gratis con tus propias fotos. Una página o un Reel.",
+  },
+  {
+    title: "Lo revisas",
+    description: "Lo ves en tu celular. Si te gusta, los precios están aquí arriba. Si no, no me debes nada.",
+  },
+  {
+    title: "Pagas para empezar",
     description:
-      "Una llamada rápida para conocer tu negocio, tus metas y lo que de verdad necesitas. Sin palabras raras y sin presión.",
+      "$300 para empezar una página. Los videos se pagan antes de mandarte los archivos limpios. Luego la termino con tus cambios.",
   },
   {
-    title: "Diseño y desarrollo",
-    description: "Recibes un diseño a la medida hecho con tu contenido real: tu menú, tus fotos, tu historia y tus reseñas.",
-  },
-  {
-    title: "Lanzamiento",
-    description: "Tu página sale en línea: carga rápido, se ve bien en el celular y queda lista para mandarle clientes.",
-  },
-  {
-    title: "Apoyo continuo",
-    description:
-      "¿Necesitas un cambio, una foto nueva o un precio nuevo? Nomás me llamas. No te entrego la página y desaparezco.",
+    title: "Sale en línea",
+    description: "Tu página sale en línea. Si quieres, yo la mantengo al día por $100 al mes.",
   },
 ];

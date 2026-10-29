@@ -9,8 +9,12 @@ import { businessTypes, process } from "@/data/businessTypes";
 import { businessTypesEs, processEs } from "@/data/businessTypes.es";
 import { videoWork, type VideoCaseStudy } from "@/data/videoWork";
 import { videoWorkEs } from "@/data/videoWork.es";
-import { work, type CaseStudy } from "@/data/work";
-import { workEs } from "@/data/work.es";
+import { work, workGroups, type CaseStudy, type WorkGroup } from "@/data/work";
+import { workEs, workGroupsEs } from "@/data/work.es";
+import { reels, type Reel } from "@/data/reels";
+import { reelsEs } from "@/data/reels.es";
+import { addOns, pricing, type AddOns, type Pricing } from "@/data/pricing";
+import { addOnItemsEs, pricingEs } from "@/data/pricing.es";
 
 /**
  * The prose data for a language. English always comes straight from src/data/*.ts, untouched. Spanish comes
@@ -59,10 +63,43 @@ export function getWork(lang: Lang): CaseStudy[] {
     return {
       ...w,
       category: es?.category ?? w.category,
+      short: es?.short ?? w.short,
       summary: es?.summary ?? w.summary,
       deliverables: es?.deliverables ?? w.deliverables,
     };
   });
+}
+
+/** The gallery's filter groups in display order, with their label in the page's language. */
+export function getWorkGroups(lang: Lang): { id: WorkGroup; label: string }[] {
+  return workGroups.map((g) => ({ id: g.id, label: lang === "es" ? workGroupsEs[g.id] : g.label }));
+}
+
+/** A Reel with the file to play on this language's page (the Spanish cut on /es when there is one). */
+export type LocalizedReel = Omit<Reel, "slug" | "slugEs"> & { video: string; poster: string };
+
+export function getReels(lang: Lang): LocalizedReel[] {
+  return reels.map(({ slug, slugEs, ...r }) => {
+    const file = lang === "es" && slugEs ? slugEs : slug;
+    const es = lang === "es" ? reelsEs[r.id] : undefined;
+    return {
+      ...r,
+      business: es?.business ?? r.business,
+      what: es?.what ?? r.what,
+      source: es?.source ?? r.source,
+      video: `/reels/${file}.mp4`,
+      poster: `/reels/${file}.jpg`,
+    };
+  });
+}
+
+export function getPricing(lang: Lang): Pricing {
+  return lang === "es" ? pricingEs : pricing;
+}
+
+/** Add-ons in this language. `showPrices` always comes from pricing.ts, so it's switched on in one place. */
+export function getAddOns(lang: Lang): AddOns {
+  return { showPrices: addOns.showPrices, items: lang === "es" ? addOnItemsEs : addOns.items };
 }
 
 /** What the command menu needs to list the live client sites. */

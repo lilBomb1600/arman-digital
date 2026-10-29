@@ -5,6 +5,7 @@ import { useInView, animate } from "framer-motion";
 import { Container } from "@/components/ui/Container";
 import { work } from "@/data/work";
 import { videoWork } from "@/data/videoWork";
+import { reels } from "@/data/reels";
 import type { Dictionary } from "@/i18n/dictionaries";
 
 function CountUp({ to }: { to: number }) {
@@ -31,7 +32,8 @@ function CountUp({ to }: { to: number }) {
 
 export function Stats({ t }: { t: Dictionary["stats"] }) {
   const liveSites = work.filter((w) => w.status === "live").length;
-  const videos = videoWork.length;
+  // Counted from the data, so they stay true: live sites, and the videos actually on this page.
+  const videos = videoWork.length + reels.length;
 
   return (
     <section className="relative overflow-hidden border-t border-border/60 py-14">
@@ -50,8 +52,8 @@ export function Stats({ t }: { t: Dictionary["stats"] }) {
           <p className="mt-2 text-xs text-muted sm:text-sm">{t.videos}</p>
         </div>
         <div className="text-center sm:text-left">
-          <p className="text-glow font-display text-4xl font-bold text-gold sm:text-5xl">100%</p>
-          <p className="mt-2 text-xs text-muted sm:text-sm">{t.custom}</p>
+          <p className="text-glow font-display text-4xl font-bold text-gold sm:text-5xl">0</p>
+          <p className="mt-2 text-xs text-muted sm:text-sm">{t.templates}</p>
         </div>
       </Container>
     </section>

@@ -8,7 +8,7 @@ import { homePath, siteUrl } from "@/i18n/config";
 // serves this page for any unknown URL (experimental.globalNotFound in next.config.ts). English, with a way
 // back to either language.
 export const metadata: Metadata = {
-  title: "Page not found — Arman Digital",
+  title: "Page not found | Arman Digital",
   metadataBase: new URL(siteUrl),
 };
 

@@ -5,10 +5,10 @@ import {
   motion,
   useMotionTemplate,
   useMotionValue,
-  useReducedMotion,
   useSpring,
 } from "framer-motion";
 import { cn } from "@/lib/utils";
+import { usePrefersReducedMotion } from "@/lib/usePrefersReducedMotion";
 
 /**
  * A large radial glow that follows the cursor within its nearest positioned
@@ -23,7 +23,7 @@ export function CursorGlow({
   color?: string;
 }) {
   const containerRef = useRef<HTMLDivElement>(null);
-  const prefersReducedMotion = useReducedMotion();
+  const prefersReducedMotion = usePrefersReducedMotion();
 
   const x = useMotionValue(50);
   const y = useMotionValue(35);

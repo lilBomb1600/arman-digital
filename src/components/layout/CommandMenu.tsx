@@ -27,14 +27,17 @@ import { fill, homePath, type Lang } from "@/i18n/config";
 import type { Dictionary } from "@/i18n/dictionaries";
 import type { LiveSiteLink } from "@/i18n/content";
 
+// In page order.
 const SECTIONS = [
   { href: "#hero", key: "hero" },
-  { href: "#about", key: "about" },
-  { href: "#services", key: "services" },
   { href: "#work", key: "work" },
+  { href: "#reels", key: "reels" },
+  { href: "#prices", key: "prices" },
+  { href: "#process", key: "process" },
+  { href: "#services", key: "services" },
+  { href: "#about", key: "about" },
   { href: "#video-work", key: "videoWork" },
   { href: "#instagram", key: "instagram" },
-  { href: "#process", key: "process" },
   { href: "#contact", key: "contact" },
 ] as const;
 
@@ -108,7 +111,11 @@ export function CommandMenu({ lang, t, liveSites }: { lang: Lang; t: Dictionary[
 
           <CommandGroup heading={t.groups.navigate}>
             {SECTIONS.map((s) => (
-              <CommandItem key={s.href} onSelect={() => go(s.href)} value={t.sections[s.key]}>
+              <CommandItem
+                key={s.href}
+                onSelect={() => go(s.href)}
+                value={s.key === "prices" ? `${t.sections.prices} ${t.search.prices}` : t.sections[s.key]}
+              >
                 <Compass className="text-gold" />
                 {t.sections[s.key]}
               </CommandItem>

@@ -1,13 +1,12 @@
-import { Check } from "lucide-react";
 import { Container } from "@/components/ui/Container";
 import { SectionHeading } from "@/components/ui/SectionHeading";
 import { RevealGroup, RevealItem } from "@/components/ui/Reveal";
 import { SectionGlow } from "@/components/ui/SectionGlow";
-import { GlassCard } from "@/components/ui/GlassCard";
 import type { Lang } from "@/i18n/config";
 import { getDictionary } from "@/i18n/dictionaries";
 import { getServices } from "@/i18n/content";
 
+/** What Arman sells, as a plain list: name, what you get, and the price when there's an approved one. */
 export function Services({ lang }: { lang: Lang }) {
   const t = getDictionary(lang).services;
   const services = getServices(lang);
@@ -16,26 +15,33 @@ export function Services({ lang }: { lang: Lang }) {
     <section id="services" className="relative overflow-hidden border-t border-border/60 py-24 sm:py-28">
       <SectionGlow className="-left-40 top-1/4" />
       <Container>
-        <SectionHeading
-          title={t.title}
-          description={t.description}
-        />
+        <SectionHeading title={t.title} description={t.description} />
 
-        <RevealGroup className="mt-14 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+        <RevealGroup className="mt-12 border-t border-white/[0.08]">
           {services.map((service) => (
             <RevealItem key={service.id}>
-              <GlassCard tilt className="group flex h-full flex-col rounded-3xl p-7 transition-shadow duration-300 hover:!border-gold/40 hover:shadow-[0_25px_60px_-15px_rgba(217,164,65,0.3)]">
-                <h3 className="font-display text-xl font-semibold text-cream">{service.title}</h3>
-                <p className="mt-3 flex-1 text-sm leading-relaxed text-muted">{service.description}</p>
-                <ul className="mt-6 space-y-2.5">
-                  {service.bullets.map((b) => (
-                    <li key={b} className="flex items-start gap-2.5 text-sm text-cream/90">
-                      <Check className="mt-0.5 h-4 w-4 shrink-0 text-gold transition-transform duration-300 group-hover:scale-110" />
-                      {b}
-                    </li>
-                  ))}
-                </ul>
-              </GlassCard>
+              <div className="group grid gap-4 border-b border-white/[0.08] py-8 md:grid-cols-[minmax(0,0.9fr)_minmax(0,1.4fr)_10rem] md:gap-10">
+                <h3 className="font-display text-2xl font-semibold text-cream transition-colors duration-300 group-hover:text-gold-light">
+                  {service.title}
+                </h3>
+                <div>
+                  <p className="max-w-prose leading-relaxed text-muted">{service.description}</p>
+                  <ul className="mt-4 flex flex-wrap gap-2">
+                    {service.bullets.map((b) => (
+                      <li key={b} className="rounded-full border border-white/10 px-3 py-1 text-xs font-medium text-cream/85">
+                        {b}
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+                <p className="md:text-right">
+                  {service.price ? (
+                    <span className="whitespace-nowrap font-display text-xl font-semibold tabular-nums text-gold">{service.price}</span>
+                  ) : (
+                    <span className="text-sm text-muted md:inline-block">{t.askPrice}</span>
+                  )}
+                </p>
+              </div>
             </RevealItem>
           ))}
         </RevealGroup>
