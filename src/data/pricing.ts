@@ -38,6 +38,13 @@ export const pricing: Pricing = {
         per: "a month",
         title: "4 Reels a month",
         detail: "Cancel anytime.",
+      },
+      {
+        id: "monthly8",
+        price: "$225",
+        per: "a month",
+        title: "8 Reels a month",
+        detail: "2 a week, made from your own clips. Cancel anytime.",
         best: "Best price per Reel",
       },
     ],
@@ -93,6 +100,18 @@ export const addOns: AddOns = {
       price: "$99",
     },
     {
+      id: "google-monthly",
+      title: "Google profile upkeep",
+      detail: "After setup, I keep it fresh: new photos, a post every week, and replies to your reviews that you OK first.",
+      price: "$49/mo",
+    },
+    {
+      id: "posting",
+      title: "I post your Reels for you",
+      detail: "Add it to a monthly Reel plan. I post to your Instagram and Facebook with captions in English or Spanish, so you don't have to.",
+      price: "$39/mo",
+    },
+    {
       id: "review-qr",
       title: "Google review QR cards",
       detail: "A counter card or a sticker. Customers scan it and land on your Google review page.",
@@ -109,6 +128,12 @@ export const addOns: AddOns = {
       title: "Flyers, door hangers and business cards",
       detail: "Print-ready files with your logo and colors. $59 each, or all 3 for $99.",
       price: "$59",
+    },
+    {
+      id: "second-language",
+      title: "Your site or menu in Spanish (or English)",
+      detail: "A second-language version of your one-page site for $99, or your menu or price list for $39. You check it before it goes live.",
+      price: "$39",
     },
     {
       id: "logo",

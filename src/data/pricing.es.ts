@@ -19,6 +19,13 @@ export const pricingEs: Pricing = {
         per: "al mes",
         title: "4 Reels al mes",
         detail: "Cancelas cuando quieras.",
+      },
+      {
+        id: "monthly8",
+        price: "$225",
+        per: "al mes",
+        title: "8 Reels al mes",
+        detail: "2 por semana, hechos con tus propios videos. Cancelas cuando quieras.",
         best: "El mejor precio por Reel",
       },
     ],
@@ -62,6 +69,18 @@ export const addOnItemsEs: AddOns["items"] = [
     price: "$99",
   },
   {
+    id: "google-monthly",
+    title: "Mantenimiento de tu perfil de Google",
+    detail: "Después de crearlo, lo mantengo al día: fotos nuevas, una publicación cada semana y respuestas a tus reseñas que tú apruebas primero.",
+    price: "$49/mes",
+  },
+  {
+    id: "posting",
+    title: "Yo subo tus Reels por ti",
+    detail: "Se agrega a un plan mensual de Reels. Los subo a tu Instagram y Facebook con texto en español o inglés, para que tú no tengas que hacerlo.",
+    price: "$39/mes",
+  },
+  {
     id: "review-qr",
     title: "Tarjetas QR para reseñas de Google",
     detail: "Una tarjeta para el mostrador o una calcomanía. Tus clientes la escanean y caen directo en tus reseñas de Google.",
@@ -78,6 +97,12 @@ export const addOnItemsEs: AddOns["items"] = [
     title: "Volantes, colgantes para puertas y tarjetas de presentación",
     detail: "Archivos listos para imprimir, con tu logo y tus colores. $59 cada uno, o los 3 por $99.",
     price: "$59",
+  },
+  {
+    id: "second-language",
+    title: "Tu página o menú en inglés (o en español)",
+    detail: "Una versión en otro idioma de tu página web sencilla por $99, o de tu menú o lista de precios por $39. Tú la revisas antes de publicarla.",
+    price: "$39",
   },
   {
     id: "logo",
