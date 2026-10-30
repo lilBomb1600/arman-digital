@@ -1,6 +1,7 @@
 /**
  * What business owners told Arman about his work, word for word, from the texts and DMs he shared (2026-10-29).
  * Quotes stay in the language they were written in. Never edit the wording; add only real messages.
+ * Clients gave Arman permission to be quoted (10-29).
  * "kind" says whether they paid or were reacting to a free demo, so nobody reads a demo reaction as a paid review.
  */
 export type OwnerQuote = {
