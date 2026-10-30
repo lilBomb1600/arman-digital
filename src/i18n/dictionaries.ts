@@ -123,10 +123,7 @@ export const en = {
     title: "Reels I made for real clients",
     description:
       "These are real Reels for businesses that paid me, plus one ad I made for myself. Most are cut from the owner's own photos and clips. When there are AI shots in one, I say so.",
-    results: [
-      "A wrap shop I made Reels for said people loved them.",
-      "The cookie baker I made Reels for got more customers from them.",
-    ],
+    results: ["The cookie baker I made Reels for got more customers from them."],
     price: "from $40 a Reel",
     rail: "Reels",
     prev: "Previous Reels",
@@ -139,6 +136,13 @@ export const en = {
     cta: "Text me for a free sample Reel",
     ctaNote: "Send a few photos of your work. I'll make one Reel from them for free.",
     smsBody: "Hi Arman, I saw your Reels. Can you make me a free sample one?",
+  },
+  ownerQuotes: {
+    title: "What owners told me",
+    description: "Word for word, from their texts and DMs. Three of them paid me. Two were reacting to a free demo.",
+    client: "Paid client",
+    demo: "Saw a free demo",
+    via: "via {where}",
   },
   prices: {
     title: "What it costs",
@@ -314,10 +318,7 @@ export const es: Dictionary = {
     title: "Reels que hice para clientes reales",
     description:
       "Son Reels de verdad para negocios que me pagaron, más un anuncio que hice para mí. Casi todos salen de las fotos y videos del mismo dueño. Si un Reel trae tomas con IA, te lo digo.",
-    results: [
-      "Un taller de wraps para el que hice Reels me dijo que a la gente le encantaron.",
-      "La repostera para la que hice Reels consiguió más clientes con ellos.",
-    ],
+    results: ["La repostera para la que hice Reels consiguió más clientes con ellos."],
     price: "desde $40 por Reel",
     rail: "Reels",
     prev: "Reels anteriores",
@@ -330,6 +331,13 @@ export const es: Dictionary = {
     cta: "Pídeme un Reel de muestra gratis",
     ctaNote: "Mándame unas fotos de tu trabajo y te hago un Reel gratis con ellas.",
     smsBody: "Hola Arman, vi tus Reels. ¿Me puedes hacer uno de muestra gratis?",
+  },
+  ownerQuotes: {
+    title: "Lo que me dijeron los dueños",
+    description: "Palabra por palabra, de sus mensajes y DMs (los dejé en el idioma en que los escribieron). Tres me pagaron. Dos estaban viendo un demo gratis.",
+    client: "Cliente que pagó",
+    demo: "Vio un demo gratis",
+    via: "por {where}",
   },
   prices: {
     title: "Lo que cuesta",

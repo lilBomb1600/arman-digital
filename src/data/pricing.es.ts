@@ -31,6 +31,12 @@ export const pricingEs: Pricing = {
       "$300 para empezar, y el resto cuando ya esté en línea y te guste.",
       "$100 al mes solo si quieres que yo la hospede y la mantenga al día. Eso es opcional.",
     ],
+    starter: {
+      title: "¿Solo necesitas una página?",
+      price: "$299",
+      per: "+ $25/mes de hosting",
+      line: "Tus servicios, precios, fotos y un botón para llamar o mandar texto. Si después quieres la página completa, los $299 cuentan.",
+    },
   },
 };
 

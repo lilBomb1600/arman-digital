@@ -11,7 +11,13 @@ export type Pricing = {
     items: { id: string; price: string; per?: string; title: string; detail: string; best?: string }[];
     note: string;
   };
-  website: { title: string; price: string; lines: string[] };
+  website: {
+    title: string;
+    price: string;
+    lines: string[];
+    /** The one-page site: the main site offer for solo sellers (Arman, 2026-10-29). */
+    starter: { title: string; price: string; per: string; line: string };
+  };
 };
 
 export const pricing: Pricing = {
@@ -44,6 +50,12 @@ export const pricing: Pricing = {
       "$300 to start, the rest when it's live and you're happy.",
       "$100 a month only if you want me hosting and updating it. That part is optional.",
     ],
+    starter: {
+      title: "Just need one page?",
+      price: "$299",
+      per: "+ $25/mo hosting",
+      line: "Your services, prices, photos and a call or text button. If you go full site later, the $299 counts toward it.",
+    },
   },
 };
 

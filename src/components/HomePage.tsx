@@ -11,6 +11,7 @@ import { Process } from "@/components/sections/Process";
 import { WhoWeServe } from "@/components/sections/WhoWeServe";
 import { Contact } from "@/components/sections/Contact";
 import { Reels } from "@/components/sections/Reels";
+import { OwnerQuotes } from "@/components/sections/OwnerQuotes";
 import { Prices } from "@/components/sections/Prices";
 import type { Lang } from "@/i18n/config";
 import { getDictionary } from "@/i18n/dictionaries";
@@ -32,6 +33,7 @@ export function HomePage({ lang }: { lang: Lang }) {
       <Ticker items={t.ticker} />
       <Work lang={lang} />
       <Reels lang={lang} />
+      <OwnerQuotes lang={lang} />
       <Prices lang={lang} />
       <Process lang={lang} />
       <Services lang={lang} />

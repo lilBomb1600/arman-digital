@@ -95,6 +95,17 @@ export function Prices({ lang }: { lang: Lang }) {
                   </li>
                 ))}
               </ul>
+              <div className="mt-7 rounded-2xl border border-gold/20 bg-gold/[0.04] p-5">
+                <div className="flex flex-wrap items-baseline justify-between gap-x-4 gap-y-1">
+                  <p className="font-display text-lg font-semibold text-cream">{p.website.starter.title}</p>
+                  <p className="whitespace-nowrap font-display text-2xl font-bold tabular-nums text-gold">
+                    <span className="mr-1.5 text-xs font-medium text-muted">{p.from}</span>
+                    {p.website.starter.price}
+                    <span className="ml-1.5 text-xs font-medium text-muted">{p.website.starter.per}</span>
+                  </p>
+                </div>
+                <p className="mt-2 text-sm leading-relaxed text-muted">{p.website.starter.line}</p>
+              </div>
               <a
                 href="#work"
                 className="mt-auto inline-flex w-fit items-center gap-1.5 pt-8 text-sm font-semibold text-gold underline decoration-gold/40 underline-offset-4 transition-colors hover:text-gold-light hover:decoration-gold focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gold"

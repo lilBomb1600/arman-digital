@@ -25,6 +25,7 @@ export function Reels({ lang }: { lang: Lang }) {
           reels={getReels(lang)}
           t={t}
           aside={
+            <div className="space-y-4">
             <ul className="space-y-2">
               {t.results.map((line) => (
                 <li key={line} className="flex items-start gap-2.5 text-sm leading-relaxed text-cream/85">
@@ -33,6 +34,7 @@ export function Reels({ lang }: { lang: Lang }) {
                 </li>
               ))}
             </ul>
+            </div>
           }
         />
       </Reveal>

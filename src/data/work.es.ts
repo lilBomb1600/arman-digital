@@ -194,6 +194,34 @@ export const workEs: Record<string, { category: string; short: string; summary: 
       "Un sitio conceptual para una estética canina de Walnut Creek que seca a mano y termina con tijera a cada perro: un diagrama de corte que vas recortando con tu cursor, y sus fotos reales de antes y después.",
     deliverables: ["Diagrama de corte interactivo", "Fotos reales de antes / después", "Llama para hacer tu cita", "Hecho para el celular, ya en línea"],
   },
+  guadaclean: {
+    category: "Limpieza de exteriores · Concepto",
+    short: "Canaletas, techos, paneles solares y entradas en Antioch. Limpia el techo con el dedo y llama.",
+    summary:
+      "Un sitio conceptual para un equipo de limpieza de exteriores en Antioch (canaletas, techos, paneles solares, ventanas y entradas). La página baja por una casa del techo a la entrada, te deja limpiar la mugre de una foto con el dedo y arma tu lista antes de llamar.",
+    deliverables: ["Herramienta para limpiar la foto", "Lista para la llamada", "Reseñas reales de Google y Yelp", "Hecho para el celular, ya en línea"],
+  },
+  "ww-mobile-mechanic": {
+    category: "Mecánico a domicilio · Concepto",
+    short: "Mecánico a domicilio en El Sobrante. Toca lo que hace tu carro y te escribe el mensaje.",
+    summary:
+      "Un sitio conceptual para un mecánico que va a tu casa en el oeste de Contra Costa. Tocas lo que hace el carro, pones año, marca y modelo, y el sitio le escribe el mensaje a Will.",
+    deliverables: ["Selector de síntomas", "Mensaje listo para el mecánico", "Reseñas reales de Yelp", "Hecho para el celular, ya en línea"],
+  },
+  "lashed-out": {
+    category: "Estudio de pestañas · Concepto",
+    short: "Estudio de pestañas en Concord. Tres toques te dan tu set con el precio real, y reservas.",
+    summary:
+      "Un sitio conceptual para una artista de pestañas en Concord especializada en lifting coreano. Con tres toques llegas a su servicio y precio reales, el menú completo está en la página y la reserva va directo a su Acuity.",
+    deliverables: ["Selector de set", "Menú completo con precios", "Reserva en Acuity", "Hecho para el celular, ya en línea"],
+  },
+  "her-creative-events": {
+    category: "Globos y decoración · Concepto",
+    short: "Guirnaldas de globos y decoración en Antioch. Escoge tus colores y ve tu guirnalda.",
+    summary:
+      "Un sitio conceptual para una decoradora de eventos en Antioch (guirnaldas de globos, fondos, mesas y bodas). Escoges los colores de los globos, ves cómo cambia la guirnalda y mandas tu selección a su formulario.",
+    deliverables: ["Vista previa de colores", "Manda tu selección", "Reseñas reales de Thumbtack", "Hecho para el celular, ya en línea"],
+  },
   "lima-jumpers": {
     category: "Rentas para fiestas · Concepto",
     short: "Brincolines en Concord. Revisa qué cabe en tu patio y reserva por texto.",
