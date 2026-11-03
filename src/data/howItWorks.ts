@@ -69,7 +69,7 @@ export const howItWorks: HowItWorks = {
         "It takes the caller's name, number and what they need, and texts it to you right away.",
       ],
       rules:
-        "It tells every caller it's an automated assistant, and it never makes up a price or a date. Call minutes are extra, at what they cost me. Your number has to be registered with the phone carriers first, and that usually needs your EIN.",
+        "It tells every caller it's an automated assistant, and it never makes up a price or a date. If calls are recorded, it says so before anything else, because California needs everyone's OK. Call minutes are extra, at what they cost me. Your number has to be registered with the phone carriers first, and that usually needs your EIN.",
       example: {
         label: "Example call",
         lines: [
@@ -198,7 +198,7 @@ export const howItWorksEs: HowItWorks = {
         "Toma el nombre y el número de la persona y lo que necesita, y te lo manda por texto al momento.",
       ],
       rules:
-        "A cada persona que llama le dice que es un asistente automático, y nunca inventa un precio ni una fecha. Los minutos de llamada van aparte y te los cobro a lo que me cuestan. Primero hay que registrar tu número con las compañías de teléfono, y casi siempre piden tu EIN.",
+        "A cada persona que llama le dice que es un asistente automático, y nunca inventa un precio ni una fecha. Si las llamadas se graban, lo avisa antes que nada, porque en California todos tienen que estar de acuerdo. Los minutos de llamada van aparte y te los cobro a lo que me cuestan. Primero hay que registrar tu número con las compañías de teléfono, y casi siempre piden tu EIN.",
       example: {
         label: "Ejemplo de llamada",
         lines: [
