@@ -257,6 +257,83 @@ export const workEs: Record<string, { category: string; short: string; summary: 
       "Una dulcería inventada, con una piñata que puedes romper en la primera pantalla. El menú viene de dos lugares de postres reales del Área de la Bahía, usado con permiso: pasteles para fiesta, croffles, snowflake bingsu y boba, acomodados como los pasillos de una tienda de fiestas.",
     deliverables: ["Portada con piñata que se rompe", "Siete pasillos de menú", "Arma tu caja para fiesta", "Hecho para el celular, ya en línea"],
   },
+  "double-trouble-boxing": {
+    category: "Gimnasio de box · Concepto",
+    short: "Gimnasio de box en Antioch. Su año como una cartelera de peleas que vas tocando.",
+    summary:
+      "Un sitio conceptual para un gimnasio de box familiar en Antioch, con entrenadores con licencia de USA Boxing y peleadores profesionales y amateurs, abierto desde 2014. Hecho con su propio Instagram: su año es una cartelera de peleas, y al tocar una pelea se abre lo que publicaron de ella. La primera clase es gratis, y llamar, mandar texto o sacar la ruta es un solo toque.",
+    deliverables: ["Cartelera de peleas que se abre al tocar", "Sus propias fotos de Instagram", "Llamada, texto o ruta", "Hecho para el celular, ya en línea"],
+  },
+  "south-bay-party-rentals": {
+    category: "Carpas y rentas para fiestas · Concepto",
+    short: "Carpas para fiestas en San José. Escoge el color de las telas y la carpa cambia.",
+    summary:
+      "Un sitio conceptual bilingüe para un negocio de rentas para fiestas en San José y su marca de telas, Dreamy Drapery. Escoges un color y las telas de la entrada de la carpa cambian a ese color, luego ves su montaje real en ese color y les mandas un texto sobre ese. Cada tamaño de carpa de sus publicaciones está dibujado a escala, y también están sus brincolines y resbaladillas de agua.",
+    deliverables: ["Escoge el color de tu carpa", "Tamaños de carpa a escala", "Inglés / español", "Cotización por texto"],
+  },
+  "kona-concrete": {
+    category: "Concreto y pasto sintético · Concepto",
+    short: "Concreto, muros de block y pasto sintético en Antioch. Arrastra y ve el patio antes y después.",
+    summary:
+      "Un sitio conceptual para un equipo de Antioch que hace concreto, muros de contención de block y pasto sintético, hecho con las fotos de uno de sus trabajos en un patio. Arrastras sobre el patio para verlo antes y después, sigues el trabajo desde la zanja hasta el pasto terminado y pides tu presupuesto gratis por texto.",
+    deliverables: ["Antes / después que arrastras", "Un trabajo de principio a fin", "Presupuesto gratis por texto", "Hecho para el celular, ya en línea"],
+  },
+  "jj-mobile-detailing": {
+    category: "Detallado a domicilio · Concepto",
+    short: "Detallado de carros a domicilio en el Área de la Bahía. Bajas y la espuma se enjuaga.",
+    summary:
+      "Un sitio conceptual para un detallador que va hasta tu casa en el Área de la Bahía, desde $60. Bajas por la página y la espuma se enjuaga del carro para enseñar el trabajo terminado. Cada carro que mandó está acomodado como el carrete de fotos del celular, y su número va tan grande como las letras de una troca. Hecho con las fotos de su propio anuncio.",
+    deliverables: ["Portada que se enjuaga al bajar", "Sus trabajos como carrete de fotos", "Citas por texto", "Hecho para el celular, ya en línea"],
+  },
+  "bolanos-camaras": {
+    category: "Cámaras de seguridad · Concepto",
+    short: "Cámaras de seguridad en Stockton. Un muro de pantallas hecho con sus propias instalaciones.",
+    summary:
+      "Un sitio conceptual bilingüe para un instalador de cámaras de seguridad para casas y negocios en Stockton, en español primero. Las fotos de sus instalaciones están en un muro de monitores de cámaras (tocas una y llena la pantalla), los presupuestos son gratis y tiene dos líneas: una en español y una en inglés.",
+    deliverables: ["Muro de monitores de cámaras", "Español / inglés", "Dos líneas, un solo toque", "Hecho para el celular, ya en línea"],
+  },
+  "mila-pavers-turf": {
+    category: "Adoquines y pasto sintético · Concepto",
+    short: "Patios de adoquín y pasto sintético en San José. Recorre un patio y cada pieza se ilumina.",
+    summary:
+      "Un sitio conceptual para un equipo de San José que instala patios de adoquín y pasto sintético. Bajas por uno de sus patios y cada pieza (adoquín, borde, incrustación, pasto, muros, escalones) se marca con luz. Después vienen sus fotos de trabajos, un video recorriendo un patio y un cotizador que le escribe el texto a Mila.",
+    deliverables: ["Patio pieza por pieza", "Fotos y video de trabajos reales", "Cotización por texto", "Hecho para el celular, ya en línea"],
+  },
+  "new-gen-contractors": {
+    category: "Acarreo y entrega de material · Concepto",
+    short: "Acarreo y entrega de material por Fairfield. La cotización es un ticket de báscula.",
+    summary:
+      "Un sitio conceptual para un equipo que da servicio en Fairfield y ciudades cercanas del Área de la Bahía: entrega de piedra y material, retiro de basura, demolición de concreto y limpieza de obra. El cotizador parece un ticket de báscula y empieza con una pregunta: ¿lo traes o te lo llevas? Su logo y sus propias fotos de trabajos hacen el resto.",
+    deliverables: ["Cotizador tipo ticket de báscula", "Sus fotos reales de trabajos", "Mensaje por Facebook", "Hecho para el celular, ya en línea"],
+  },
+  "elizabeth-hair-design": {
+    category: "Salón de belleza · Concepto",
+    short: "Color y peinados de novia en Lafayette. Sus rojos, sus foils y sus novias, con sus propias palabras.",
+    summary:
+      "Un sitio conceptual para una estilista de Lafayette en Golden Gate Way que hace color a la medida, luces, difuminado de canas, cortes y peinados de novia. Sus fotos cambian mientras bajas, cada servicio va escrito con sus propias palabras y un enlace a la publicación, y para hacer cita es una llamada.",
+    deliverables: ["Fotos que cambian al bajar", "Servicios con sus propias palabras", "Llama para hacer tu cita", "Hecho para el celular, ya en línea"],
+  },
+  "diablo-barber-co": {
+    category: "Barbería · Concepto",
+    short: "Barberías en Lafayette y Danville. Los dos locales y sus barberos en una sola página.",
+    summary:
+      "Un sitio conceptual para una barbería con dos locales, en Mt Diablo Blvd en Lafayette y en Hartz Ave en Danville, cortando desde 2021. Sus propias fotos de Instagram, sus barberos con sus propias palabras, cortes, arreglo de barba y afeitado con toalla caliente, y un botón de Vagaro para reservar en cada local.",
+    deliverables: ["Dos locales, una página", "Barberos con sus propias palabras", "Reserva en Vagaro", "Hecho para el celular, ya en línea"],
+  },
+  "gel-nails-spa": {
+    category: "Salón de uñas · Concepto",
+    short: "Salón de uñas en Lafayette. Escoge un color y la mano en la mesa lo lleva puesto.",
+    summary:
+      "Un sitio conceptual para un salón de uñas en el centro de Lafayette, dibujado como su mesa de uñas vista desde arriba, en el verde lima y el rojo de su letrero. Escoges un color de gel y un tono de piel y la mano dibujada lo lleva puesto, junto a sus fotos reales de uñas de Google, su calificación de 4.7 en Google, el horario de hoy y una llamada para hacer cita. Se aceptan clientes sin cita.",
+    deliverables: ["Prueba un color en la mano", "Fotos reales de uñas", "Abierto ahorita y horario", "Llama o llega sin cita"],
+  },
+  "rising-loafer": {
+    category: "Café y panadería · Concepto",
+    short: "Café y panadería en Lafayette. Una barra al lado sube como la masa mientras bajas.",
+    summary:
+      "Un sitio conceptual para un café y panadería de Lafayette, un Green Certified Business, hecho con su propio Instagram: panes de ajonjolí ya crecidos en el molde, el combo de pancakes de 9 granos, el sándwich de pollo Loafer y pan dulce horneado por encargo. Una barra al lado de la página sube como la masa mientras bajas.",
+    deliverables: ["Barra que sube como la masa", "Favoritos de sus propias publicaciones", "Llama o saca la ruta", "Hecho para el celular, ya en línea"],
+  },
   "kold-krate": {
     category: "Tinas frías de secuoya · Concepto",
     short: "Tinas frías de secuoya en Santa Cruz, con las propias palabras del dueño.",
