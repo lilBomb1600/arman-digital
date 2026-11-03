@@ -69,6 +69,9 @@ export const pricing: Pricing = {
 /**
  * Extras that go with a site or Reels. Prices approved by Arman on 2026-10-28 ("show these prices"), shown as
  * "from" prices. An item with an empty price shows "Text me" instead. Keep pricing.es.ts in step.
+ * Phone receptionist, booking calendar, follow-up and Meta ads were added on 2026-11-03 (Arman asked for them; see
+ * Outreach/EXTRA-SERVICES.md). They're meant for people who already buy Reels or a site, and each one gets a plain
+ * "how it works" card in howItWorks.ts, no live demo.
  * The $299 starter page is NOT listed here on purpose: it's only offered after someone says no to the full site.
  */
 export type AddOns = {
@@ -94,6 +97,27 @@ export const addOns: AddOns = {
       isNew: true,
     },
     {
+      id: "phone-receptionist",
+      title: "Phone receptionist",
+      detail: "When you can't pick up, it answers in English or Spanish with your hours and prices, takes a message and texts it to you. It tells callers it's an assistant. Call minutes are extra, at what they cost me.",
+      price: "$299 + $99/mo",
+      isNew: true,
+    },
+    {
+      id: "booking-calendar",
+      title: "Booking calendar",
+      detail: "A Book button on your site and your Google profile. Customers pick an open time, get a reminder, and it shows up in your phone's calendar.",
+      price: "$99 + $15/mo",
+      isNew: true,
+    },
+    {
+      id: "follow-up",
+      title: "Lead list and follow-up",
+      detail: "Leads from your site, ads, Instagram and calls go into one list. People who asked for a quote get a follow-up text, and you get a short summary every week.",
+      price: "$199 + $49/mo",
+      isNew: true,
+    },
+    {
       id: "google-profile",
       title: "Google Business Profile setup and cleanup",
       detail: "Your hours, photos, services and phone, filled in right, so people near you find you on Maps.",
@@ -110,6 +134,13 @@ export const addOns: AddOns = {
       title: "I post your Reels for you",
       detail: "Add it to a monthly Reel plan. I post to your Instagram and Facebook with captions in English or Spanish, so you don't have to.",
       price: "$39/mo",
+    },
+    {
+      id: "meta-ads",
+      title: "Facebook and Instagram ads",
+      detail: "I set up and run your ads from your own Reels and photos, and send you a report every month. Your ad budget is separate from my fee: you pay Meta on your own card.",
+      price: "$199/mo",
+      isNew: true,
     },
     {
       id: "review-qr",

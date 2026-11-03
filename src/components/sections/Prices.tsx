@@ -167,7 +167,7 @@ export function Prices({ lang }: { lang: Lang }) {
           </ul>
         </Reveal>
 
-        {/* The two newer extras get a plain "how it works" instead of a live demo (Arman, 2026-10-29). */}
+        {/* The newer extras get a plain "how it works" instead of a live demo (Arman, 2026-10-29, same for the 2026-11-03 ones). */}
         <Reveal className="mt-16">
           <h3 className="font-display text-2xl font-semibold text-cream">{how.title}</h3>
           <div className="mt-6 grid gap-6 lg:grid-cols-2">

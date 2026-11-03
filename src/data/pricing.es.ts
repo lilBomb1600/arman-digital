@@ -63,6 +63,27 @@ export const addOnItemsEs: AddOns["items"] = [
     isNew: true,
   },
   {
+    id: "phone-receptionist",
+    title: "Recepcionista telefónica",
+    detail: "Cuando no puedes contestar, contesta en español o inglés con tu horario y tus precios, toma el recado y te lo manda por texto. Les dice a los clientes que es un asistente. Los minutos de llamada se cobran aparte, a lo que me cuestan.",
+    price: "$299 + $99/mes",
+    isNew: true,
+  },
+  {
+    id: "booking-calendar",
+    title: "Calendario para citas",
+    detail: "Un botón para hacer cita en tu página y en tu perfil de Google. Tus clientes escogen una hora libre, les llega un recordatorio y la cita aparece en el calendario de tu celular.",
+    price: "$99 + $15/mes",
+    isNew: true,
+  },
+  {
+    id: "follow-up",
+    title: "Lista de clientes y seguimiento",
+    detail: "Los que te escriben por tu página, tus anuncios, Instagram o por teléfono quedan en una sola lista. A quien pidió una cotización le llega un texto de seguimiento, y cada semana recibes un resumen corto.",
+    price: "$199 + $49/mes",
+    isNew: true,
+  },
+  {
     id: "google-profile",
     title: "Perfil de Google Business: lo creo y lo arreglo",
     detail: "Tu horario, fotos, servicios y teléfono, bien puestos, para que la gente cerca te encuentre en Maps.",
@@ -79,6 +100,13 @@ export const addOnItemsEs: AddOns["items"] = [
     title: "Yo subo tus Reels por ti",
     detail: "Se agrega a un plan mensual de Reels. Los subo a tu Instagram y Facebook con texto en español o inglés, para que tú no tengas que hacerlo.",
     price: "$39/mes",
+  },
+  {
+    id: "meta-ads",
+    title: "Anuncios en Facebook e Instagram",
+    detail: "Armo y manejo tus anuncios con tus propios Reels y fotos, y cada mes te mando un reporte. Lo que gastas en anuncios va aparte de lo que me pagas a mí: se lo pagas a Meta con tu propia tarjeta.",
+    price: "$199/mes",
+    isNew: true,
   },
   {
     id: "review-qr",
