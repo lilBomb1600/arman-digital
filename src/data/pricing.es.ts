@@ -65,7 +65,7 @@ export const addOnItemsEs: AddOns["items"] = [
   {
     id: "phone-receptionist",
     title: "Recepcionista telefónica",
-    detail: "Cuando no puedes contestar, contesta en español o inglés con tu horario y tus precios, toma el recado y te lo manda por texto. Les dice a los clientes que es un asistente. Los minutos de llamada se cobran aparte, a lo que me cuestan.",
+    detail: "Cuando no puedes contestar, contesta por ti en español o inglés con tu horario y tus precios, toma el recado y te lo manda por texto. Les dice a los clientes que es un asistente. Los minutos de llamada van aparte y te los cobro a lo que me cuestan.",
     price: "$299 + $99/mes",
     isNew: true,
   },

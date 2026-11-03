@@ -193,12 +193,12 @@ export const howItWorksEs: HowItWorks = {
       title: "Recepcionista telefónica",
       price: "desde $299 + $99/mes",
       steps: [
-        "Cuando estás en un trabajo y no puedes contestar, contesta la llamada en vez del buzón de voz.",
+        "Cuando estás en un trabajo y no puedes contestar, la llamada la contesta el asistente en vez del buzón de voz.",
         "Contesta en español o inglés con tu horario, tus precios y cómo hacer cita, solo con la información que tú me diste.",
         "Toma el nombre y el número de la persona y lo que necesita, y te lo manda por texto al momento.",
       ],
       rules:
-        "A cada persona que llama le dice que es un asistente automático, y nunca inventa un precio ni una fecha. Los minutos de llamada se cobran aparte, a lo que me cuestan. Primero hay que registrar tu número con las compañías de teléfono, y casi siempre piden tu EIN.",
+        "A cada persona que llama le dice que es un asistente automático, y nunca inventa un precio ni una fecha. Los minutos de llamada van aparte y te los cobro a lo que me cuestan. Primero hay que registrar tu número con las compañías de teléfono, y casi siempre piden tu EIN.",
       example: {
         label: "Ejemplo de llamada",
         lines: [
@@ -213,7 +213,7 @@ export const howItWorksEs: HowItWorks = {
       title: "Calendario para citas",
       price: "desde $99 + $15/mes",
       steps: [
-        "Se pone un botón para hacer cita en tu página web y en tu perfil de Google.",
+        "Pongo un botón para hacer cita en tu página web y en tu perfil de Google.",
         "Tus clientes escogen una hora que de verdad tienes libre, así no te caen dos citas a la misma hora.",
         "Les llega un recordatorio antes de la cita, y la cita aparece en el calendario de tu celular.",
       ],
@@ -224,7 +224,7 @@ export const howItWorksEs: HowItWorks = {
         lines: [
           {
             from: "them",
-            text: "Hola María, te recordamos de Sunrise Tile & Stone: tu cita es mañana a las 10am. ¿Necesitas otra hora? cal.com/… Responde STOP para no recibir más.",
+            text: "Hola María, te recordamos tu cita con Sunrise Tile & Stone mañana a las 10am. ¿Necesitas otra hora? cal.com/… Responde STOP para no recibir más.",
           },
         ],
       },
@@ -262,7 +262,7 @@ export const howItWorksEs: HowItWorks = {
       rules:
         "Lo que gastas en anuncios va aparte de lo que me pagas a mí. Se lo pagas directo a Meta con tu propia tarjeta, y tú decides cuánto. Muchos negocios chicos empiezan con $5 a $20 al día. Nadie te puede prometer ventas con anuncios, así que yo no te las prometo. Los dejo bien hechos, los reviso y te enseño los números.",
       example: {
-        label: "Ejemplo de mensaje mío",
+        label: "Ejemplo de un mensaje mío",
         lines: [
           {
             from: "them",
