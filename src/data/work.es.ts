@@ -308,31 +308,31 @@ export const workEs: Record<string, { category: string; short: string; summary: 
   },
   "elizabeth-hair-design": {
     category: "Salón de belleza · Concepto",
-    short: "Color y peinados de novia en Lafayette. Sus rojos, sus foils y sus novias, con sus propias palabras.",
+    short: "Color y peinados de novia en Lafayette. Tocas un color de cabello y el espejo cambia a su trabajo en ese color.",
     summary:
-      "Un sitio conceptual para una estilista de Lafayette en Golden Gate Way que hace color a la medida, luces, difuminado de canas, cortes y peinados de novia. Sus fotos cambian mientras bajas, cada servicio va escrito con sus propias palabras y un enlace a la publicación, y para hacer cita es una llamada.",
-    deliverables: ["Fotos que cambian al bajar", "Servicios con sus propias palabras", "Llama para hacer tu cita", "Hecho para el celular, ya en línea"],
+      "Un sitio conceptual para una estilista de Lafayette en Golden Gate Way que hace color a la medida, luces, difuminado de canas, cortes y peinados de novia. Abre con su nombre en letra cursiva, como lo escribe su letrero, sobre sus propias ondas oscuras. Tocas Rubio, Castaño, Rojo, Violeta o Difuminado de canas y el espejo pasa a sus fotos de ese color mientras toda la página toma el color del cabello. Después vienen la historia de su corte bob asimétrico, sus novias y su local, con sus propias palabras y sus propias fotos. Para hacer cita es una llamada.",
+    deliverables: ["Espejo por familia de color", "Sus propias fotos y palabras", "Llama para hacer tu cita", "Hecho para el celular, ya en línea"],
   },
   "diablo-barber-co": {
     category: "Barbería · Concepto",
-    short: "Barberías en Lafayette y Danville. Los dos locales y sus barberos en una sola página.",
+    short: "Barberías en Lafayette y Danville. Bajas y recorres el local, luego revisas un corte con el espejo de mano.",
     summary:
-      "Un sitio conceptual para una barbería con dos locales, en Mt Diablo Blvd en Lafayette y en Hartz Ave en Danville, cortando desde 2021. Sus propias fotos de Instagram, sus barberos con sus propias palabras, cortes, arreglo de barba y afeitado con toalla caliente, y un botón de Vagaro para reservar en cada local.",
-    deliverables: ["Dos locales, una página", "Barberos con sus propias palabras", "Reserva en Vagaro", "Hecho para el celular, ya en línea"],
+      "Un sitio conceptual para una barbería con dos locales, en Mt Diablo Blvd en Lafayette y en Hartz Ave en Danville, abierta desde 2021. Al bajar recorres el local de Lafayette: la entrada con los sillones de piel, el área de corte, la barra con su grifo y sus tazas DBC, y la pared con máquinas antiguas. Luego mueves un espejo de mano sobre un corte terminado para verlo de cerca en la foto a tamaño completo. Sus cortes en un carrusel que deslizas, sus barberos con sus propias palabras, cortes, arreglo de barba y afeitado con toalla caliente, y un botón de Vagaro para reservar en cada local.",
+    deliverables: ["Recorre el local al bajar", "Espejo de mano sobre cortes reales", "Reserva en Vagaro en cualquier local", "Hecho para el celular, ya en línea"],
   },
   "gel-nails-spa": {
     category: "Salón de uñas · Concepto",
-    short: "Salón de uñas en Lafayette. Escoge un color y la mano en la mesa lo lleva puesto.",
+    short: "Salón de uñas en Lafayette. Sus 66 diseños reales en un muro. Escoge un color y ves solo los de ese color.",
     summary:
-      "Un sitio conceptual para un salón de uñas en el centro de Lafayette, dibujado como su mesa de uñas vista desde arriba, en el verde lima y el rojo de su letrero. Escoges un color de gel y un tono de piel y la mano dibujada lo lleva puesto, junto a sus fotos reales de uñas de Google, su calificación de 4.7 en Google, el horario de hoy y una llamada para hacer cita. Se aceptan clientes sin cita.",
-    deliverables: ["Prueba un color en la mano", "Fotos reales de uñas", "Abierto ahorita y horario", "Llama o llega sin cita"],
+      "Un sitio conceptual para un salón de uñas en el centro de Lafayette, hecho con 66 de sus propios diseños de su página de Google. La primera pantalla es su letrero rojo y verde lima sobre un muro de sus diseños que se va moviendo, y luego el salón se abre a pantalla completa. Escoges un color en el muro de uñas, el color cubre toda la sección y solo quedan los diseños de ese color. Tocas uno para verlo en grande, o guardas los que te gustan para enseñarlos cuando llegues. Su calificación de 4.7 en Google, el horario de hoy y una llamada para hacer cita. Se aceptan clientes sin cita.",
+    deliverables: ["Muro de uñas por color", "66 de sus diseños reales", "Abierto ahorita y horario", "Llama o llega sin cita"],
   },
   "rising-loafer": {
     category: "Café y panadería · Concepto",
-    short: "Café y panadería en Lafayette. Una barra al lado sube como la masa mientras bajas.",
+    short: "Café y panadería en Lafayette. Tocas un platillo de su menú de desayunos real y armas tu plato, con todo y total.",
     summary:
-      "Un sitio conceptual para un café y panadería de Lafayette, un Green Certified Business, hecho con su propio Instagram: panes de ajonjolí ya crecidos en el molde, el combo de pancakes de 9 granos, el sándwich de pollo Loafer y pan dulce horneado por encargo. Una barra al lado de la página sube como la masa mientras bajas.",
-    deliverables: ["Barra que sube como la masa", "Favoritos de sus propias publicaciones", "Llama o saca la ruta", "Hecho para el celular, ya en línea"],
+      "Un sitio conceptual para un café y panadería de Lafayette, un Green Certified Business. Abre en su propio comedor amarillo bajo las letras de bronce de su letrero, y al bajar el menú sube sobre el comedor. Su menú impreso de desayunos, los 14 platillos leídos de una foto del menú, sirve para armar tu plato: tocas un platillo, ves qué lleva, escoges The Loafers' Potatoes o fruta fresca y los extras, y el total va subiendo. Cada platillo conserva las nubes de CO2 del menú impreso. Después vienen su pan, su repostería y fotos de su comida, y termina con su letrero.",
+    deliverables: ["Arma tu plato de desayuno", "Su menú impreso real", "Llama o saca la ruta", "Hecho para el celular, ya en línea"],
   },
   "kold-krate": {
     category: "Tinas frías de secuoya · Concepto",
