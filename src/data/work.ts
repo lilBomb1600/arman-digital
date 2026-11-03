@@ -540,9 +540,9 @@ export const work: CaseStudy[] = [
     client: "Elizabeth Hair Design",
     category: "Hair Salon · Concept",
     group: "beauty",
-    short: "Lafayette color and bridal hair. Tap a hair color and the mirror switches to her work in it.",
+    short: "Lafayette color and bridal hair. Tap a hair color and the mirror shows her work in it.",
     summary:
-      "A concept site for a Lafayette stylist on Golden Gate Way who does custom color, highlights, gray blending, cuts and bridal hair. It opens on her name in script, the way her sign spells it, over her own dark waves. Tap Blonde, Brunette, Red, Violet or Gray blending and the mirror wipes to her photos of that color while the whole page takes on the color of the hair. Then her asymmetrical bob story, her brides and her storefront, in her own words and her own photos. Booking is one call.",
+      "A concept site for a Lafayette stylist on Golden Gate Way who does custom color, highlights, gray blending, cuts and bridal hair. It opens on her name in script, the way her sign spells it, over her own dark waves. Tap Blonde, Brunette, Red, Violet or Gray blending and the mirror wipes to her photos of that color while the background takes on the color of the hair. Then her asymmetrical bob story, her brides and her storefront, in her own words and her own photos. Booking is one call.",
     deliverables: ["Color-family mirror", "Her own photos and words", "Call to book", "Mobile-first, live on the web"],
     liveUrl: "https://elizabeth-hair-design.vercel.app",
     status: "live",
@@ -554,7 +554,7 @@ export const work: CaseStudy[] = [
     group: "beauty",
     short: "Lafayette and Danville barbershops. Scroll to walk through the shop, then check a cut with the hand mirror.",
     summary:
-      "A concept site for a barbershop with two locations, Mt Diablo Blvd in Lafayette and Hartz Ave in Danville, open since 2021. Scroll and you walk through the Lafayette shop: the front room with the leather couches, the floor, the bar with a tap and their DBC mugs, and the wall of old clippers. Then move a hand mirror over a finished cut to see it up close from the full size photo. Their cuts on a swipe rail, their barbers in their own words, cuts, beard trims and hot towel shaves, and a Vagaro booking button for each shop.",
+      "A concept site for a barbershop with two locations, Mt Diablo Blvd in Lafayette and Hartz Ave in Danville, open since 2021. Scroll and you walk through the Lafayette shop: the front room with the leather couches, the floor, the bar with a tap and their DBC mugs, and the wall of old clippers. Then move a hand mirror over a finished cut to see it up close from the full size photo. A row of their cuts you can swipe, their barbers in their own words, cuts, beard trims and hot towel shaves, and a Vagaro booking button for each shop.",
     deliverables: ["Walk through the shop as you scroll", "Hand mirror on real cuts", "Book either shop on Vagaro", "Mobile-first, live on the web"],
     liveUrl: "https://diablo-barber-co.vercel.app",
     status: "live",
@@ -578,7 +578,7 @@ export const work: CaseStudy[] = [
     group: "food",
     short: "Lafayette cafe and bakery. Tap a dish on their real breakfast menu and build your plate, total and all.",
     summary:
-      "A concept site for a Lafayette cafe and bakery, a Green Certified Business. It opens in their own yellow dining room under the bronze sign letters, and the menu slides up over the room as you scroll. Their printed breakfast menu, all 14 dishes read from a photo of it, works as a plate builder: tap a dish, see what goes on it, pick The Loafers' Potatoes or fresh fruit and add-ons, and the total rolls up. Each dish keeps the CO2 clouds from the printed menu. Then their bread, pastry and food photos, and it ends on their sign.",
+      "A concept site for a Lafayette cafe and bakery, a Green Certified Business. It opens in their own yellow dining room under the bronze sign letters, and the menu slides up over the room as you scroll. Their printed breakfast menu, all 14 dishes read from a photo of it, works as a plate builder: tap a dish, see what goes on it, pick The Loafers' Potatoes or fresh fruit and add-ons, and the total rolls up. The CO2 clouds from the printed menu come along too. Then their bread, pastry and food photos, and it ends on their sign.",
     deliverables: ["Breakfast plate builder", "Their real printed menu", "Call or get directions", "Mobile-first, live on the web"],
     liveUrl: "https://rising-loafer.vercel.app",
     status: "live",

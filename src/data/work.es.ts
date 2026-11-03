@@ -303,14 +303,14 @@ export const workEs: Record<string, { category: string; short: string; summary: 
     category: "Acarreo y entrega de material · Concepto",
     short: "Acarreo y entrega de material por Fairfield. La cotización es un ticket de báscula.",
     summary:
-      "Un sitio conceptual para un equipo que da servicio en Fairfield y ciudades cercanas del Área de la Bahía: entrega de piedra y material, retiro de basura, demolición de concreto y limpieza de obra. El cotizador parece un ticket de báscula y empieza con una pregunta: ¿lo traes o te lo llevas? Su logo y sus propias fotos de trabajos hacen el resto.",
+      "Un sitio conceptual para un equipo que da servicio en Fairfield y ciudades cercanas del Área de la Bahía: entrega de piedra y material, retiro de basura, demolición de concreto y limpieza de obra. El cotizador parece un ticket de báscula y empieza con una pregunta: ¿te lo traemos o nos lo llevamos? Su logo y sus propias fotos de trabajos hacen el resto.",
     deliverables: ["Cotizador tipo ticket de báscula", "Sus fotos reales de trabajos", "Mensaje por Facebook", "Hecho para el celular, ya en línea"],
   },
   "elizabeth-hair-design": {
     category: "Salón de belleza · Concepto",
     short: "Color y peinados de novia en Lafayette. Tocas un color de cabello y el espejo cambia a su trabajo en ese color.",
     summary:
-      "Un sitio conceptual para una estilista de Lafayette en Golden Gate Way que hace color a la medida, luces, difuminado de canas, cortes y peinados de novia. Abre con su nombre en letra cursiva, como lo escribe su letrero, sobre sus propias ondas oscuras. Tocas Rubio, Castaño, Rojo, Violeta o Difuminado de canas y el espejo pasa a sus fotos de ese color mientras toda la página toma el color del cabello. Después vienen la historia de su corte bob asimétrico, sus novias y su local, con sus propias palabras y sus propias fotos. Para hacer cita es una llamada.",
+      "Un sitio conceptual para una estilista de Lafayette en Golden Gate Way que hace color a la medida, luces, difuminado de canas, cortes y peinados de novia. Abre con su nombre en letra cursiva, como lo escribe su letrero, sobre sus propias ondas oscuras. Tocas Rubio, Castaño, Rojo, Violeta o Difuminado de canas y el espejo pasa a sus fotos de ese color mientras el fondo toma el color del cabello. Después vienen la historia de su corte bob asimétrico, sus novias y su local, con sus propias palabras y sus propias fotos. Para hacer cita es una llamada.",
     deliverables: ["Espejo por familia de color", "Sus propias fotos y palabras", "Llama para hacer tu cita", "Hecho para el celular, ya en línea"],
   },
   "diablo-barber-co": {
@@ -331,7 +331,7 @@ export const workEs: Record<string, { category: string; short: string; summary: 
     category: "Café y panadería · Concepto",
     short: "Café y panadería en Lafayette. Tocas un platillo de su menú de desayunos real y armas tu plato, con todo y total.",
     summary:
-      "Un sitio conceptual para un café y panadería de Lafayette, un Green Certified Business. Abre en su propio comedor amarillo bajo las letras de bronce de su letrero, y al bajar el menú sube sobre el comedor. Su menú impreso de desayunos, los 14 platillos leídos de una foto del menú, sirve para armar tu plato: tocas un platillo, ves qué lleva, escoges The Loafers' Potatoes o fruta fresca y los extras, y el total va subiendo. Cada platillo conserva las nubes de CO2 del menú impreso. Después vienen su pan, su repostería y fotos de su comida, y termina con su letrero.",
+      "Un sitio conceptual para un café y panadería de Lafayette, un Green Certified Business. Abre en su propio comedor amarillo bajo las letras de bronce de su letrero, y al bajar el menú sube sobre el comedor. Su menú impreso de desayunos, los 14 platillos leídos de una foto del menú, sirve para armar tu plato: tocas un platillo, ves qué lleva, escoges The Loafers' Potatoes o fruta fresca y los extras, y el total va subiendo. También trae las nubes de CO2 del menú impreso. Después vienen su pan, su repostería y fotos de su comida, y termina con su letrero.",
     deliverables: ["Arma tu plato de desayuno", "Su menú impreso real", "Llama o saca la ruta", "Hecho para el celular, ya en línea"],
   },
   "kold-krate": {
