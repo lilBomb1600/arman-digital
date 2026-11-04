@@ -104,19 +104,20 @@ export const howItWorks: HowItWorks = {
       id: "follow-up",
       title: "Lead list and follow-up",
       price: "from $199 + $49/mo",
+      // Only what the CRM does today (References/crm/CRM-RESEARCH.md, 2026-11-03). Keep pricing.ts in step.
       steps: [
-        "Everyone who reaches out from your site, your ads, Instagram or a missed call goes into one list on your phone.",
-        "If someone asked for a quote and went quiet, they get a friendly follow-up text from your business.",
-        "After the job they get your review link, and once a week you get a short summary of who's new and who's waiting on you.",
+        "I set it up for you: one simple list on your phone for every lead, whether they called, filled out your site, sent a DM or walked in. You add them, or I can.",
+        "Each day it shows who to call or text back and which follow-ups are due. Every text is already written, in English or Spanish, and you send it with one tap from your own phone.",
+        "Your notes, where each lead stands, booked jobs and the money you've won stay in one place. If you want, I add the leads for you and keep the follow-ups on schedule with you.",
       ],
       rules:
-        "Texts only go to people who reached out to you first, every one says Reply STOP, and you can turn off any follow-up. It works with the review texter and chat helper if you already have them.",
+        "Nothing goes out on its own. You tap send, so every text comes from your own number. The follow-up texts I write are only for people who reached out to you first, and every one says Reply STOP.",
       example: {
         label: "Example follow-up",
         lines: [
           {
             from: "them",
-            text: "Hi James, it's Sunrise Tile & Stone. Still thinking about the bathroom floor? Happy to answer any questions. Reply STOP to opt out.",
+            text: "Hi James, it's Ray from Sunrise Tile & Stone. Still thinking about the bathroom floor? Happy to answer any questions. Reply STOP to opt out.",
           },
         ],
       },
@@ -234,18 +235,18 @@ export const howItWorksEs: HowItWorks = {
       title: "Lista de clientes y seguimiento",
       price: "desde $199 + $49/mes",
       steps: [
-        "Todos los que te escriben por tu página, tus anuncios, Instagram o una llamada perdida quedan en una sola lista en tu celular.",
-        "Si alguien pidió una cotización y ya no contestó, le llega un texto amable de seguimiento de tu negocio.",
-        "Después del trabajo le llega tu link de reseñas, y cada semana recibes un resumen corto de quién es nuevo y quién está esperando tu respuesta.",
+        "Yo te lo dejo listo: una sola lista sencilla en tu celular con todos los que te buscan, ya sea por llamada, por tu página, por mensaje directo o en persona. Tú los agregas, o los agrego yo.",
+        "Cada día te muestra a quién llamar o mandarle texto y qué seguimientos te tocan. Cada texto ya viene escrito en español o inglés, y lo mandas con un toque desde tu propio celular.",
+        "Tus notas, en qué va cada cliente, los trabajos agendados y el dinero que ya ganaste quedan en un solo lugar. Si quieres, yo agrego a tus clientes y llevo los seguimientos al día contigo.",
       ],
       rules:
-        "Los textos solo les llegan a personas que te contactaron primero, todos dicen Responde STOP y puedes apagar cualquier seguimiento. Funciona junto con los textos para reseñas y el chat si ya los tienes.",
+        "Nada se manda solo. Tú tocas enviar, así que cada texto sale de tu propio número. Los textos de seguimiento que te escribo son solo para personas que te contactaron primero, y todos dicen Responde STOP.",
       example: {
         label: "Ejemplo de seguimiento",
         lines: [
           {
             from: "them",
-            text: "Hola Luis, te escribe Sunrise Tile & Stone. ¿Todavía estás pensando lo del piso del baño? Con gusto te contestamos cualquier pregunta. Responde STOP para no recibir más.",
+            text: "Hola Luis, soy Ray de Sunrise Tile & Stone. ¿Todavía estás pensando lo del piso del baño? Con gusto te contesto cualquier pregunta. Responde STOP para no recibir más.",
           },
         ],
       },

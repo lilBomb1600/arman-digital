@@ -111,9 +111,11 @@ export const addOns: AddOns = {
       isNew: true,
     },
     {
+      // Only what the CRM does today (References/crm/CRM-RESEARCH.md, 2026-11-03): leads are added by hand and every
+      // text is sent by the owner with one tap. No automatic lead intake, auto texts, review links or weekly summary.
       id: "follow-up",
       title: "Lead list and follow-up",
-      detail: "Leads from your site, ads, Instagram and calls go into one list. People who asked for a quote get a follow-up text, and you get a short summary every week.",
+      detail: "I set up one list on your phone for all your leads: calls, your site, DMs and walk-ins. You or I add them, and it shows who to call or text back today. Each follow-up is one tap, with the text already written in English or Spanish.",
       price: "$199 + $49/mo",
       isNew: true,
     },
