@@ -41,8 +41,9 @@ export const pricingEs: Pricing = {
     starter: {
       title: "¿Solo necesitas una página?",
       price: "$299",
-      per: "+ $25/mes de hosting",
+      per: "+ $49/mes",
       line: "Tus servicios, precios, fotos y un botón para llamar o mandar texto. Si después quieres la página completa, los $299 cuentan.",
+      care: "Con el plan de mantenimiento yo la hospedo, la mantengo rápida y segura, la reviso cada mes y te hago cambios pequeños, como horario, fotos, menú o precios (unos 30 minutos al mes). Si andas corto de dinero, son $25/mes solo por el hosting, y los cambios te los cobro aparte.",
     },
   },
 };

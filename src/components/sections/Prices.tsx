@@ -105,6 +105,7 @@ export function Prices({ lang }: { lang: Lang }) {
                   </p>
                 </div>
                 <p className="mt-2 text-sm leading-relaxed text-muted">{p.website.starter.line}</p>
+                <p className="mt-2 text-sm leading-relaxed text-muted">{p.website.starter.care}</p>
               </div>
               <a
                 href="#work"

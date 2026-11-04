@@ -1,6 +1,8 @@
 /**
  * Arman's prices, as approved on 2026-10-28. Shown in the Prices section (src/components/sections/Prices.tsx).
  * Change a number here and in pricing.es.ts together; don't add a price that Arman hasn't approved.
+ * 2026-11-04 (Arman's call): the one-page site's monthly went from $25 hosting to the $49/mo Care plan, with $25/mo
+ * hosting-only kept for tight budgets. Owners already quoted $25/mo keep that price; their demo sites aren't touched.
  */
 export type Pricing = {
   /** Small "from" label shown before every paid price: Arman wants prices to read as flexible starting points. */
@@ -15,8 +17,12 @@ export type Pricing = {
     title: string;
     price: string;
     lines: string[];
-    /** The one-page site: the main site offer for solo sellers (Arman, 2026-10-29). */
-    starter: { title: string; price: string; per: string; line: string };
+    /**
+     * The one-page site: the main site offer for solo sellers (Arman, 2026-10-29). `per` sits on one line next to the
+     * price, so keep it short (about 20 characters) or it spills out of the box on a phone. `care` says what the
+     * monthly plan covers and the hosting-only option.
+     */
+    starter: { title: string; price: string; per: string; line: string; care: string };
   };
 };
 
@@ -60,8 +66,9 @@ export const pricing: Pricing = {
     starter: {
       title: "Just need one page?",
       price: "$299",
-      per: "+ $25/mo hosting",
+      per: "+ $49/mo Care plan",
       line: "Your services, prices, photos and a call or text button. If you go full site later, the $299 counts toward it.",
+      care: "With the Care plan I host it, keep it fast and secure, check it every month and make small changes for you, like hours, photos, menu or prices (about 30 minutes a month). If money's tight, $25/mo is hosting only, and I charge for changes when you need them.",
     },
   },
 };
