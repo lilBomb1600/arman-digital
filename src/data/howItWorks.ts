@@ -107,11 +107,11 @@ export const howItWorks: HowItWorks = {
       // Only what the CRM does today (References/crm/CRM-RESEARCH.md, 2026-11-03). Keep pricing.ts in step.
       steps: [
         "I set it up for you: one simple list on your phone for every lead, whether they called, filled out your site, sent a DM or walked in. You add them, or I can.",
-        "Each day it shows who to call or text back and which follow-ups are due. Every text is already written, in English or Spanish, and you send it with one tap from your own phone.",
+        "Each day it shows who to call or text back and which follow-ups are due. Every text is already written, in English or Spanish. You copy it with one tap and send it from your own phone.",
         "Your notes, where each lead stands, booked jobs and the money you've won stay in one place. If you want, I add the leads for you and keep the follow-ups on schedule with you.",
       ],
       rules:
-        "Nothing goes out on its own. You tap send, so every text comes from your own number. The follow-up texts I write are only for people who reached out to you first, and every one says Reply STOP.",
+        "Nothing goes out on its own. You send every text yourself, from your own number. The follow-up texts I write are only for people who reached out to you first, and every one says Reply STOP.",
       example: {
         label: "Example follow-up",
         lines: [
@@ -236,11 +236,11 @@ export const howItWorksEs: HowItWorks = {
       price: "desde $199 + $49/mes",
       steps: [
         "Yo te lo dejo listo: una sola lista sencilla en tu celular con todos los que te buscan, ya sea por llamada, por tu página, por mensaje directo o en persona. Tú los agregas, o los agrego yo.",
-        "Cada día te muestra a quién llamar o mandarle texto y qué seguimientos te tocan. Cada texto ya viene escrito en español o inglés, y lo mandas con un toque desde tu propio celular.",
+        "Cada día te muestra a quién llamar o mandarle un texto y qué seguimientos te tocan. Cada texto ya viene escrito en español o inglés. Lo copias con un toque y lo mandas desde tu propio celular.",
         "Tus notas, en qué va cada cliente, los trabajos agendados y el dinero que ya ganaste quedan en un solo lugar. Si quieres, yo agrego a tus clientes y llevo los seguimientos al día contigo.",
       ],
       rules:
-        "Nada se manda solo. Tú tocas enviar, así que cada texto sale de tu propio número. Los textos de seguimiento que te escribo son solo para personas que te contactaron primero, y todos dicen Responde STOP.",
+        "Nada se manda solo. Tú mandas cada texto desde tu propio número. Los textos de seguimiento que te escribo son solo para personas que te contactaron primero, y todos dicen Responde STOP.",
       example: {
         label: "Ejemplo de seguimiento",
         lines: [

@@ -79,7 +79,7 @@ export const addOnItemsEs: AddOns["items"] = [
   {
     id: "follow-up",
     title: "Lista de clientes y seguimiento",
-    detail: "Te armo una sola lista en tu celular con todos tus clientes: llamadas, tu página, mensajes directos y los que llegan en persona. Tú o yo los agregamos, y te muestra a quién llamar o mandarle texto hoy. Cada seguimiento es un toque, con el texto ya escrito en español o inglés.",
+    detail: "Te armo una sola lista en tu celular con todos los que te buscan: por llamada, por tu página, por mensaje directo o en persona. Tú o yo los agregamos, y te muestra a quién llamar o mandarle un texto hoy. Cada texto de seguimiento ya viene escrito en español o inglés. Lo copias y lo mandas desde tu propio celular.",
     price: "$199 + $49/mes",
     isNew: true,
   },
