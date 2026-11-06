@@ -584,6 +584,19 @@ export const work: CaseStudy[] = [
     status: "live",
   },
   {
+    id: "silvias-house-cleaning",
+    client: "Silvia's House Cleaning",
+    category: "House Cleaning · Concept",
+    group: "home",
+    short: "Concord house cleaner. Her shiny floors fill the screen, and tapping your house writes the text to her.",
+    summary:
+      "A bilingual concept site for a Concord house cleaner with 6 years of cleaning houses, built from her own job photos. It opens on one of her living rooms, the hardwood polished to a mirror, as a band of light crosses the floor and polishes the headline. Tap your bedrooms, bathrooms, floors and what you want done, and a sketch of your house fills in while the site writes your free estimate text to Silvia, in English or Spanish.",
+    deliverables: ["Tap-your-house estimate tool", "Her own job photos", "English / Spanish", "Free estimate by text"],
+    liveUrl: "https://silvias-house-cleaning.vercel.app",
+    status: "live",
+    bilingual: true,
+  },
+  {
     id: "kold-krate",
     client: "Kold Krate",
     category: "Redwood Cold Plunges · Concept",

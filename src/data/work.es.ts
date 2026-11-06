@@ -334,6 +334,13 @@ export const workEs: Record<string, { category: string; short: string; summary: 
       "Un sitio conceptual para un café y panadería de Lafayette, un Green Certified Business. Abre en su propio comedor amarillo bajo las letras de bronce de su letrero, y al bajar el menú sube sobre el comedor. Su menú impreso de desayunos, los 14 platillos leídos de una foto del menú, sirve para armar tu plato: tocas un platillo, ves qué lleva, escoges The Loafers' Potatoes o fruta fresca y los extras, y el total va subiendo. También trae las nubes de CO2 del menú impreso. Después vienen su pan, su repostería y fotos de su comida, y termina con su letrero.",
     deliverables: ["Arma tu plato de desayuno", "Su menú impreso real", "Llama o saca la ruta", "Hecho para el celular, ya en línea"],
   },
+  "silvias-house-cleaning": {
+    category: "Limpieza de casas · Concepto",
+    short: "Limpieza de casas en Concord. Sus pisos brillando llenan la pantalla, y al tocar cómo es tu casa se escribe el mensaje para ella.",
+    summary:
+      "Un sitio conceptual bilingüe para Silvia, que lleva 6 años limpiando casas en Concord, hecho con sus propias fotos de trabajo. Abre en una de sus salas, con el piso de madera pulido como espejo, mientras una franja de luz cruza el piso y le saca brillo al título. Tocas tus recámaras, baños, pisos y lo que quieres que se haga, y un dibujo de tu casa se va llenando mientras el sitio escribe tu mensaje para pedirle un presupuesto gratis a Silvia, en inglés o en español.",
+    deliverables: ["Arma tu casa y pide presupuesto", "Sus propias fotos de trabajo", "Inglés / español", "Presupuesto gratis por mensaje"],
+  },
   "kold-krate": {
     category: "Tinas frías de secuoya · Concepto",
     short: "Tinas frías de secuoya en Santa Cruz, con las propias palabras del dueño.",
